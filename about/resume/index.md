@@ -5,6 +5,8 @@ title: Résumé
 
 # Juan Uys
 
+<a href="#" title="Rarely am I in a suit jacket."><img src="/res/suited-side.jpg" align="right" alt="Picture of Juan Uys" style="margin-left:20px" width="120" height="277"/></a>
+
 ## Introduction
 
 I'm a [London-based](http://pits-to-palace.tumblr.com/) South African who have been doing tech work since 2002. Most information about said activity can be found on my [personal website](http://opyate.com), but my [LinkedIn profile](http://www.linkedin.com/in/juanuys) could very well be more up to date. I'm not open to relocation, but I'm very keen on remote working.
