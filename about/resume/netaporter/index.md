@@ -1,3 +1,10 @@
+---
+layout: page
+title: Net-A-Porter.com
+---
+
+
+Net-a-porter.com - a leading e-tailer of luxury fashion
 January 2007 - current, London/UK
 Java Developer
 
@@ -40,6 +47,5 @@ Everything implemented in Java using Spring/Hibernate unless otherwise specified
   year-on-year growth for weeks 1-9, to 65% growth for weeks 10 (launch) - 18;
   new promotions engine which can be configured by customer, email, price,
   season, designer, customer list, per-item, per-basket, etc;
-
 
 

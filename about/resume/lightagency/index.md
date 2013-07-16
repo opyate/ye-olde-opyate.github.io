@@ -1,3 +1,9 @@
+---
+layout: page
+title: The Light Agency
+---
+
+
 ### [Mobilize Systems](http://www.mobilize-systems.com/) (previously The Light Agency)
 
 Sept 2006 - January 2007, London/UK

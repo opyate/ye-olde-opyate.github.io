@@ -1,3 +1,12 @@
+---
+layout: page
+title: Ye olden days
+---
+
+Coming soon...
+
+[The Light Agency](/about/resume/lightagency/)
+
 ### The early part of my career is summarised here.
 
 Sep 2005 - Dec 2005, Freelancer, London/UK
