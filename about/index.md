@@ -8,9 +8,9 @@ title: About
 
 Hi, I'm Juan. Check out my [Résumé](/about/resume/).
 
-## Elsewhere
+## Digital footprint
 
-You can find me on a variety of social web sites; my username is usually "opyate".
+You can find me on a variety of destinations on the Interwebs; my username is usually "opyate".
 
 - [Facebook](http://www.facebook.com/opyate) — friends and foes
 - [GitHub](https://github.com/opyate) — code, juicy code
