@@ -3,11 +3,55 @@ layout: page
 title: Net-A-Porter.com
 ---
 
+# My work with Net-A-Porter.com
 
-Net-a-porter.com - a leading e-tailer of luxury fashion
-January 2007 - current, London/UK
-Java Developer
+I have been working at Net-A-Porter.com for 7 years, and have done everything from implementing our first shared payment service, our first API, our first translations system, and I've also won a hack day with an iOS app. I've also led teams on occasion, and have made many friends during my time there.
 
+# 2006
+
+I interviewed with Net-A-Porter shortly after Xmas of 2006 and started there soon after as their 3rd Java developer. (number 2 has since left, and number 1 recently celebrated 10 years with the company!)
+
+It was fun, it had a startup vibe, and on the technology front, the world was our oyster. My manager came to me early on and said "check out this [Spring](http://www.springsource.org/) thing everyone's talking about", and the fun ensued.
+
+The team soon growed &mdash; I interviewed a lot of what would become today's fourty or fifty odd team of JVM devs, and took a lot of the new recruits under my wing with my new-found Spring knowledge (including whom is today our Chief Architect, mind!).
+
+# Growth and adaptation
+
+Our IT team could once fit on a large sofa, but today we're just shy of 200. Over the years we've stayed agile and tried many different gloves for an ever growing hand (fashion puns are appropriate). We had teams, then streams, then cross-functional teams, then splinter groups going solo trying to save the world in their own special way. All along working for the greater good and trying to get your wives, girlfriends and sisters to buy another handbag.
+
+Through-out the growing pains we've kept to a single theme: get the job done. Get it done well.
+
+![NAP Translations team doing it agile!](/res/nap-agile.jpg)
+
+![NAP Translations launch in German, French and Chinese](/res/nap-translations-launch.jpg)
+
+The company is not far off 5,000 employees strong, and our HQ is quite a sizeable hole in the side of the Westfield shopping centre, with a recent expansion up to BBC HQ's way. I can tell you one thing: you might think it looks a bit Gattaca, but these guys know how to put an office together.
+
+![NAP Office, the 'Hangar'](/res/nap-massive-office.jpg)
+
+# Life
+
+Net-A-Porter has become a very integrated part of my life. I remember shopping for a new TV on Tottenham Court Road one Saturday morning, when I got a call from ops saying the payment service is throwing a wobbly, and could I take a look. I'd whip the laptop out there and then, make the connection, troubleshoot, re-compile and deploy right there. Needless to say, it's 2013 now, and I've only recently got a TV and a license for one.
+
+I've also made many wonderful friends at NAP throughout the years. I've gone to my colleagues' house warmings, weddings, birthday parties and BBQs. They are truly a great bunch. My LinkedIn network is NAP/other to a ratio of almost 5:1.
+
+[![NAP tech circa 2007](https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-frc1/222537_8125517399_1278_n.jpg)](https://www.facebook.com/chiselwright/media_set?set=a.8125327399.23525.516677399&type=3)
+
+That's me on the right with the long hair.
+
+![NAP Xmas 2008](https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash4/1594_527795514264_5912_n.jpg)
+
+Spot Mr. Longhair again.
+
+![Enjoying drinks at the local, 2009](https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-ash3/6460_218711365084_468042_n.jpg)
+
+That's your good self on the very left.
+
+# Technology
+
+I've had every opportunity in the world to use any technology I see fit. I sowed the Scala seeds in 2009, and were the first developer to use a MacBook in the same year. Not that it matters, but we've always been bound to our desks with enormous server-grade machines, and the laptops enabled us to roam the office for the first time. Besides, the iPhone had just launched and it was a very exciting thing to develop for.
+
+Since there is so much more to say about NAP's culture, opportunities, and way of working, but so little time, I'm leaving you with a bulleted list of things I did at NAP that popped into my head whilst writing this.
 Everything implemented in Java using Spring/Hibernate unless otherwise specified; no particular order.
 
 * Open Source: active contributor to many Scala libraries and tools (e.g. jerkson by Yammer, the SBT plugin for IntelliJ, and my very own Scala Graph for inclusion in Scala Extended Collections library)
@@ -20,7 +64,7 @@ Everything implemented in Java using Spring/Hibernate unless otherwise specified
 * XML sitemap automation using Spring Batch, Apache Nutch and Solr
 * spearheaded a lot of dev processes
 * Dev tools console w/ Scala + Lift
-* Integration (gradual): Spring 1.2/2.0/2.5.5/3.0 into a Struts 1 web app
+* Integration (gradual): Spring 1.2/2.0/2.5.5/3.x into a Struts 1 web app
 * Credit card database that enable customers to save their card details on our
   system; adherence to PCI compliance; use of BouncyCastle library
 * Payment system (PSP) - adherence to PCI compliance; use of Apache CXF library
