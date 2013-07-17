@@ -3,45 +3,16 @@ layout: page
 title: Ye olden days
 ---
 
-[The Light Agency](/about/resume/lightagency/)
+# My work in the olden days
 
-### The early part of my career is summarised here.
+One of my best early memories is working for Marc Lewis at the [The Light Agency](/about/resume/lightagency/). Have a read, and make sure you make an effort to meet Marc.
 
-Sep 2005 - Dec 2005, Freelancer, London/UK
-* re-skilling: R&D; CMS system; J2ME games development
-* freelance/bespoke dev: for MBD (a previous employer) e.g. UCEA site re-design
-  and search indexing;
-  See opyate.com for more details.
-* consultancy: TAIB Securities
+Some time after I came to London in 2004, I worked for [Man Bytes Dog](http://www.manbytesdog.net). My boss, Jonathan Young, was a righteous dude, and a great boss. He's now a Brit expat in South Africa (good move!). Work incudes building marketing database systems for the private healthcare group [Cambian](http://www.cambiangroup.com/), re-jigging the website for the [UCEA](http://www.ucea.ac.uk/), and helping build our in-house cloud management platform [VITAL](http://www.mdnx.com/), which has since been bought, renamed, sliced and diced.
 
-May 2004 - Aug 2005, Developer, Man Bytes Dog (MBD), London/UK 
-http://www.manbytesdog.net
-* Cambian Healthcare Marketing Database System (C#, IIS, MSSQL)
-* UCEA Web site; UCEA Client Database
-* VITAL; support
-RFL: Java/Open Source beckons :-)
+Shortly after that, I had a go at freelancing, but my work turned out to be a major exercise in free unpaid work and mostly skilling up. Work done during this period includes J2ME games development, and supporting the IT for a [small private bank](http://www.taib.com/).
 
-October 2003 - March 2004, Web Developer, Business Edge Systems (BES), JHB/SA 
-http://www.businessedge.co.za 
-E-business consultancy/bespoke dev to major blue chips/gov/banking/Forex.
-* Investec (London/JHB): single sign-on secure site (XML, SOAP, ColdFusion)
-* Moraine Systems' Glacier Suite: financial software suite (C#)
-* LeasePlan SA: Migration of Development Environment and Source Code (WSAD,
-  MSSQL, Tomcat 4.1, Rational ClearCase, Jetty)
-RFL: UK, here I come!
+Prior to all of this, I was in South Africa, where my career kickstarted. Just before leaving for London, my employer was a pool of contractors, probably the [best of the best of the Johannesburg tech scene for finance](http://www.businessedge.co.za) at the time. I was stationed at [Investec](http://www.investec.co.za/) most of the time, and did some top notch CMS work, for some top notch dollar. Other work done for Business Edge includes financial software suites and lease management software. Exciting stuff.
 
-May 2002 - September 2003, (only) Developer, iGate Technologies, JHB/SA
-Internet advertising, wireless internet bandwidth provision, and web services.
-* iCatcher Back-office system: ad engine; control panel
-* iCatcher Reporting Engine: DB to XML, transformed using XSL
-* iCatcher Ads: creative (DHTML, JavaScript, VBScript, Flash, Photoshop)
-* iCatcher Network: in conjunction with www.doubleclick.com and www.checkm8.com
-  mobile sales tool (J2ME, WML)
-* Sysadmin: 3 mission-critical Linux servers
-* Newsletter engine: HTML scraped, made it email-safe, put clickthru counters
-  on all hrefs, emailed it to distribution list (Perl, HTML, Majordomo,
-  Postgres)
-RFL: it was my first job, I learnt a lot, and was ready for something bigger.
+Prior to Business Edge, my first ever taxes-paying job (not the ones where you get paid cash-in-hand as a school boy) was with [one of South Africa's first ever Internet advertising brokers](http://web.archive.org/web/20030213133755/http://www.icatcher.co.za/). The work I did for them... hell &mdash; I did everything: The ad engine, the control panel, the data transformations, the APIs, the ads (DHTML, JavaScript, VBScript, Flash, Photoshop), the relations (with www.doubleclick.com and www.checkm8.com), the ops of multiple mission-critical Linux servers, the newsletters, the metrics, the analytics, and everything else. Every second night I wouldn't go home. I'd just work. I might go home for a shower. But I FRIGGIN LOVED IT. It was 2002, and one of the best years of my career.
 
-
-
+Thanks for reading. I might add some more anecdotes of my high school jobs, but those don't really count.
