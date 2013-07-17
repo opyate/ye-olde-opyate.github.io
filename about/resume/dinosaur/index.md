@@ -3,8 +3,6 @@ layout: page
 title: Ye olden days
 ---
 
-Coming soon...
-
 [The Light Agency](/about/resume/lightagency/)
 
 ### The early part of my career is summarised here.
