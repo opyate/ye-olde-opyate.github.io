@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Finance Leads Online (FLO)
+title: BeatThatQuote.com
 ---
 
-# My work with FLO & BeatThatQuote
+# My work with BeatThatQuote.com
 
-FLO was the UK's fastest growing start-up in 2005 and won the HSBC regional award for best start-up in the London region. The company’s core business is generating and selling financial leads. As employee #5 (and the second techie!) I was resposible for implementing backends in Java, and customer self-service front-ends in RoR. BeatThatQuote has since been acquired by Google.
+[BeatThatQuote](http://www.beatthatquote.com/) (also trading as [Finance Leads Online](http://financeleadsonline.co.uk)) was the UK's fastest growing start-up in 2005 and won the HSBC regional award for best start-up in the London region. The company’s core business is generating and selling financial leads. As employee #5 (and the second techie!) I was resposible for implementing backends in Java, and customer self-service front-ends in RoR. BeatThatQuote has since been acquired by Google.
 
 # Hitting the ground running
 
@@ -23,11 +23,11 @@ Behold:
 
 {% gist 6020023 %}
 
-I also grew immensely as a developer whilst working for FLO. The pace was fast, and the tasks demanding. John would stand behind me, waiting for a bit of Ruby to deploy, saying "Every minute is X thousand pounds" and my heart would start pounding, and my hands would shake a little. But, I loved every minute of it. Never in your life would you so quickly learn to implement keyboard shortcuts for everything, and never ever even look at your keyboard ever again.
+I also grew immensely as a developer whilst working for BeatThatQuote.com. The pace was fast, and the tasks demanding. John would stand behind me, waiting for a bit of Ruby to deploy, saying "Every minute is X thousand pounds" and my heart would start pounding, and my hands would shake a little. But, I loved every minute of it. Never in your life would you so quickly learn to implement keyboard shortcuts for everything, and never ever even look at your keyboard ever again.
 
 # Stuff done
 
-As always, a bulleted list of a few things I built at FLO.
+As always, a bulleted list of a few things I built at BeatThatQuote.com.
 
 * MI System - leads submissions system; extended the system with 4 new products
   (property, life insurance, pension, and investment) on top of existing loans
@@ -35,7 +35,7 @@ As always, a bulleted list of a few things I built at FLO.
 * Direct 2 Broker system (Ruby on Rails, Ajax); extension to MI system; cuts
   out underwriter stage
 * IFA self-service system (Java, Struts, Velocity)
-* Finance Leads Online, Misc: Ad-hoc reports (Perl); new test framework (Ruby, Watir, Selenium)
+* Misc: Ad-hoc reports (Perl); new test framework (Ruby, Watir, Selenium)
 
 
 
