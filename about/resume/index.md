@@ -27,7 +27,7 @@ I have been working at Net-A-Porter.com for 7 years, and have done everything fr
 
 ## [Finance Leads Online](http://www.financeleadsonline.co.uk) / [BeatThatQuote](http://www.beatthatquote.com) 
 
-FLO was the UK's fastest growing start-up in 2005 and won the HSBC regional award for best start-up in the London region. The company’s core business is generating and selling financial leads. As employee #5 (and the second techie!) I was resposible for implementing backends in Java, and customer self-service front-ends in RoR. BeatThatQuote &mdash; the brand &mdash; has since been acquired by Google.
+FLO was the UK's fastest growing start-up in 2005 and won the HSBC regional award for best start-up in the London region. The company’s core business is generating and selling financial leads. As employee #5 (and the second techie!) I was resposible for implementing backends in Java, and customer self-service front-ends in RoR. BeatThatQuote has since been acquired by Google.
 
 [Read more about my work with FLO &rarr;](/about/resume/financeleads/)
 
