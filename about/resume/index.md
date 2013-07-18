@@ -9,9 +9,9 @@ title: Résumé
 
 ## Introduction
 
-I'm a [London-based](http://pits-to-palace.tumblr.com/) South African who have been doing tech work since 2002. Most information about said activity can be found on my [personal website](http://opyate.com), but my [LinkedIn profile](http://www.linkedin.com/in/juanuys) could very well be more up to date. I'm not open to relocation, but I'm very keen on remote working.
+I'm a [London-based](http://pits-to-palace.tumblr.com/) South African who has been doing tech work since 2002. Most information about said activity can be found on my [personal website](http://opyate.com), but my [LinkedIn profile](http://www.linkedin.com/in/juanuys). I'm also very keen on remote working.
 
-My [old CV](https://s3-eu-west-1.amazonaws.com/opyate.com/cv2011.txt) is still available, but it is reminiscent of the days when recruiters used to tell us to use as many keywords as possible and doesn't really tell a story.
+My [old CV](https://s3-eu-west-1.amazonaws.com/opyate.com/cv2011.txt) is still available, and contains more technical information about the work I have done in the past.
 
 ## [pollarize.me](http://app.pollarize.me)
 
