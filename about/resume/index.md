@@ -19,7 +19,7 @@ I'm a [London-based](http://pits-to-palace.tumblr.com/) South African who has be
 
 ## [Net-A-Porter.com](http://www.net-a-porter.com/)
 
-I have been working at Net-A-Porter.com for 7 years, and some of my achievements include implementing our first shared payment service, our first API, our first translations system, leading teams, and I've also won a hack day with an iOS app.
+I have been working at Net-A-Porter.com for 7 years, and some of my achievements include implementing our first shared payment service, our first API and our first translations system. I have led teams, and I've also won a hack day with an iOS app.
 
 [Read more about my work with Net-A-Porter.com &rarr;](/about/resume/netaporter/)
 
