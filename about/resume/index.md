@@ -13,13 +13,13 @@ I'm a [London-based](http://pits-to-palace.tumblr.com/) South African who has be
 
 ## [pollarize.me](http://app.pollarize.me)
 
-Pollarize is a decision making platform that makes it quicker and easier for you to query your friends across multiple social networks and gather their responses into one concise answer. I co-founded pollarize at Startup Weekend London, March 2012, which we won. Shortly after, we were accepted into Wayra UK, whom gave us enough money to work on releasing pollarize on iOS and web in December 2012. Sadly, we have since run out of cash and have failed to secure more funding.
+*Pollarize* is a decision-making platform that makes it quicker and easier for you to query your friends across multiple social networks and gather their responses into one concise answer. I co-founded *pollarize* at Startup Weekend London, March 2012, which we won. Shortly after, we were accepted into Wayra UK, who gave us enough money to work on releasing *pollarize* on iOS and web in December 2012. Sadly, we have since run out of cash and have failed to secure more funding.
 
 [Read more about my work with pollarize.me &rarr;](/about/resume/pollarizeme/)
 
 ## [Net-A-Porter.com](http://www.net-a-porter.com/)
 
-I have been working at Net-A-Porter.com for 7 years, and have done everything from implementing our first shared payment service, our first API, our first translations system, and I've also won a hack day with an iOS app. I've also led teams on occasion, and have made many friends during my time there.
+I have been working at Net-A-Porter.com for 7 years, and some of my achievements include our first shared payment service, our first API, our first translations system, led teams, and I've also won a hack day with an iOS app.
 
 [Read more about my work with Net-A-Porter.com &rarr;](/about/resume/netaporter/)
 

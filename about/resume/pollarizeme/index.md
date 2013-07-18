@@ -5,7 +5,7 @@ title: pollarize.me
 
 # My work with pollarize.me
 
-Pollarize is a decision making platform that makes it quicker and easier for you to query your friends across multiple social networks and gather their responses into one concise answer. I co-founded pollarize at Startup Weekend London, March 2012, which we won. Shortly after, we were accepted into Wayra UK, whom gave us enough money to work on releasing pollarize on iOS and web in December 2012. Sadly, we have since run out of cash and have failed to secure more funding. This article is a retrospective.
+*Pollarize* is a decision-making platform that makes it quicker and easier for you to query your friends across multiple social networks and gather their responses into one concise answer. I co-founded *pollarize* at Startup Weekend London, March 2012, which we won. Shortly after, we were accepted into Wayra UK, whom gave us enough money to work on releasing *pollarize* on iOS and web in December 2012. Sadly, we have since run out of cash and have failed to secure more funding. This article is a retrospective.
 
 ## Startup weekend
 
@@ -13,11 +13,11 @@ Pollarize is a decision making platform that makes it quicker and easier for you
 
 *That's me in front behind the HP bag.*
 
-I won't re-tell the story of pollarize's beginnings, so I copy Mat's post from the old pollarize blog:
+I won't re-tell the story of *pollarize's* beginnings, so I copy Mat's post from the old *pollarize* blog:
 
 > If superhero reboots have taught me anything over the past few years it’s that people love an origin story so I thought I’d share ours with you:
 > 
-> At the most basic level Pollarize was born out of my long term courtship of Juan Uys, our CTO, and an indecisive iPad purchase.  
+> At the most basic level *Pollarize* was born out of my long term courtship of Juan Uys, our CTO, and an indecisive iPad purchase.  
 > 
 > Juan and I met for the first time at a Hacker News event in 2010 and I quickly identified him as the technical guru I needed to help me launch the startup I was working on. Unfortunately I discovered that Juan was working on his own project but the the two of us stayed in touch and ended up becoming friends instead.
 > 
@@ -41,7 +41,7 @@ I won't re-tell the story of pollarize's beginnings, so I copy Mat's post from t
 > 
 > It’s been 8 months since the Startup Weekend pitch that kicked all of this off and we’re still to break the ‘heads-down and execute like hell’ initiative that brought us that initial success. We have a wait list of 1,500 potential users signed up already, the second version of our iOS app in the app store and a brand new web app experience.  It’s very early days for us but you can be sure that we’re giving it our best shot.  
 > 
-> I’d like to take this quick opportunity to thank my team, our early adopters and all the people that have supported us behind the scenes - Pollarize may have been born out of an iPad purchase but it’s growing into something bigger thanks to the awesome group of people involved in the project.
+> I’d like to take this quick opportunity to thank my team, our early adopters and all the people that have supported us behind the scenes - *Pollarize* may have been born out of an iPad purchase but it’s growing into something bigger thanks to the awesome group of people involved in the project.
 > 
 > Cheers,
 > 
@@ -53,7 +53,7 @@ I won't re-tell the story of pollarize's beginnings, so I copy Mat's post from t
 
 Mat's post above already aluded to Wayra Academy. I'll fill in some more blanks.
 
-Wayra was the hardest I've ever worked in my life. Apart from having to keep my day job (the guys didn't &mdash; bless 'em), I squeezed pollarize deliverables into every spare minute I had. As can be read from my [old pollarize posts](http://funkshional.wordpress.com/category/pollarize/), I used a few technologies which enabled me to iterate very, very quickly. I worked 3 hours before work in the morning, one hour over lunch, then another few hours in the evening. Weekends were 2 ten hour days. Needless to say, I never burned out. I followed a healthy diet and went to the gym every morning to stay limber. I did regret not spending the week days in the shiny new office with the guys, but with the help of good old email, Pivotal Tracker and some Basecamp, I did a mighty good job of getting those tickets out and keeping the bugs at bay.
+Wayra was the hardest I've ever worked in my life. Apart from having to keep my day job (the guys didn't &mdash; bless 'em), I squeezed *pollarize* deliverables into every spare minute I had. As can be read from my [old *pollarize* posts](http://funkshional.wordpress.com/category/pollarize/), I used a few technologies which enabled me to iterate very, very quickly. I worked 3 hours before work in the morning, one hour over lunch, then another few hours in the evening. Weekends were 2 ten hour days. Needless to say, I never burned out. I followed a healthy diet and went to the gym every morning to stay limber. I did regret not spending the week days in the shiny new office with the guys, but with the help of good old email, Pivotal Tracker and some Basecamp, I did a mighty good job of getting those tickets out and keeping the bugs at bay.
 
 I rushed through hours and hours of Scala, and used some Python for some add-on NLP and recommendation projects which we never launched. Mike designed everything we threw at him perfectly, whilst also juggling what was to become his [tech events](http://www.3-beards.com/) business. Phil became my personal hero when he learned, developed and launched a gorgeous iOS app in 3 months. And Mat kept hustling all the way through it all, meeting, greeting, wining, dining and basically trying to secure us some funding.
 
