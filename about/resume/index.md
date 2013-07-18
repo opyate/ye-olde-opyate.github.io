@@ -11,8 +11,6 @@ title: Résumé
 
 I'm a [London-based](http://pits-to-palace.tumblr.com/) South African who has been doing tech work since 2002. Most information about said activity can be found on my [personal website](http://opyate.com), but my [LinkedIn profile](http://www.linkedin.com/in/juanuys). I'm also very keen on remote working.
 
-My [old CV](https://s3-eu-west-1.amazonaws.com/opyate.com/cv2011.txt) is still available, and contains more technical information about the work I have done in the past.
-
 ## [pollarize.me](http://app.pollarize.me)
 
 Pollarize is a decision making platform that makes it quicker and easier for you to query your friends across multiple social networks and gather their responses into one concise answer. I co-founded pollarize at Startup Weekend London, March 2012, which we won. Shortly after, we were accepted into Wayra UK, whom gave us enough money to work on releasing pollarize on iOS and web in December 2012. Sadly, we have since run out of cash and have failed to secure more funding.
