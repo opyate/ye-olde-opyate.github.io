@@ -7,7 +7,7 @@ title: Ye olden days
 
 One of my best early memories is working for Marc Lewis at the [The Light Agency](/about/resume/lightagency/). Have a read, and make sure you make an effort to meet Marc.
 
-Some time after I came to London in 2004, I worked for [Man Bytes Dog](http://www.manbytesdog.net). My boss, Jonathan Young, was a righteous dude, and a great boss. He's now a Brit expat in South Africa (good move!). Work incudes building marketing database systems for the private healthcare group [Cambian](http://www.cambiangroup.com/), re-jigging the website for the [UCEA](http://www.ucea.ac.uk/), and helping build our in-house cloud management platform [VITAL](http://www.mdnx.com/), which has since been bought, renamed, sliced and diced.
+Some time after I came to London in 2004, I worked for [Man Bytes Dog](http://www.manbytesdog.net). My boss, Jonathan Young, was a righteous dude, and a great boss. He's now a Brit expat in South Africa (good move!). Work incudes building marketing database systems for the private healthcare group [Cambian](http://www.cambiangroup.com/), re-jigging the website for the [UCEA](http://www.ucea.ac.uk/), and helping support our in-house cloud management platform [VITAL](http://www.mdnx.com/), which has since been bought, renamed, sliced and diced.
 
 Shortly after that, I had a go at freelancing, but my work turned out to be a major exercise in free unpaid work and mostly skilling up. Work done during this period includes J2ME games development, and supporting the IT for a [small private bank](http://www.taib.com/).
 
