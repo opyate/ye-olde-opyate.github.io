@@ -9,7 +9,7 @@ title: Résumé
 
 ## Introduction
 
-I'm a [London-based](http://pits-to-palace.tumblr.com/) South African who has been doing tech work since 2002. Most information about said activity can be found on my [personal website](http://opyate.com), but my [LinkedIn profile](http://www.linkedin.com/in/juanuys). I'm also very keen on remote working.
+I'm a [London-based](http://pits-to-palace.tumblr.com/) South African who has been doing tech work since 2002. Most information about said activity can be found on my [personal website](http://opyate.com) and my [LinkedIn profile](http://www.linkedin.com/in/juanuys). I'm also very keen on remote working.
 
 ## [pollarize.me](http://app.pollarize.me)
 
