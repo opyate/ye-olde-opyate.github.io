@@ -11,7 +11,7 @@ title: Résumé
 
 I'm a [London-based](http://pits-to-palace.tumblr.com/) South African who has been doing tech work since 2002. I've designed, architected and implemented entire social networks and ecommerce systems, while also assuming the role of developer, ops, analyst and tester throughout (a given for single tecnical co-founders).
 
-Most information about said activity can be found on my [personal website](http://opyate.com) and my [LinkedIn profile](http://www.linkedin.com/in/juanuys).
+Most information about said activity can be found on my [personal website](http://opyate.com), my [LinkedIn profile](http://www.linkedin.com/in/juanuys) or my [StackOverflow careers profile](http://careers.stackoverflow.com/opyate) (the latter is nicely key-worded for recruiters).
 
 ## [pollarize.me](http://app.pollarize.me)
 
