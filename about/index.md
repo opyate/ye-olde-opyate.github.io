@@ -41,3 +41,22 @@ Get in touch by [sending me a message on Facebook](https://www.facebook.com/mess
     try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
 }(document, 'script'));
 </script>
+
+## Follow me
+
+<a href="https://twitter.com/opyate" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @opyate</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<!-- Place this tag where you want the widget to render. -->
+<div class="g-person" data-href="//plus.google.com/115689360157951814802" data-rel="author"></div>
+
+<!-- Place this tag after the last widget tag. -->
+<script type="text/javascript">
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
