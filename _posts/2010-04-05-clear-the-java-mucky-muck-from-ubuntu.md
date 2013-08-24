@@ -5,13 +5,13 @@ og_image_url: "http://distilleryimage2.ak.instagram.com/02f13c2a0c5a11e3bc652200
 image: "http://distilleryimage2.ak.instagram.com/02f13c2a0c5a11e3bc6522000ae91414_7.jpg"
 image_content_type: "image/jpeg"
 layout: post
-tags: java, ubuntu
+tags: [tech, java]
 category: blog
 ---
 
 # Java on Ubuntu
 
-This article is for Java developers who use Ubuntu as a development platform who wants to install Sun’s range of tools manually, instead of installing it with Synaptic/aptitude/apt-get. The commands in this article was tested on Ubuntu 8.04 “Hardy Heron” and assumes knowledge of the [Debian alternatives system](http://www.debian.org/doc/FAQ/ch-customizing.en.html#s-diverse).
+<img src="http://distilleryimage2.ak.instagram.com/02f13c2a0c5a11e3bc6522000ae91414_7.jpg" width="50%" align="right">This article is for Java developers who use Ubuntu as a development platform who wants to install Sun’s range of tools manually, instead of installing it with Synaptic/aptitude/apt-get. The commands in this article was tested on Ubuntu 8.04 “Hardy Heron” and assumes knowledge of the [Debian alternatives system](http://www.debian.org/doc/FAQ/ch-customizing.en.html#s-diverse).
 
 The benefits of installing it manually are:
 

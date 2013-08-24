@@ -8,6 +8,14 @@ layout: default
     <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
       {{ page.date | date: "%b %d, %Y" }}
     </info>
+
+	<div class="meta">
+		<p class="item tags small">
+		{% for tag in page.tags %}<a href="/tag/{{ tag }}" class="tag">{{ tag }}</a>{% endfor %}
+		</p>
+	</div>
+	<div class="breaker"></div>
+
     <div class="body">{{ content }}</div>
     <div class="breaker"></div>
 

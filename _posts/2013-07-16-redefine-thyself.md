@@ -5,7 +5,7 @@ og_image_url: "http://24.media.tumblr.com/0e3daaaf5e64585f0dea531728d037c2/tumbl
 image: "http://24.media.tumblr.com/0e3daaaf5e64585f0dea531728d037c2/tumblr_mo8rc4h5de1ri2z5io1_1280.jpg"
 image_content_type: "image/jpeg"
 layout: post
-tags: opyate
+tags: life
 category: blog
 ---
 
