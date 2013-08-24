@@ -1,0 +1,4 @@
+rvm use 2.0.0-p247@opyate.com-jekyll --create --default
+gem install jekyll
+gem install rdiscount
+gem install jekyll-assets
