@@ -17,7 +17,7 @@ Most information about said activity can be found on my [personal website](http:
 
 *Pollarize* is a decision-making platform that makes it quicker and easier for you to query your friends across multiple social networks and gather their responses into one concise answer. I co-founded *pollarize* at Startup Weekend London, March 2012, which we won. Shortly after, we were accepted into Wayra UK, who gave us enough money to work on releasing *pollarize* on iOS and web in December 2012. Sadly, we have since run out of cash and have failed to secure more funding.
 
-[Read more about my work with pollarize.me &rarr;](/2013/07/19/failed-startup-2.html)
+[Read more about my work with pollarize.me &rarr;](/tag/pollarize)
 
 ## [Net-A-Porter.com](http://www.net-a-porter.com/)
 
