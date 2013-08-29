@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Juan Uys</title>
+  <link href="http://opyate.com/atom.xml" rel="self"/>
+  <link href="http://opyate.com/"/>
+  <updated>2013-08-29T17:40:21+01:00</updated>
+  <id>http://opyate.com/</id>
+  <author>
+    <name>Juan Uys</name>
+    <email>opyate@gmail.com</email>
+  </author>
+  
+  <entry>
+    <title>Failed startup #2</title>
+    <link href="http://opyate.com/2013/07/19/failed-startup-2.html"/>
+    <updated>2013-07-19T00:00:00+01:00</updated>
+    <id>http://opyate.com/2013/07/19/failed-startup-2</id>
+    <content type="html">&lt;p&gt;&lt;em&gt;Pollarize&lt;/em&gt; is a decision-making platform that makes it quicker and easier for you to query your friends across multiple social networks and gather their responses into one concise answer. I co-founded &lt;em&gt;pollarize&lt;/em&gt; at Startup Weekend London, March 2012, which we won. Shortly after, we were accepted into Wayra UK, whom gave us enough money to work on releasing &lt;em&gt;pollarize&lt;/em&gt; on iOS and web in December 2012. Sadly, we have since run out of cash and have failed to secure more funding.&lt;/p&gt;
+
+&lt;p&gt;This article is a retrospective.&lt;/p&gt;
+
+&lt;h2&gt;Startup weekend&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/didscatterbrain/sets/72157629680707765/with/7021256699/&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7256/7021256699_cf4c66b390_b.jpg&quot; alt=&quot;Startup weekend final photo&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;That&amp;rsquo;s me in front behind the HP bag.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I won&amp;rsquo;t re-tell the story of &lt;em&gt;pollarize&amp;rsquo;s&lt;/em&gt; beginnings, so I copy Mat&amp;rsquo;s post from the old &lt;em&gt;pollarize&lt;/em&gt; blog:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;If superhero reboots have taught me anything over the past few years it’s that people love an origin story so I thought I’d share ours with you:&lt;/p&gt;
+
+&lt;p&gt;At the most basic level &lt;em&gt;Pollarize&lt;/em&gt; was born out of my long term courtship of Juan Uys, our CTO, and an indecisive iPad purchase.&lt;/p&gt;
+
+&lt;p&gt;Juan and I met for the first time at a Hacker News event in 2010 and I quickly identified him as the technical guru I needed to help me launch the startup I was working on. Unfortunately I discovered that Juan was working on his own project but the the two of us stayed in touch and ended up becoming friends instead.&lt;/p&gt;
+
+&lt;p&gt;Fast forward a year and a half and both of our previous projects have gone the way of the dodo so we decided to team up and attend London Startup Weekend. We met up towards the end of March of this year, a week or so before the event, and threw a few ideas around, including an idea borne out of my experience trying to decide which iPad version (3G vs. Extra Memory) I should buy…&lt;/p&gt;
+
+&lt;p&gt;Startup Weekend London was an awesome experience. I’d spoken to people that had attend similar events before so I knew that the key to doing well was forming a small, manageable, team and executing as quickly as possible. With Juan on board and taking care of the back end we set out to fill the gaps in our team as quickly as possible and recruited Michael Hobson to look after design and Sara Gozalo to focus on front end development.&lt;/p&gt;
+
+&lt;p&gt;We learnt a lot over the course of that weekend - I got further with a startup in those 54 hours than I had in a year of trying - but most importantly we went on to win.  Winning that event had two major outcomes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;It was a great validation of the project and encouraged us to continue with it after the event.&lt;/li&gt;
+&lt;li&gt;It introduced us to the team behind Wayra UK - the weekend’s primary sponsors.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;In light of this we decided to continue the project after we left Startup Weekend and also began the process of applying to accelerators.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately we had to part ways with Sara at this point due to her other commitments and Juan quickly brought Phil Cole on board to take over front end development work.&lt;/p&gt;
+
+&lt;p&gt;A month or so later we made it through the final stage of selection at Wayra and became one of the first 16 teams to participate in Wayra UK.&lt;/p&gt;
+
+&lt;p&gt;A month after that we moved into the Wayra Academy as one of, if not the, earliest stage teams in the program and set about starting again from scratch.&lt;/p&gt;
+
+&lt;p&gt;It’s been 8 months since the Startup Weekend pitch that kicked all of this off and we’re still to break the ‘heads-down and execute like hell’ initiative that brought us that initial success. We have a wait list of 1,500 potential users signed up already, the second version of our iOS app in the app store and a brand new web app experience.  It’s very early days for us but you can be sure that we’re giving it our best shot.&lt;/p&gt;
+
+&lt;p&gt;I’d like to take this quick opportunity to thank my team, our early adopters and all the people that have supported us behind the scenes - &lt;em&gt;Pollarize&lt;/em&gt; may have been born out of an iPad purchase but it’s growing into something bigger thanks to the awesome group of people involved in the project.&lt;/p&gt;
+
+&lt;p&gt;Cheers,&lt;/p&gt;
+
+&lt;p&gt;Mat&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h2&gt;Wayra Academy&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.facebook.com/PollarizeMe&quot;&gt;&lt;img src=&quot;https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-prn1/543441_483970661623402_1985125126_n.jpg&quot; alt=&quot;W is for Wayra&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Mat&amp;rsquo;s post above already aluded to Wayra Academy. I&amp;rsquo;ll fill in some more blanks.&lt;/p&gt;
+
+&lt;p&gt;Wayra was the hardest I&amp;rsquo;ve ever worked in my life. Apart from having to keep my day job (the guys didn&amp;rsquo;t &amp;mdash; bless &amp;lsquo;em), I squeezed &lt;em&gt;pollarize&lt;/em&gt; deliverables into every spare minute I had. As can be read from my &lt;a href=&quot;http://funkshional.wordpress.com/category/pollarize/&quot;&gt;old &lt;em&gt;pollarize&lt;/em&gt; posts&lt;/a&gt;, I used a few technologies which enabled me to iterate very, very quickly. I worked 3 hours before work in the morning, one hour over lunch, then another few hours in the evening. Weekends were 2 ten hour days. Needless to say, I never burned out. I followed a healthy diet and went to the gym every morning to stay limber. I did regret not spending the week days in the shiny new office with the guys, but with the help of good old email, Pivotal Tracker and some Basecamp, I did a mighty good job of getting those tickets out and keeping the bugs at bay.&lt;/p&gt;
+
+&lt;p&gt;I rushed through hours and hours of Scala, and used some Python for some add-on NLP and recommendation projects which we never launched. Mike designed everything we threw at him perfectly, whilst also juggling what was to become his &lt;a href=&quot;http://www.3-beards.com/&quot;&gt;tech events&lt;/a&gt; business. Phil became my personal hero when he learned, developed and launched a gorgeous iOS app in 3 months. And Mat kept hustling all the way through it all, meeting, greeting, wining, dining and basically trying to secure us some funding.&lt;/p&gt;
+
+&lt;p&gt;We were going for the Big Bang, one-in-a-million, &amp;ldquo;get lucky&amp;rdquo; exit &amp;mdash; something one is especially hungry for when your app is social and free.&lt;/p&gt;
+
+&lt;h2&gt;Dublin Web Summit&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.facebook.com/PollarizeMe&quot;&gt;&lt;img src=&quot;https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-prn1/404671_481933535160448_515453169_n.jpg&quot; alt=&quot;&#39;Stout&#39; in Afrikaans means &#39;Naughty&#39;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Mike won 2 Web Summit tickets, and Wayra sponsored another 2, so we were all able to attend. We implemented and refined about double the amount of features from the previous 6 months at the Web Summit weekend.&lt;/p&gt;
+
+&lt;p&gt;We had a successful iPhone app launch, got some good PR going, and met with more angels and investors you can shake an executive summary at.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://itunes.apple.com/gb/app/pollarize/id564203002&quot;&gt;&lt;img src=&quot;https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-prn1/561795_479200655433736_1131174673_n.jpg&quot; alt=&quot;App Store, here we come!&quot; /&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We spoke, we demo&amp;rsquo;d, we networked with other startups and got the buzz going. This was the best times of our respective professional lives.&lt;/p&gt;
+
+&lt;h2&gt;Big Bang&lt;/h2&gt;
+
+&lt;p&gt;Big bang? No: crash and burn. We failed to secure funding. We pivoted, then re-pivoted in a panic to make ourselves matter. We desperately wanted to stick together as a team and make more stuff. We do sometimes wonder if we were in a different startup environment if things would have panned out differently. Besides, we weren&amp;rsquo;t the only ones making opinion apps: there are &lt;a href=&quot;https://getamen.com/classic&quot;&gt;Amen&lt;/a&gt;, &lt;a href=&quot;http://thumb.it/&quot;&gt;Thumb&lt;/a&gt;, &lt;a href=&quot;http://polarb.com/&quot;&gt;Polar&lt;/a&gt; and others.&lt;/p&gt;
+
+&lt;p&gt;We started an agency called &lt;a href=&quot;http://meetstrange.com/&quot;&gt;Strange&lt;/a&gt;, heavily inspired by &lt;a href=&quot;http://berglondon.com/&quot;&gt;BERG&lt;/a&gt;. All of us, however, went on to separate things, because bills needed paying, and our respective better halves couldn&amp;rsquo;t sustain us too much longer. (My story is slightly different. Having kept my day job, the missus really just needed some help with the &lt;a href=&quot;http://pits-to-palace.tumblr.com&quot;&gt;renovations&lt;/a&gt; already!)&lt;/p&gt;
+
+&lt;h2&gt;Exodus&lt;/h2&gt;
+
+&lt;p&gt;A couple of days ago I put a stop to all our bills: Github, Pivotal, Heroku Postgres, SSL, Mongo, etc etc. The free instance on Heroku is in maintenance mode, and our splash page will remain until the domain expires, and we probably won&amp;rsquo;t renew it. The demise of pollarize is sad for the 4 of us considering the hours we put in.&lt;/p&gt;
+
+&lt;p&gt;We are doing great, though. Phil went on to work (and take equity in) one of the Wayra shining stars: &lt;a href=&quot;http://www.nightzookeeper.com/&quot;&gt;Night Zookeeper&lt;/a&gt;. Mike, like I said, is crafting the best tech events, now worldwide. (Silicon Drinkabout Copenhagen, anyone?). Mat continues to conquer the world, &lt;a href=&quot;https://medium.com/@Wehtam&quot;&gt;one idea at a time&lt;/a&gt;. The missus and I just had a baby, and I&amp;rsquo;m planning my next move.&lt;/p&gt;
+
+&lt;p&gt;Now, I just have to wait for the guys to become slightly more available again so we can hack up our Next Big Thing. We did everything perfectly before, but the world just wasn&amp;rsquo;t ready. Our next product will be perfect again, but it won&amp;rsquo;t be free ;-)&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading.&lt;/p&gt;
+</content>
+	<content type="image/jpeg" src="http://i.imgur.com/ENlAiHy.jpg" />
+    <author>
+      <name>Juan Uys</name>
+      <uri>http://opyate.com/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>Redefine thyself.</title>
+    <link href="http://opyate.com/2013/07/16/redefine-thyself.html"/>
+    <updated>2013-07-16T00:00:00+01:00</updated>
+    <id>http://opyate.com/2013/07/16/redefine-thyself</id>
+    <content type="html">&lt;p&gt;&lt;img src=&quot;http://24.media.tumblr.com/0e3daaaf5e64585f0dea531728d037c2/tumblr_mo8rc4h5de1ri2z5io1_1280.jpg&quot; width=&quot;50%&quot; align=&quot;right&quot;&gt;We&amp;rsquo;ve just had a baby, and it has put things into perspective a little bit.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;I never think of the future - it comes soon enough. &amp;ndash; Albert Einstein&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Thanks, Einstein, but it does not apply to me anymore.&lt;/p&gt;
+
+&lt;p&gt;Wish me luck with my imminent adventure. Details to follow.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Image: my own rendition of Saul Steinberg, Untitled, 1948&lt;/em&gt;&lt;/p&gt;
+</content>
+	<content type="image/jpeg" src="http://24.media.tumblr.com/0e3daaaf5e64585f0dea531728d037c2/tumblr_mo8rc4h5de1ri2z5io1_1280.jpg" />
+    <author>
+      <name>Juan Uys</name>
+      <uri>http://opyate.com/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>Pollarize architecture at a glance</title>
+    <link href="http://opyate.com/2012/11/20/pollarize-architecture-at-a-glance.html"/>
+    <updated>2012-11-20T00:00:00+00:00</updated>
+    <id>http://opyate.com/2012/11/20/pollarize-architecture-at-a-glance</id>
+    <content type="html">&lt;p&gt;&lt;em&gt;X-posted from the pollarize.me blog&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1&gt;Genesis&lt;/h1&gt;
+
+&lt;p&gt;Pollarize was &lt;a href=&quot;http://thenextweb.com/uk/2012/03/26/the-winner-of-startup-weekend-london-is-pollarize-me/&quot;&gt;bourne&lt;/a&gt; out of a 54 hour hacking stint at Startup Weekend in March 2012. The Thursday night before that weekend, I thought about the various tech I knew and wanted to have a good idea how to kickstart our hack before putting pen to paper on the Friday night.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://media.tumblr.com/tumblr_mdsg3ecowA1ryyv9k.png&quot; width=&quot;50%&quot; align=&quot;right&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;The decision was made: Pollarize was going to be a Spring MVC web app running on an Amazon EC2 instance. I was going to worry about the database later, and maybe get away with using an in-memory map or something for the data.&lt;/p&gt;
+
+&lt;p&gt;Come Friday night, I felt a bit different. Why not learn something new, I thought. Besides, AWS might be a bit clunky for a weekend hack. And I’ve heard good things about the Play! framework, and the v2 was released just a few months before.&lt;/p&gt;
+
+&lt;h1&gt;Today&lt;/h1&gt;
+
+&lt;p&gt;Fast forward 7 months, over 200 deploys, and over 1,000 commits. This is what our API looks like now:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/bd1Bh.png&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
+
+&lt;h2&gt;Core&lt;/h2&gt;
+
+&lt;p&gt;The core app is a lightweight &lt;a href=&quot;http://www.playframework.org/documentation/2.0.1/Home&quot;&gt;Play! 2.0 (Scala edition)&lt;/a&gt; web app which exposes a JSON web API, and it makes transactional writes to our operational &lt;a href=&quot;https://postgres.heroku.com/&quot;&gt;Postgres&lt;/a&gt; database. Most other (unimportant) write operations happen via fire-and-forget calls to other modules via &lt;a href=&quot;http://akka.io/&quot;&gt;Akka&lt;/a&gt;. The IDs for these data is pre-chosen, so subsequent calls will be idempotent.&lt;/p&gt;
+
+&lt;h2&gt;MongoDB&lt;/h2&gt;
+
+&lt;p&gt;All writes to the operational database is fired off to a &lt;a href=&quot;https://www.mongolab.com/home&quot;&gt;MongoDB&lt;/a&gt; actor, which serves as the read-only cache for API reads. The data in MongoDB is already in the format the caller will consume, so it is extremely quick. The cache can be rebuilt asynchronously with the click of a button.&lt;/p&gt;
+
+&lt;h2&gt;Media&lt;/h2&gt;
+
+&lt;p&gt;The media module accepts profile pictures and poll images, and we use &lt;a href=&quot;http://blitline.com/&quot;&gt;Blitline&lt;/a&gt; to get them into our signature circular format (and different sizes), and then we store the results in &lt;a href=&quot;http://aws.amazon.com/s3/&quot;&gt;Amazon S3&lt;/a&gt; and expose it to the world via &lt;a href=&quot;http://aws.amazon.com/cloudfront/&quot;&gt;Cloudfront&lt;/a&gt;. If you have any image processing to be done, definitely give Blitline a shot: they’re very helpful and the API is a lot of fun to play with.&lt;/p&gt;
+
+&lt;h2&gt;Notify&lt;/h2&gt;
+
+&lt;p&gt;Notifications is triggered via an Akka scheduled job in the case of poll expiry, and via events in the case of registration, password reset, poll creation from people you follow and follow notifications (yes, we’re a tiny social network). In general we use email via &lt;a href=&quot;http://www.mailgun.com/&quot;&gt;Mailgun&lt;/a&gt;’s simple API, &lt;a href=&quot;http://www.pubnub.com/&quot;&gt;Pubnub&lt;/a&gt; for web users, and &lt;a href=&quot;http://urbanairship.com/&quot;&gt;Urban Airship&lt;/a&gt; for our mobile users.&lt;/p&gt;
+
+&lt;h2&gt;Other&lt;/h2&gt;
+
+&lt;p&gt;We played with some other tech but those were chucked out for various reasons. &lt;a href=&quot;http://redistogo.com/&quot;&gt;Redis&lt;/a&gt; is awesome, and we used it initially for our social network, but in our case it was just another piece of your architecture to worry about. Our social network now happily lives in our operational database where it belongs. One day, if Postgres buckles under the graph, we’ll reconsider. Then there’s &lt;a href=&quot;http://www.cloudamqp.com/&quot;&gt;RabbitMQ&lt;/a&gt;. It’s beautifully stable, and has a very good monitoring plugin, but once again: it’s one more thing to manage, and besides, Akka mailboxes will suffice for now.
+You bet your PaaS we’re using Heroku&lt;/p&gt;
+
+&lt;p&gt;Heroku has been great for getting started. Have an idea? Code it, commit, push, et voilà. No worrying about builds, deploys or anything like that: one less operational hassle to worry about when you’re building features. However, we do have a chunky $5,000 AWS credit, and I’m slowly but surely creating &lt;a href=&quot;http://puppetlabs.com/&quot;&gt;Puppet&lt;/a&gt; manifests for all our components (&lt;a href=&quot;http://vagrantup.com/&quot;&gt;Vagrant&lt;/a&gt; has been great for testing this locally), but this is still a nice-to-have for the size of our user base, so I’m really just hacking at this in the in-between moments.&lt;/p&gt;
+
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;So, there you have it. Our architecture at a glance. There will be some more detail later down the line. In fact, I’m already drafting a Play! best practices, jotting down everything I’m learning along the way. Questions and comments on the back of a postcard.&lt;/p&gt;
+</content>
+	<content type="image/png" src="http://i.imgur.com/bd1Bh.png" />
+    <author>
+      <name>Juan Uys</name>
+      <uri>http://opyate.com/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>Adding SMS functionality with Twilio</title>
+    <link href="http://opyate.com/2012/10/15/adding-sms-functionality-with-twilio.html"/>
+    <updated>2012-10-15T00:00:00+01:00</updated>
+    <id>http://opyate.com/2012/10/15/adding-sms-functionality-with-twilio</id>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://pollarize.me&quot;&gt;Pollarize&lt;/a&gt; helps the world make up its mind via its beautiful, delightful suite of apps. However, not everyone owns a smartphone. Luckily, &lt;a href=&quot;http://www.twilio.com/&quot;&gt;Twilio&lt;/a&gt; brings voice and messaging to web and mobile applications. Which means that Pollarize now allows our brick-lugging friends to compose polls via SMS.&lt;/p&gt;
+
+&lt;h1&gt;How we built it&lt;/h1&gt;
+
+&lt;p&gt;The usual Pollarize system constraints are the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;poll question can not exceed 100 characters&lt;/li&gt;
+&lt;li&gt;options A and B can not exceed 100 characters each&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;The requirements are the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a poll SMS should be in the format “Question text. A. First option B. Second option”&lt;/li&gt;
+&lt;li&gt;if either A or B is omitted, then default to “Yes” and “No” respectively&lt;/li&gt;
+&lt;li&gt;a poll SMS can exceed the 160 character limit, but not exceed 308 characters if we take into account the delimiters ” A. ” and ” B. “&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;This meant that an entire poll can at least be described at least by one SMS, and at most by two, since 308 is less than 2 * 160, or two SMS fragments.&lt;/p&gt;
+
+&lt;h1&gt;SMS&lt;/h1&gt;
+
+&lt;p&gt;Twilio seemingly don’t maintain any state on their side. I.e. if a user sends a large SMS, Twilio will not bundle the resulting SMS fragments up and send it to us in one piece. Instead, Twilio will send us the fragments one after the other as they become available from the mobile network.&lt;/p&gt;
+
+&lt;p&gt;To illustrate this, here are the &lt;code&gt;application/form-url-encoded&lt;/code&gt; payloads represented as Scala maps:&lt;/p&gt;
+
+&lt;script src=&#39;https://gist.github.com/3854971.js?file=TwilioSMSFirst.scala&#39;&gt;&lt;/script&gt;
+
+
+&lt;div&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;Map(
+ ToCountry -&amp;gt; List(GB),
+ ToState -&amp;gt; List(London),
+ SmsMessageSid -&amp;gt; List(SMc508bc45e41be7ec3827ac6b9617fb62),
+ ToCity -&amp;gt; List(),
+ FromZip -&amp;gt; List(),
+ SmsSid -&amp;gt; List(SMc508bc45e41be7ec3827ac6b9617fb62),
+ FromState -&amp;gt; List(),
+ SmsStatus -&amp;gt; List(received),
+ FromCity -&amp;gt; List(),
+ Body -&amp;gt; List(I don&amp;#39;t have an iPhone, so I thought I&amp;#39;d build SMS functionality. A. Great, what about something that interprets smoke signals? B. Good, now get on with ),
+ FromCountry -&amp;gt; List(GB),
+ To -&amp;gt; List(+442033224667),
+ ToZip -&amp;gt; List(),
+ AccountSid -&amp;gt; List(AC78cccde86008c911f6ae6a1c575b575a),
+ From -&amp;gt; List(+447446112182),
+ ApiVersion -&amp;gt; List(2010-04-01))&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/div&gt;
+
+
+
+
+&lt;script src=&#39;https://gist.github.com/3854971.js?file=TwilioSMSSecond.scala&#39;&gt;&lt;/script&gt;
+
+
+&lt;div&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;Map(
+ ToCountry -&amp;gt; List(GB),
+ ToState -&amp;gt; List(London),
+ SmsMessageSid -&amp;gt; List(SM3f5c6a4584270d38ccbd1641a7b83df4),
+ ToCity -&amp;gt; List(),
+ FromZip -&amp;gt; List(),
+ SmsSid -&amp;gt; List(SM3f5c6a4584270d38ccbd1641a7b83df4),
+ FromState -&amp;gt; List(),
+ SmsStatus -&amp;gt; List(received),
+ FromCity -&amp;gt; List(),
+ Body -&amp;gt; List(the Android app already!),
+ FromCountry -&amp;gt; List(GB),
+ To -&amp;gt; List(+442033224667),
+ ToZip -&amp;gt; List(),
+ AccountSid -&amp;gt; List(AC78cccde86008c911f6ae6a1c575b575a),
+ From -&amp;gt; List(+447446112182),
+ ApiVersion -&amp;gt; List(2010-04-01))&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Implementation in a nutshell&lt;/h1&gt;
+
+&lt;p&gt;The trick here is to assemble the SMS text once we’ve received all the fragments. Since Twilio doesn’t tell us there’s a second fragment coming, we don’t create a poll immediately after an SMS is received. Instead, we dump the payloads into MongoDB as they are received. A background worker then scans all “unprocessed” SMSes and check if there were other SMSes &lt;em&gt;from the same phone number within the last 10 seconds&lt;/em&gt;. Once we have all the SMSes, we combine the original SMS text into a single text, create the poll, and we mark the Mongo record as “processed”.&lt;/p&gt;
+
+&lt;p&gt;The “&lt;em&gt;within the last 10 seconds&lt;/em&gt;” bit only came after I discovered a massive bug. Let me explain…&lt;/p&gt;
+
+&lt;h1&gt;The Poll-from-SMS scheduled job&lt;/h1&gt;
+
+&lt;p&gt;The background job server re-assembles the SMS fragments into a single SMS and checks if they’re poll-worthy.&lt;/p&gt;
+
+&lt;p&gt;The first version of the SMSWorker accidentally did the following (using the data from the two Gists above):&lt;/p&gt;
+
+&lt;h2&gt;Poll #1&lt;/h2&gt;
+
+&lt;pre&gt;
+Question: I don&#39;t have an iPhone, so I thought I&#39;d build SMS functionality.
+Option A. Great, what about something that interprets smoke signals?
+Option B. Good, now get on with
+&lt;/pre&gt;
+
+
+&lt;h2&gt;Poll #2&lt;/h2&gt;
+
+&lt;pre&gt;
+Question: the Android app already!
+Option A: Yes
+Option B: No
+&lt;/pre&gt;
+
+
+&lt;p&gt;See what I did there? Option B got cut off due to the 160 character SMS limit, and we accidentally created a whole new, unintelligible poll. Not quite what I had in mind, as you can imagine. I had to start making some assumptions about the way Twilio and the mobile networks interact in light of the absence of an SLA from either.&lt;/p&gt;
+
+&lt;p&gt;I assumed a maximum of 10 seconds between SMS fragments. A counter point to this is that we assume a user won’t create polls via SMS in quick succession.&lt;/p&gt;
+
+&lt;h1&gt;The Poll-from-SMS scheduled job V2&lt;/h1&gt;
+
+&lt;p&gt;The second version of the SMSWorker can be seen below.&lt;/p&gt;
+
+&lt;script src=&#39;https://gist.github.com/3854971.js?file=ScheduledPollFromSMSActor.scala&#39;&gt;&lt;/script&gt;
+
+
+&lt;div&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;class ScheduledPollFromSMSActor extends Actor with ActorLogging {
+  def receive = {
+    case &amp;quot;check&amp;quot; =&amp;gt; {
+      // find all &amp;quot;unprocessed&amp;quot; SMSes
+      val twilios = TwilioMongo.findAllUnprocessed()
+
+      // we don&amp;#39;t assume that users will send short SMSes in a short amount of time
+      twilios.groupBy(t =&amp;gt; t.smsdata(&amp;quot;From&amp;quot;)).map {
+        case (mobile, data) =&amp;gt; {
+          // take the user&amp;#39;s SMSes where they&amp;#39;re 10 seconds from one another
+          val first = data.head
+          val inProximity = data.takeWhile(d =&amp;gt; scala.math.abs(d.created - first.created) &amp;lt; 10000L)
+
+          // assemble the entire SMS
+          val entireSMS = inProximity.foldLeft(&amp;quot;&amp;quot;)((a, v) =&amp;gt; {
+            a + v.smsdata(&amp;quot;Body&amp;quot;)
+          })
+
+          val parsed = SMSParser(entireSMS)
+          
+          // &amp;lt;omitted&amp;gt; create poll, notify user, broadcast to other listeners...
+          
+          // mark as processed, or failed
+          inProximity.map(twilioData =&amp;gt; {
+            TwilioMongo.update(twilioData.copy(status = parsed.map(_ =&amp;gt; &amp;quot;processed&amp;quot;).getOrElse(&amp;quot;failed&amp;quot;)))
+          })
+        }
+      }
+    }
+  }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The value inProximity are the SMS fragments within a 10 second period. The SMS fragments belong to the same user, as obtained via the groupBycall on line 8.&lt;/p&gt;
+
+&lt;p&gt;The SMSParser on line 19 is really nothing special, but from the test cases you’ll see that we’re catering for every eventuality:&lt;/p&gt;
+
+&lt;script src=&#39;https://gist.github.com/3854971.js?file=SMSParserSpec.scala&#39;&gt;&lt;/script&gt;
+
+
+&lt;div&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;class SMSParserSpec extends Specification {
+  
+  // one hundred characters
+  val h = &amp;quot;0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789&amp;quot;
+  // MORE than one hundred characters
+  val h1 = &amp;quot;0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789&amp;quot; + &amp;quot;!&amp;quot;
+ 
+  // --
+  
+  &amp;quot;SMS Parser&amp;quot; should {
+    
+    &amp;quot;extract question and 2 answers&amp;quot; in {
+      val poll = SMSParser(&amp;quot;Was this sent via SMS? a. Yes, indeed. b. Nope!&amp;quot;)
+      
+      poll.get.question.trim must equalTo(&amp;quot;Was this sent via SMS?&amp;quot;)
+      poll.get.option_a.get.trim must equalTo(&amp;quot;Yes, indeed.&amp;quot;)
+      poll.get.option_b.get.trim must equalTo(&amp;quot;Nope!&amp;quot;)
+    }
+    
+    &amp;quot;default to Yes and No when no answers are specified&amp;quot; in {
+      val poll = SMSParser(&amp;quot;Cheese is da bomb!&amp;quot;)
+      
+      poll.get.question must equalTo(&amp;quot;Cheese is da bomb!&amp;quot;)
+      poll.get.option_a must beSome(&amp;quot;Yes&amp;quot;)
+      poll.get.option_b must beSome(&amp;quot;No&amp;quot;)
+    }
+    
+    &amp;quot;ignore the case of a and b&amp;quot; in {
+      val poll = SMSParser(&amp;quot;Was this sent via SMS? A. Yes, indeed. b. Nope!&amp;quot;)
+      
+      poll.get.question must equalTo(&amp;quot;Was this sent via SMS?&amp;quot;)
+      poll.get.option_a.get.trim must equalTo(&amp;quot;Yes, indeed.&amp;quot;)
+      poll.get.option_b.get.trim must equalTo(&amp;quot;Nope!&amp;quot;)
+    }
+    
+    &amp;quot;default b to &amp;#39;No&amp;#39; if only a is specified&amp;quot; in {
+      val poll = SMSParser(&amp;quot;Was this sent via SMS? A. Yes, indeed.&amp;quot;)
+      
+      poll.get.question must equalTo(&amp;quot;Was this sent via SMS?&amp;quot;)
+      poll.get.option_a.get.trim must equalTo(&amp;quot;Yes, indeed.&amp;quot;)
+      poll.get.option_b must beSome(&amp;quot;No&amp;quot;)
+    }
+    
+    &amp;quot;default a to &amp;#39;Yes&amp;#39; if only b is specified&amp;quot; in {
+      val poll = SMSParser(&amp;quot;Was this sent via SMS? B. This is only a dream.&amp;quot;)
+      
+      poll.get.question must equalTo(&amp;quot;Was this sent via SMS?&amp;quot;)
+      poll.get.option_a must beSome(&amp;quot;Yes&amp;quot;)
+      poll.get.option_b.get.trim must equalTo(&amp;quot;This is only a dream.&amp;quot;)
+    }
+    
+    &amp;quot;be invalid if only options were specified (i.e. no question)&amp;quot; in {
+      SMSParser(&amp;quot;A. Yes, indeed. B. This is only a dream.&amp;quot;) must beNone
+      SMSParser(&amp;quot;A. Yes, indeed.&amp;quot;) must beNone
+      SMSParser(&amp;quot;B. This is only a dream.&amp;quot;) must beNone
+    }
+    
+    &amp;quot;be invalid if nothing at all was specified&amp;quot; in {
+      SMSParser(&amp;quot;&amp;quot;) must beNone
+      SMSParser(&amp;quot; &amp;quot;) must beNone
+      SMSParser(&amp;quot;  &amp;quot;) must beNone
+    }
+    
+    &amp;quot;reject the SMS if any/all fields are &amp;gt; 100&amp;quot; in {
+      val poll = SMSParser(&amp;quot;%s A. %s B. %s&amp;quot;.format(h, h, h))
+      poll.get.question must equalTo(h)
+      poll.get.option_a must beSome(h)
+      poll.get.option_b must beSome(h)
+      
+      SMSParser(&amp;quot;%s A. %s B. %s&amp;quot;.format(h1, h, h)) must beNone
+      SMSParser(&amp;quot;%s A. %s B. %s&amp;quot;.format(h, h1, h)) must beNone
+      SMSParser(&amp;quot;%s A. %s B. %s&amp;quot;.format(h, h, h1)) must beNone
+      SMSParser(&amp;quot;%s A. %s B. %s&amp;quot;.format(h1, h1, h1)) must beNone
+    }
+  }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;This was a fun little addition. Next up is voting via SMS.&lt;/p&gt;
+
+&lt;p&gt;MongoDB allowed me to store the entire SMS payload and worry about the contents later. I didn’t create a model for the SMS payload, because it isn’t core to my domain. Also, the 10 second window seemed like a safe trade-off in light of being in the dark (huh?) with regards to mobile network SLAs. We’ll measure and adjust accordingly, of course.&lt;/p&gt;
+
+&lt;p&gt;Twilio was easy to integrate with, and it all just works. Now I feel like SMS-enabling all my apps.&lt;/p&gt;
+
+&lt;p&gt;&lt;img width=&quot;50%&quot; src=&quot;http://cdn.memegenerator.net/instances/400x/28084623.jpg&quot; alt=&quot;SMS-enable all the things&quot;&gt;&lt;/p&gt;
+</content>
+	<content type="image/png" src="http://www.twilio.com/packages/company/img/logos_downloadable_round.png" />
+    <author>
+      <name>Juan Uys</name>
+      <uri>http://opyate.com/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>Semantic Web Deep Dive</title>
+    <link href="http://opyate.com/2012/07/31/semantic-web-deep-dive.html"/>
+    <updated>2012-07-31T00:00:00+01:00</updated>
+    <id>http://opyate.com/2012/07/31/semantic-web-deep-dive</id>
+    <content type="html">&lt;p&gt;Or, actually:&lt;/p&gt;
+
+&lt;h1&gt;Semantic Web Crash &amp;amp; Burn&lt;/h1&gt;
+
+&lt;p&gt;I sent a &lt;a href=&quot;/2009/07/10/semantic-web.html&quot;&gt;very naïve open letter&lt;/a&gt; to a few key players in the semweb space a few years ago. I got no responses, and hence thought that either my question was posed incorrectly, or the field is so new no-one can really answer me, or the race is on to lay the groundwork and therefore there’s no time to get a newbie up to speed, or X. (I don’t know what X is yet.)&lt;/p&gt;
+
+&lt;p&gt;Fast-forward 3 years and I now have a project going which may or may not generate some valuable data soon. I want to store the data in a way that makes sense for humans and computers alike. I do not want to index everything, because being presented with a list of 10 close matches to what you want is so archaic. And since I’m a big fan of free PaaS hosting plans, the data needs to be stored very efficiently, and I should be able to operate on it every efficiently. Besides, &lt;a href=&quot;http://www.information-management.com/blogs/big-data-size-mass-velocity-10022886-1.html&quot;&gt;your Big Data is big enough&lt;/a&gt;, so I should be OK.&lt;/p&gt;
+
+&lt;p&gt;Without further ado, I’ve dedicated my evening to a Deep Dive of everything semweb.&lt;/p&gt;
+
+&lt;p&gt;I love the web and I’m a web programmer. I also want to give meaning to my data, i.e. attach some sort of semantics. Roll on.&lt;/p&gt;
+
+&lt;h1&gt;Overview&lt;/h1&gt;
+
+&lt;p&gt;I started this post at 7 and now it’s 11. I got stuck on a &lt;a href=&quot;http://en.wikipedia.org/wiki/Linked_data&quot;&gt;handful of Wikipedia articles&lt;/a&gt; and &lt;a href=&quot;http://www.w3.org/2001/sw/&quot;&gt;W3C&lt;/a&gt; recommendations and working groups. It all reminded me of this XKCD on standards:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://xkcd.com/927/&quot;&gt;&lt;img alt=&quot;XKCD #927 (http://xkcd.com/927/)&quot; src=&quot;http://imgs.xkcd.com/comics/standards.png&quot; width=&quot;500&quot; height=&quot;283&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;After hours of randomly clicking and reading bits and pieces, I’ve managed to get a better overview of the state of semweb.&lt;/p&gt;
+
+&lt;h1&gt;And then a funny thing happened&lt;/h1&gt;
+
+&lt;p&gt;This is where I was supposed to write about it all, dissect it, make sense of it and summarise it.&lt;/p&gt;
+
+&lt;p&gt;I was going to give you a primer on simple terms like taxonomy, vocabulary and ontology. I was going to tell you how we’re still far away from data and still very much document-based, stuck in silos, and how traditional markup doesn’t cut it—how it does not describe what something means, how &lt;a href=&quot;http://en.wikipedia.org/wiki/Microformat&quot;&gt;microformats&lt;/a&gt; is a web-based approach to semantic markup, and how this proliferation of formats can luckily be ground down into something coherent using &lt;a href=&quot;http://en.wikipedia.org/wiki/GRDDL&quot;&gt;GRDDL&lt;/a&gt;. Most importantly, I was going to tell you about &lt;a href=&quot;http://en.wikipedia.org/wiki/Knowledge_representation_and_reasoning&quot;&gt;knowledge representation&lt;/a&gt; using OWL and RDF, and the software tools to peruse said formats.&lt;/p&gt;
+
+&lt;p&gt;Then I realised: my brain is so crammed with 4 hours worth of reading all this stuff, that I need to find a way to do exactly that: &lt;strong&gt;a knowledge representation of what’s in my brain&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Then something in my head went &lt;em&gt;snap&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;I ended up on the floor in a spasmodic fit of hilarity, sucking my thumb. The confusion punctured my prefrontal cortex, and I now only speak to uppity wooden chairs. In reverse. My brain turned on itself in the most meta way possible. I had to stop.&lt;/p&gt;
+
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;I don’t want to duplicate any knowledge here, so there will be no summaries. But, I’ve seen the suffering, and will leave with you the following tips:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;if you ever publish anything, and it’s not data, please &lt;a href=&quot;http://en.wikipedia.org/wiki/Embedded_RDF&quot;&gt;annotate&lt;/a&gt; it for &lt;a href=&quot;http://en.wikipedia.org/wiki/Artificial_intelligence&quot;&gt;generations to come&lt;/a&gt;. The web is too noisy to scrape anything anymore and we’re too busy to build a spider to make sense of your mash of markup.&lt;/li&gt;
+&lt;li&gt;there are &lt;a href=&quot;http://answers.semanticweb.com/&quot;&gt;places&lt;/a&gt; where you can ask questions if you get stuck.&lt;/li&gt;
+&lt;li&gt;don’t silo your data or think it belongs to you especially if your users created it (here’s looking at you, Facebook). &lt;a href=&quot;http://vibrantdata.org/&quot;&gt;It should be free.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;don’t break the web by creating user profiles and not annotating it with &lt;a href=&quot;http://microformats.org/wiki/hcard&quot;&gt;hCard&lt;/a&gt; at the very least. There’s also &lt;a href=&quot;http://www.foaf-project.org/&quot;&gt;FOAF&lt;/a&gt; and &lt;a href=&quot;http://en.wikipedia.org/wiki/XHTML_Friends_Network&quot;&gt;XFN&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;don’t expect silver bullets. There are smart people doing good things to take this movement forward, like &lt;a href=&quot;http://www.opencalais.com/&quot;&gt;http://www.opencalais.com/&lt;/a&gt; (even though OC are too focused on companies/mergers news)&lt;/li&gt;
+&lt;li&gt;there’s too much standards documentation for me to consume right now. &lt;a href=&quot;http://hueniverse.com/2012/07/oauth-2-0-and-the-road-to-hell/&quot;&gt;Process can scare the most optimistic of us away&lt;/a&gt;, but it seemed the folks at W3C managed to pull something wonderful together. I really do hope I can get through it all one day.&lt;/li&gt;
+&lt;li&gt;a few weeks after doing this 7-11 stint, I found a semweb on-line test, and memory served me well. I’ll consume you yet, semweb, just you wait.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;Decided to learn a thing or 2 about RDF/OWL by throwing myself into the deep end with a test. &lt;a href=&quot;https://twitter.com/search?q=%23semweb&amp;amp;src=hash&quot;&gt;#semweb&lt;/a&gt; &lt;a href=&quot;https://twitter.com/search?q=%23TabSwitchingFTW&amp;amp;src=hash&quot;&gt;#TabSwitchingFTW&lt;/a&gt; &lt;a href=&quot;http://t.co/lBydLQ6A&quot;&gt;pic.twitter.com/lBydLQ6A&lt;/a&gt;&lt;/p&gt;&amp;mdash; opyate (@opyate) &lt;a href=&quot;https://twitter.com/opyate/statuses/224227281810358273&quot;&gt;July 14, 2012&lt;/a&gt;&lt;/blockquote&gt;
+
+
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+
+&lt;h1&gt;And, then some…&lt;/h1&gt;
+
+&lt;p&gt;…other things I wanted to write a few words about, but responsibilities beckon.&lt;/p&gt;
+
+&lt;h2&gt;LOD&lt;/h2&gt;
+
+&lt;p&gt;This really excites me: http://www.w3.org/wiki/SweoIG/TaskForces/CommunityProjects/LinkingOpenData&lt;/p&gt;
+
+&lt;p&gt;See FAQ #7: “Invent heuristics to auto-generate links between data items from different sources.”&lt;/p&gt;
+
+&lt;p&gt;And then further down there is a list of passionate people telling the world how they could help.&lt;/p&gt;
+
+&lt;h2&gt;MIT Simile project&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://simile.mit.edu/&quot;&gt;http://simile.mit.edu/&lt;/a&gt;&lt;/p&gt;
+</content>
+	<content type="image/gif" src="http://www.w3.org/DesignIssues/diagrams/loop.gif" />
+    <author>
+      <name>Juan Uys</name>
+      <uri>http://opyate.com/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>Consistent hashing with Scala</title>
+    <link href="http://opyate.com/2012/02/27/consistent-hashing-using-scala-and-gnuplot.html"/>
+    <updated>2012-02-27T00:00:00+00:00</updated>
+    <id>http://opyate.com/2012/02/27/consistent-hashing-using-scala-and-gnuplot</id>
+    <content type="html">&lt;p&gt;I recently got into &lt;a href=&quot;http://basho.com/products/riak-overview/&quot;&gt;Riak&lt;/a&gt;, and subsequently &lt;a href=&quot;http://en.wikipedia.org/wiki/Consistent_hashing&quot;&gt;Consistent Hashing&lt;/a&gt;, and found the referenced &lt;a href=&quot;http://www.lexemetech.com/2007/11/consistent-hashing.html&quot;&gt;Java implementation&lt;/a&gt; quite a delightful and informative read.&lt;/p&gt;
+
+&lt;p&gt;As any hacker would, I thought I’d implement it in my current favourite language: Scala. Half-way through I realised that Scala’s TreeMap is as slow as a geriatric slug on a salted snowed-in street. So, I did the &lt;code&gt;import java.util.{TreeMap =&amp;gt; JTreeMap}&lt;/code&gt; thing and got cracking:&lt;/p&gt;
+
+&lt;p&gt;The gist can be found here: &lt;a href=&quot;https://gist.github.com/1927001&quot;&gt;https://gist.github.com/1927001&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1&gt;How many virtual nodes?&lt;/h1&gt;
+
+&lt;p&gt;Systems using consistent hashing needs the “virtual nodes” parameter tuned so as to find a sweet spot where you get good mixing of cached objects amongst nodes (i.e. all nodes store a somewhat equal amount of stuff).&lt;/p&gt;
+
+&lt;p&gt;The gist above, when run, will generate a file called “dat” in the current directory, which can be fed into &lt;a href=&quot;http://www.gnuplot.info/&quot;&gt;gnuplot&lt;/a&gt; to show the standard deviation (as a percentage of the mean) for certain sizes of vnode.&lt;/p&gt;
+
+&lt;p&gt;As per the lexemetech.com article, a value not higher than 5% or 10% is preferable, and for 10 nodes, this amounts to about 100 or 200 vnodes. Let’s verify this.&lt;/p&gt;
+
+&lt;h1&gt;gnuplot&lt;/h1&gt;
+
+&lt;p&gt;Using a terminal, run gnuplot in the same location as “dat”, and you’ll see this prompt: &lt;code&gt;gnuplot&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, copy/paste this entire bit of code into the terminal:&lt;/p&gt;
+
+&lt;script src=&#39;https://gist.github.com/1927001.js?file=gnuplot&#39;&gt;&lt;/script&gt;
+
+
+&lt;div&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;reset
+set logscale
+ 
+# xrange to max number of vnodes
+#set xrange [1:1000]
+ 
+# set specific tic labels
+set ytics (&amp;quot;5&amp;quot; 5, &amp;quot;10&amp;quot; 10, &amp;quot;20&amp;quot; 20, &amp;quot;50&amp;quot; 50, &amp;quot;100&amp;quot; 100)
+set xtics (&amp;quot;1&amp;quot; 1, &amp;quot;2&amp;quot; 2, &amp;quot;5&amp;quot; 5, &amp;quot;10&amp;quot; 10, &amp;quot;20&amp;quot; 20, &amp;quot;50&amp;quot; 50, &amp;quot;100&amp;quot; 100, &amp;quot;200&amp;quot; 200, &amp;quot;500&amp;quot; 500, &amp;quot;1000&amp;quot; 1000, &amp;quot;2000&amp;quot; 2000, &amp;quot;5000&amp;quot; 5000, &amp;quot;10000&amp;quot; 10000)
+ 
+# x and y labels
+set xlabel &amp;#39;Number of Virtual Nodes&amp;#39;
+set ylabel &amp;#39;Standard Deviation as % of mean&amp;#39;
+ 
+# linear regression
+f(x) = m*x + b
+fit f(x) &amp;quot;dat&amp;quot; using 1:2 via m,b
+ 
+#...and since m and b is stored, just call it with the original plot
+plot &amp;quot;dat&amp;quot; using 1:2 title &amp;#39;Consistent Hashing&amp;#39; with points pointtype 5, f(x) title &amp;#39;Line Fit&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Here’s the plot:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://funkshional.files.wordpress.com/2012/02/plot1.png&quot; alt=&quot;The plot&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can see, for a large amount of vnodes, the percentage tends to 1%.&lt;/p&gt;
+
+&lt;p&gt;You can see this more easily by inputting this into the gnuplot prompt:&lt;/p&gt;
+
+&lt;script src=&#39;https://gist.github.com/1927001.js?file=gnuplot-amend&#39;&gt;&lt;/script&gt;
+
+
+&lt;div&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;set ytics (&amp;quot;1&amp;quot; 1, &amp;quot;2&amp;quot; 2, &amp;quot;3&amp;quot; 3, &amp;quot;4&amp;quot; 4, &amp;quot;5&amp;quot; 5, &amp;quot;10&amp;quot; 10, &amp;quot;20&amp;quot; 20, &amp;quot;50&amp;quot; 50, &amp;quot;100&amp;quot; 100)
+replot&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/div&gt;
+
+
+&lt;p&gt;According to my plot, I start to get a low SD around 50 vnodes (5 times my number of nodes), but then this could just be because my hashing function mixes better than the one used by lexemetech.&lt;/p&gt;
+</content>
+	<content type="image/png" src="http://i.imgur.com/JSa0mQP.png" />
+    <author>
+      <name>Juan Uys</name>
+      <uri>http://opyate.com/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>Programmer’s Bill Of Rights 2012</title>
+    <link href="http://opyate.com/2012/02/24/programmers-bill-of-rights-2012.html"/>
+    <updated>2012-02-24T00:00:00+00:00</updated>
+    <id>http://opyate.com/2012/02/24/programmers-bill-of-rights-2012</id>
+    <content type="html">&lt;p&gt;It’s time to collate the various programmers’ bills of rights on the Interwebs and update it for the current age. &lt;a href=&quot;#¹&quot;&gt;¹&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Cross-posted from &lt;a href=&quot;http://perks.opyate.com&quot;&gt;http://perks.opyate.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Inspired by &lt;a href=&quot;http://www.codinghorror.com/blog/2006/08/the-programmers-bill-of-rights.html&quot;&gt;Jeff Atwood’s post&lt;/a&gt;, and my own needs as a programmer.&lt;/p&gt;
+
+&lt;h1&gt;The Necessities&lt;/h1&gt;
+
+&lt;p&gt;The right tools and supplies for your brew.&lt;/p&gt;
+
+&lt;p&gt;I get my beans from &lt;a href=&quot;http://www.monmouthcoffee.co.uk/&quot;&gt;Monmouth in Camden&lt;/a&gt;. I’m a won’t-roast-but-will-grind my own beans kinda guy. And then it’s also worth filling the kettle from a Britta jug.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://24.media.tumblr.com/611ede00c418fcdcf90c44d2755b7297/tumblr_msach2YkSU1rqrenzo1_1280.jpg&quot; alt=&quot;The necessities&quot;&gt;&lt;/p&gt;
+
+&lt;h1&gt;The Hardware&lt;/h1&gt;
+
+&lt;p&gt;All programmers want and need a MacBook Air.&lt;/p&gt;
+
+&lt;p&gt;Why? Because they’re light, beautiful, snappy, It Just Works ™ and besides, if you’re making a case for less hours in the office, what better way to take your work everywhere you go?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://24.media.tumblr.com/tumblr_lzw2jjpwEQ1rqrenzo1_1280.jpg&quot; alt=&quot;The hardware: Macbook Air&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Pixel real estate. Yes, a nice, extra 27 inches will do.&lt;/p&gt;
+
+&lt;p&gt;(OK, so personally I don’t need an extra monitor. I use my 13” Air in the pub, on the train, at the coffee shop, on the sofa. I work the same way everywhere I go, so plugging in an extra monitor in the office just doesn’t feel right.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://31.media.tumblr.com/tumblr_mb6mfh019C1qlx0y9o1_1280.jpg&quot; alt=&quot;The hardware: Cinema display&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;A large SSD.&lt;/p&gt;
+
+&lt;p&gt;Obvious speed benefits aside, the large capacity means you can take with you all your VMs, your hundreds of Github checkouts, play environments (like &lt;a href=&quot;http://supercollider.sourceforge.net/&quot;&gt;Supercollider&lt;/a&gt;, &lt;a href=&quot;http://puredata.info/&quot;&gt;Pd&lt;/a&gt;, &lt;a href=&quot;http://www.r-project.org/&quot;&gt;R&lt;/a&gt;, &lt;a href=&quot;http://squeak.org/&quot;&gt;Squeak VM&lt;/a&gt;, &lt;a href=&quot;http://www.mozart-oz.org/&quot;&gt;Oz VM&lt;/a&gt;, etc), eBooks, large data sets (for those &lt;a href=&quot;http://en.wikipedia.org/wiki/Big_data&quot;&gt;Big Data&lt;/a&gt; geeks), and just about everything you can learn from.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://24.media.tumblr.com/tumblr_lzw2znnV2A1rqrenzo1_1280.png&quot; alt=&quot;The hardware: a large SSD&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Speedy Internet connection.&lt;/p&gt;
+
+&lt;p&gt;And, please don’t put your super fast fibre optic line behind a crappy wifi router. (yes, wifi is a must, so we can go and chill out on the sofa if we need to.)&lt;/p&gt;
+
+&lt;p&gt;Why? Because everything is on the Internet already. &lt;a href=&quot;http://stackexchange.com/&quot;&gt;Solutions&lt;/a&gt;, &lt;a href=&quot;http://www.quora.com/&quot;&gt;advice&lt;/a&gt;, &lt;a href=&quot;http://news.ycombinator.com/&quot;&gt;stuff to read&lt;/a&gt;, &lt;a href=&quot;http://pollarize.me/&quot;&gt;opinions&lt;/a&gt;, &lt;a href=&quot;http://www.youtube.com/results?search_query=stalking+cat&quot;&gt;cat videos&lt;/a&gt; for the in-between moments, and The Wheel, which we won’t (and shouldn’t) have to reinvent.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Speedy_Gonzales&quot;&gt;&lt;img src=&quot;http://31.media.tumblr.com/tumblr_mbn0xsi1mC1rqrenzo1_1280.jpg&quot; alt=&quot;Speedy has speedy Internet too.&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1&gt;The Privileges&lt;/h1&gt;
+
+&lt;p&gt;An engineer SHALL have admin rights to her/his computer &lt;a href=&quot;#²&quot;&gt;²&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;OK, so I know all about &lt;a href=&quot;http://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard&quot;&gt;PCI compliancy&lt;/a&gt; and the weight of the phrase “your CEO will go to jail if you don’t harden system X”. Still, any devops worth their salt will put their developers on a secure dev subnet where they can’t make mistakes or pose any threats.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://31.media.tumblr.com/tumblr_mb6m3suL8f1qlx0y9o1_500.jpg&quot; alt=&quot;root&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Hack days. &lt;a href=&quot;http://www.nytimes.com/2007/10/21/jobs/21pre.html&quot;&gt;Google does it&lt;/a&gt;. &lt;a href=&quot;http://www.atlassian.com/company/about/shipit&quot;&gt;Atlassian does it&lt;/a&gt;. &lt;a href=&quot;http://blog.twitter.com/2012/01/hack-week-twitter.html&quot;&gt;Everyone&lt;/a&gt; &lt;a href=&quot;http://www.guardian.co.uk/info/developer-blog/2012/feb/03/guardian-hack-day-2&quot;&gt;does&lt;/a&gt; &lt;a href=&quot;http://www.youtube.com/watch?v=PUwEEOhcK3s&quot;&gt;it&lt;/a&gt;, and so should you. The &lt;a href=&quot;http://www.inc.com/jessica-stillman/hack-days-not-just-for-facebookers.html&quot;&gt;benefits&lt;/a&gt; have been &lt;a href=&quot;http://globalpersonals.co.uk/blog/hack-attack/&quot;&gt;espoused&lt;/a&gt; time and time again.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://hackdaymanifesto.com/&quot;&gt;Plan&lt;/a&gt; well, and have fun, and ensure that the hack lives on: as much fun as hack days are, developers get gratification from seeing their time investment go beyond the awards ceremony.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://24.media.tumblr.com/tumblr_mbl0jzlWN41rqrenzo1_1280.jpg&quot; alt=&quot;On your marks. Get set. HACK!&quot;&gt;&lt;/p&gt;
+
+&lt;h1&gt;The Chair&lt;/h1&gt;
+
+&lt;p&gt;An ergonomic chair that will last forever.&lt;/p&gt;
+
+&lt;p&gt;I’ve sat in one of these for 3 years now (not continuously, mind) and my back loves me for it. It’s cool in summer, reclines with grace, and makes you feel like your sitting on a cloud while managing your apps in the Cloud.&lt;/p&gt;
+
+&lt;p&gt;Get one.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://24.media.tumblr.com/tumblr_mb62qbnz5F1rqrenzo1_1280.jpg&quot; alt=&quot;If you&#39;re going to be on your bottom all day, you might as well do it in one of these&quot;&gt;&lt;/p&gt;
+
+&lt;h1&gt;&amp;hellip;and so forth&lt;/h1&gt;
+
+&lt;p&gt;This is by no means an exhaustive list, and I&amp;rsquo;ll be happy to hear what other programmers consider the bear necessities.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&quot;¹&quot;&gt;¹&lt;/a&gt; This is obviously tongue-in-cheek, and programmers make no demands ;-)&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&quot;²&quot;&gt;²&lt;/a&gt; …and all the required ports will be open.&lt;/p&gt;
+</content>
+	<content type="image/jpeg" src="http://31.media.tumblr.com/tumblr_mb6m3suL8f1qlx0y9o1_500.jpg" />
+    <author>
+      <name>Juan Uys</name>
+      <uri>http://opyate.com/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>Be careful what you type when using a terminal emulator…</title>
+    <link href="http://opyate.com/2012/02/24/be-careful-what-you-type.html"/>
+    <updated>2012-02-24T00:00:00+00:00</updated>
+    <id>http://opyate.com/2012/02/24/be-careful-what-you-type</id>
+    <content type="html">&lt;p&gt;…because it (or the shell) may not support UTF8.&lt;/p&gt;
+
+&lt;p&gt;It just so happens I accidentally called James Bond a something-or-other:&lt;/p&gt;
+
+&lt;p&gt;&lt;img width=&quot;240px&quot; src=&quot;http://funkshional.files.wordpress.com/2012/02/shell-insult.png&quot; alt=&quot;You $&amp;&amp;$^!&quot;&gt;&lt;/p&gt;
+</content>
+	<content type="image/png" src="http://amuseorbemused.com/wp-content/uploads/2011/12/Cartoon-Cussing-300x187.png" />
+    <author>
+      <name>Juan Uys</name>
+      <uri>http://opyate.com/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>Read Receipts for the rest of us</title>
+    <link href="http://opyate.com/2012/01/25/read-receipts-for-the-rest-of-us.html"/>
+    <updated>2012-01-25T00:00:00+00:00</updated>
+    <id>http://opyate.com/2012/01/25/read-receipts-for-the-rest-of-us</id>
+    <content type="html">&lt;p&gt;Or, more correctly: Read Receipts for geeks who use &lt;a href=&quot;http://www.iterm2.com/&quot;&gt;iTerm&lt;/a&gt; and/or &lt;a href=&quot;http://growl.info/&quot;&gt;Growl&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1&gt;Read receipt&lt;/h1&gt;
+
+&lt;p&gt;So, the Interwebs is down, or the proxy is packing up, or you can’t log in to server X, or &lt;insert generic technical issue here&gt;. You fire off an email to the sysadmins explaining the problem, and now you’re waiting for a reply.&lt;/p&gt;
+
+&lt;p&gt;It just so happens that I had a bit of technical trouble today, and fired off an email to someone who can help. I love metrics, and in this case I wanted to know exactly when the sysadmin is looking at my cry for help so I can actually pop over to their side of the office and badger them to fix it (nah, I’m not really like that ;-)&lt;/p&gt;
+
+&lt;p&gt;What you need is a Read Receipt notification which tells you that they read your email.&lt;/p&gt;
+
+&lt;h1&gt;The rest of us&lt;/h1&gt;
+
+&lt;p&gt;If you’re in my situation, you:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;don’t use MS products, hence no Read Receipts in your email client&lt;/li&gt;
+&lt;li&gt;even if your mail client does support Read Receipts, you haven&amp;rsquo;t switched it on, because it&amp;rsquo;s a faff&lt;/li&gt;
+&lt;li&gt;don’t work in an office where there’s a reliable ticketing system, so you don’t immediately know if your request is being actioned.&lt;/li&gt;
+&lt;li&gt;work with people who reject read receipt requests anyway&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h1&gt;The hack&lt;/h1&gt;
+
+&lt;p&gt;Put a link in the email that they can click on. The trick is to get them to click on it, e.g.&lt;/p&gt;
+
+&lt;p&gt;&lt;img width=&quot;381px&quot; src=&quot;http://funkshional.files.wordpress.com/2012/01/email.png&quot; alt=&quot;Links are made for clicking on&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Notice the link http://10.5.2.113:9999/&lt;/p&gt;
+
+&lt;p&gt;We now have to make sure it points to something, and more importantly, make sure you get an alert if the link is clicked.&lt;/p&gt;
+
+&lt;h1&gt;Cats to the rescue&lt;/h1&gt;
+
+&lt;p&gt;In this example, I’m using &lt;a href=&quot;http://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html&quot;&gt;cat&lt;/a&gt;, &lt;a href=&quot;http://en.wikipedia.org/wiki/Netcat&quot;&gt;netcat&lt;/a&gt; and a &lt;a href=&quot;http://icanhascheezburger.com/&quot;&gt;lolcat&lt;/a&gt; (swap the lolcat out with a screenshot of your actual issue). I prepend the command with &lt;a href=&quot;http://www.gnu.org/software/bash/manual/html_node/Pipelines.html&quot;&gt;time&lt;/a&gt; which causes timing statistics to be printed for the command once it finishes.&lt;/p&gt;
+
+&lt;p&gt;Open a shell, and host the image with:&lt;/p&gt;
+
+&lt;script src=&#39;https://gist.github.com/6375611.js?file=catserver&#39;&gt;&lt;/script&gt;
+
+
+&lt;div&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;time cat lolcat.jpg | nc -l 9999&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In retrospect, you can serve something up repeatedly by putting it in a &lt;code&gt;while (true)&lt;/code&gt; loop:&lt;/p&gt;
+
+&lt;script src=&#39;https://gist.github.com/6375611.js?file=holding-page&#39;&gt;&lt;/script&gt;
+
+
+&lt;div&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;while (true); do
+  date
+  {{echo &amp;quot;HTTP/1.1 200 OK\n\r\
+Content-Type: text/html\n\r\n\r\
+&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;&amp;lt;p&amp;gt;hiya\!&amp;lt;/p&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;\n\r&amp;quot;} \
+| nc -l 9009} &amp;gt; /dev/null 2&amp;gt;&amp;amp;1
+done&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img width=&quot;381px&quot; src=&quot;http://funkshional.files.wordpress.com/2012/01/start.png&quot; alt=&quot;Serve the cat with cat and netcat&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, you’ve sent the email and hosted the image. In the meanwhile, you carry on with your other work.&lt;/p&gt;
+
+&lt;h1&gt;What The Sysadmin sees&lt;/h1&gt;
+
+&lt;p&gt;The Sysadmin clicks on your link, et voila:&lt;/p&gt;
+
+&lt;p&gt;&lt;img width=&quot;381px&quot; src=&quot;http://funkshional.files.wordpress.com/2012/01/what-they-see.png&quot; alt=&quot;My all-important screenshot of my technical issue&quot;&gt;&lt;/p&gt;
+
+&lt;h1&gt;What you see&lt;/h1&gt;
+
+&lt;p&gt;A Growl notification:&lt;/p&gt;
+
+&lt;p&gt;&lt;img width=&quot;328px&quot; src=&quot;http://funkshional.files.wordpress.com/2012/01/growl.png&quot; alt=&quot;Your read receipt&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;And, the iTerm tab in which you ran the cat command’s title will flare up. This is a feature of iTerm that can be disabled with &lt;em&gt;Preferences &gt; Appearance &gt; Color&lt;/em&gt; tab labels on activity. Here’s what it looks like for me:&lt;/p&gt;
+
+&lt;p&gt;&lt;img width=&quot;381px&quot; src=&quot;http://funkshional.files.wordpress.com/2012/01/meanwhile.png&quot; alt=&quot;Read receipt part II&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Click on the tab and see the proof that the image has been served. Even better, the time command will tell you how long it took for The Sysadmin to click on your link (one minute and three seconds, in my case):&lt;/p&gt;
+
+&lt;p&gt;&lt;img width=&quot;381px&quot; src=&quot;http://funkshional.files.wordpress.com/2012/01/end.png&quot; alt=&quot;They took a minute to respond, shock horror!&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, run over there and start badgering.&lt;/p&gt;
+</content>
+	<content type="image/jpeg" src="http://i.imgur.com/t6oOMxg.jpg" />
+    <author>
+      <name>Juan Uys</name>
+      <uri>http://opyate.com/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>A dream and a lesson</title>
+    <link href="http://opyate.com/2012/01/17/a-dream-and-a-lesson.html"/>
+    <updated>2012-01-17T00:00:00+00:00</updated>
+    <id>http://opyate.com/2012/01/17/a-dream-and-a-lesson</id>
+    <content type="html">&lt;p&gt;In my dream I’m 12 again and we’re having the usual Saturday afternoon stir-fry at my maternal grandfather’s house. My mom’s 6 siblings and their partners are there, as well as all my partners in crime (aka cousins).&lt;/p&gt;
+
+&lt;p&gt;We’re swimming, eating and soaking up the sun. The adults are having deep conversations over a beer. The kids are running around, yelling, jumping in the water.&lt;/p&gt;
+
+&lt;p&gt;My uncle, a welder, is busy cooking a heap of chicken strips. Always hungry, I walk over for a mouthful. “Hey, little buddy” he says. “I had this idea I wanted to tell you about, since I heard that welding will be one of your subjects in high school next year.”&lt;/p&gt;
+
+&lt;p&gt;Well, yeah — mostly electronics and that kinda thing, but since I’m a sucker for a good idea, I briefly forgot about the swimming pool for a while.&lt;/p&gt;
+
+&lt;p&gt;His glasses sat on his browned, greasy face as he went on, eyes always flickering with curiosity. “So, I’m thinking of doing a range of metal tables that you can adjust. See, if you feel like standing up, then you flick a switch and the table comes up to your level” he says as he squats and comes back up, right hand level with his chest while his left hand is still holding the spatula.&lt;/p&gt;
+
+&lt;p&gt;At this point, my 32 year old psyche starts materialising in my head. You know — when things in your dream starts feeling out of place: you flick a light switch and the light doesn’t turn on, or you pinch yourself but feel nothing.&lt;/p&gt;
+
+&lt;p&gt;Luckily, instead of focusing, then focusing so much that I wake up (here’s looking at you, lucid dreamers), I ease into the idea just presented to me. I allow myself to be blinded by the sun’s glare on the swimming pool, and I allow my mind to swim.&lt;/p&gt;
+
+&lt;p&gt;“But, yeah — I talked to a few people, and everyone says it’s crazy.”&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;No, it’s a great idea! Trust me on this one.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;“They say that they’ll look silly standing up next to a high table in the office.”&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Don’t be silly — it’s a great relief from sitting down for hours on end!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I divert my gaze from the glare back to his glasses.&lt;/p&gt;
+
+&lt;p&gt;“They say that it may be unstable and that the monitor may fall off.”&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I know this is 1992 and that monitors weigh a tonne, but soon everyone will be a programmer, and everyone will start spending HOURS IN FRONT OF THEIR COMPUTERS!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Oh no, my eyes are focusing…&lt;/p&gt;
+
+&lt;p&gt;“So, I thought ‘nah’. But, it’s still a neat idea, no?”&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;YES! Build me one! Just do it!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip;my 32 year old self screamed, but there were no words other than those in my dream head. My eyes focus more… No, stop focusing!&lt;/p&gt;
+
+&lt;p&gt;Damn.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I wake up&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, where have I seen this before? Oh, yes — &lt;a href=&quot;http://www.geekdesk.com/&quot;&gt;geek desk&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And right there I made the following realisation:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;If you’re ever the proud owner of a good idea, and you start doubting yourself, try and believe in it so much as if your future self came back in time to tell you that this idea is great, and to &lt;strong&gt;stick with it&lt;/strong&gt;.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Or let&amp;rsquo;s look at it from the other perspective: Take one of your favourite Good Ideas. Like Google or Yammer. Go back in time. Let&amp;rsquo;s say 1998. Just enough for the idea to be useful and relevant, but not too far for it to be totally alien. Present the idea to your young self. But, believe in it SO MUCH that you actually convince your young self to go and build it. (This is easy, because you’ve seen Google and Yammer first-hand).&lt;/p&gt;
+
+&lt;p&gt;If you could go back to 1995¹ with the knowledge you have right now, which idea would you work on? And knowing what you know today, you&amp;rsquo;ll probably try a bit harder and laugh at the naysayers.&lt;/p&gt;
+
+&lt;p&gt;I suppose this is what people call “vision”. It takes someone with equal amounts of brains and crazy to religiously stick with something in such a way.&lt;/p&gt;
+
+&lt;p&gt;“Trust me on this one.” ;-)&lt;/p&gt;
+
+&lt;p&gt;¹ &lt;em&gt;I guess Perl will still be The Hammer and every web problem will be The Nail, so better brush up on some Perl ;-)&lt;/em&gt;&lt;/p&gt;
+</content>
+	<content type="image/jpeg" src="https://en.gravatar.com/userimage/6287187/f520ea24392a6b8b2aa2722273caf380.jpg?size=512" />
+    <author>
+      <name>Juan Uys</name>
+      <uri>http://opyate.com/about/</uri>
+    </author>
+  </entry>
+  
+</feed>

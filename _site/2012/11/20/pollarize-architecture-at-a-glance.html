@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <title>Pollarize architecture at a glance &mdash; Juan Uys</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href='http://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="screen, projection" href="/res/screen.css" type="text/css">
+    <link rel="stylesheet" media="print" href="/res/print.css" type="text/css">
+    <link rel="alternate" type="application/atom+xml" title="Juan Uys" href="http://feeds.feedburner.com/opyate">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/res/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/res/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/res/apple-touch-icon-114x114-precomposed.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@opyate">
+    
+    <meta property="fb:admins" content="564490402">
+    <meta property="fb:app_id" content="318152194986912">
+    
+    <meta property="og:title" content="Pollarize architecture at a glance">
+      
+      <meta name="description" content="Pollarize architecture at a glance">
+      <meta name="og:description" content="Pollarize architecture at a glance">
+      
+    
+    
+    <meta property="og:image" content="http://i.imgur.com/bd1Bh.png">
+    
+    <meta property="og:url" content="http://opyate.com/2012/11/20/pollarize-architecture-at-a-glance.html">
+    <meta property="og:site_name" content="opyate.com">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_GB" />
+    
+    <meta property="article:published_time" content="2012-11-20">
+    
+    
+    <script>
+  //html { zoom:50%; }
+  if (window.addEventListener) {
+    var sidebarAdjustTimer;
+    function updateOrientation(orientationChangeEvent) {
+      if (sidebarAdjustTimer) clearInterval(sidebarAdjustTimer);
+      //console.log('window.orientation -> '+window.orientation);
+      if (window.orientation === -90 || window.orientation === 90) {
+        // landscape
+        var sidebar = document.getElementById('sidebar');
+        if (!sidebar.src || sidebar.src === '') {
+          sidebar.src = '/archive/sidebar.html';
+        }
+        sidebarAdjustTimer = setInterval(function() {
+          var height = Math.round(document.height * 1.6);
+          if (sidebar.height != height) {
+            sidebar.height = height;
+            sidebar.style.height = height + 'px';
+          }
+        },500);
+      } else {
+        // portrait
+      }
+    }
+    window.addEventListener('orientationchange', updateOrientation);
+    document.addEventListener('DOMSubtreeModified', function(ev) {
+      if (document.getElementById('sidebar')) {
+        document.removeEventListener('DOMSubtreeModified', arguments.callee);
+        updateOrientation();
+      }
+    });
+  }
+</script>
+    
+    
+  </head>
+  <body>
+    <script>
+      var s;
+      if (document.location.hostname === 'opyate.com') {
+        s = document.createElement('script');
+        s.async = true;
+        s.src = "http://connect.facebook.net/en_US/all.js#appId=318152194986912&xfbml=1";
+        document.getElementsByTagName('head')[0].appendChild(s);
+      }
+      
+      if (window.navigator.userAgent.indexOf('iPad') != -1) {
+        document.documentElement.className = 'ios ipad';
+        window.opyateHostIsIOS = 'ipad';
+      } else if (window.navigator.userAgent.indexOf('iPhone') != -1) {
+        document.documentElement.className = 'ios iphone';
+        window.opyateHostIsIOS = 'iphone';
+      }
+    </script>
+    <div id="fb-root"></div><script></script>
+    <iframe id="sidebar"></iframe>
+    <header>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/res/signature-2-2.png" width="160" height="50" alt="Signature"></a></h1>
+      <ul class="navigation">
+        <li><a href="/projects/" title="Projects I am or was involved in">Projects</a></li>
+        <li><a href="/archive/" title="Archived articles">Archive</a></li>
+        <li><a href="/about/">About me</a></li>
+      </ul>
+    </header>
+    <!--div class="wrapper content"-->
+      <div class="content">
+  <div class="post single">
+	<div class="meta">
+		<p class="item tags small">
+		<a href="/tag/tech" class="tag">tech</a><a href="/tag/scala" class="tag">scala</a><a href="/tag/architecture" class="tag">architecture</a><a href="/tag/pollarize" class="tag">pollarize</a>
+		</p>
+	</div>
+	<div class="breaker"></div>
+    <h1>Pollarize architecture at a glance</h1>
+
+    <info datetime="2012-11-20">
+      Nov 20, 2012
+    </info>
+
+
+    <div class="body"><p><em>X-posted from the pollarize.me blog</em></p>
+
+<h1>Genesis</h1>
+
+<p>Pollarize was <a href="http://thenextweb.com/uk/2012/03/26/the-winner-of-startup-weekend-london-is-pollarize-me/">bourne</a> out of a 54 hour hacking stint at Startup Weekend in March 2012. The Thursday night before that weekend, I thought about the various tech I knew and wanted to have a good idea how to kickstart our hack before putting pen to paper on the Friday night.</p>
+
+<p><img src="http://media.tumblr.com/tumblr_mdsg3ecowA1ryyv9k.png" width="50%" align="right"></p>
+
+<p>The decision was made: Pollarize was going to be a Spring MVC web app running on an Amazon EC2 instance. I was going to worry about the database later, and maybe get away with using an in-memory map or something for the data.</p>
+
+<p>Come Friday night, I felt a bit different. Why not learn something new, I thought. Besides, AWS might be a bit clunky for a weekend hack. And I’ve heard good things about the Play! framework, and the v2 was released just a few months before.</p>
+
+<h1>Today</h1>
+
+<p>Fast forward 7 months, over 200 deploys, and over 1,000 commits. This is what our API looks like now:</p>
+
+<p><img src="http://i.imgur.com/bd1Bh.png" width="100%"></p>
+
+<h2>Core</h2>
+
+<p>The core app is a lightweight <a href="http://www.playframework.org/documentation/2.0.1/Home">Play! 2.0 (Scala edition)</a> web app which exposes a JSON web API, and it makes transactional writes to our operational <a href="https://postgres.heroku.com/">Postgres</a> database. Most other (unimportant) write operations happen via fire-and-forget calls to other modules via <a href="http://akka.io/">Akka</a>. The IDs for these data is pre-chosen, so subsequent calls will be idempotent.</p>
+
+<h2>MongoDB</h2>
+
+<p>All writes to the operational database is fired off to a <a href="https://www.mongolab.com/home">MongoDB</a> actor, which serves as the read-only cache for API reads. The data in MongoDB is already in the format the caller will consume, so it is extremely quick. The cache can be rebuilt asynchronously with the click of a button.</p>
+
+<h2>Media</h2>
+
+<p>The media module accepts profile pictures and poll images, and we use <a href="http://blitline.com/">Blitline</a> to get them into our signature circular format (and different sizes), and then we store the results in <a href="http://aws.amazon.com/s3/">Amazon S3</a> and expose it to the world via <a href="http://aws.amazon.com/cloudfront/">Cloudfront</a>. If you have any image processing to be done, definitely give Blitline a shot: they’re very helpful and the API is a lot of fun to play with.</p>
+
+<h2>Notify</h2>
+
+<p>Notifications is triggered via an Akka scheduled job in the case of poll expiry, and via events in the case of registration, password reset, poll creation from people you follow and follow notifications (yes, we’re a tiny social network). In general we use email via <a href="http://www.mailgun.com/">Mailgun</a>’s simple API, <a href="http://www.pubnub.com/">Pubnub</a> for web users, and <a href="http://urbanairship.com/">Urban Airship</a> for our mobile users.</p>
+
+<h2>Other</h2>
+
+<p>We played with some other tech but those were chucked out for various reasons. <a href="http://redistogo.com/">Redis</a> is awesome, and we used it initially for our social network, but in our case it was just another piece of your architecture to worry about. Our social network now happily lives in our operational database where it belongs. One day, if Postgres buckles under the graph, we’ll reconsider. Then there’s <a href="http://www.cloudamqp.com/">RabbitMQ</a>. It’s beautifully stable, and has a very good monitoring plugin, but once again: it’s one more thing to manage, and besides, Akka mailboxes will suffice for now.
+You bet your PaaS we’re using Heroku</p>
+
+<p>Heroku has been great for getting started. Have an idea? Code it, commit, push, et voilà. No worrying about builds, deploys or anything like that: one less operational hassle to worry about when you’re building features. However, we do have a chunky $5,000 AWS credit, and I’m slowly but surely creating <a href="http://puppetlabs.com/">Puppet</a> manifests for all our components (<a href="http://vagrantup.com/">Vagrant</a> has been great for testing this locally), but this is still a nice-to-have for the size of our user base, so I’m really just hacking at this in the in-between moments.</p>
+
+<h2>Conclusion</h2>
+
+<p>So, there you have it. Our architecture at a glance. There will be some more detail later down the line. In fact, I’m already drafting a Play! best practices, jotting down everything I’m learning along the way. Questions and comments on the back of a postcard.</p>
+</div>
+    <div class="breaker"></div>
+
+    <info class="after">
+<div class="fb-like" data-href="http://opyate.com/2012/11/20/pollarize-architecture-at-a-glance.html" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
+    </info>
+
+  
+  </div>
+</div>
+
+<script type="text/javascript">
+(function() {
+var qs = document.location.search;
+var current_etag = qs.match(/etag=("?[a-zA-Z0-9_-]+)/);
+if (current_etag !== null) { current_etag = current_etag[1]; }
+var scrolly = qs.match(/scrolly=([0-9]+)/);
+if (scrolly) {
+  scrolly = parseInt(scrolly[1]);
+  window.scrollTo(window.scrollX, scrolly);
+  setTimeout(function () {
+    window.scrollTo(window.scrollX, scrolly);
+  }, 10);
+}
+
+function check() {
+  var r = new XMLHttpRequest();
+  var url = document.location.href + ((qs && qs !== '') ? '&' : '?') + 'r=' + Math.random();
+  r.open('GET', url, true);
+  r.onreadystatechange = function() {
+    if (r.readyState == 4){
+      var found_etag = r.getResponseHeader('Etag').replace(/^"|"$/g);
+      //console.log('current_etag:', current_etag, 'found_etag:', found_etag);
+      if (current_etag === null) {
+        current_etag = found_etag;
+      } else if (found_etag !== current_etag) {
+        document.location.search =
+          '?etag=' + encodeURIComponent(found_etag) +
+          '&scrolly=' + window.scrollY;
+        return;
+      }
+      setTimeout(check, 500);
+    }
+  };
+  r.send(null);
+}
+check();
+})();
+</script>
+
+
+    <!--/div-->
+    
+    
+    <div class="content sub">
+      <h2 id="comments">Comments</h2>
+      <div class="fb-comments" data-href="http://opyate.com/2012/11/20/pollarize-architecture-at-a-glance.html" data-num-posts="" data-width="550" data-font="arial"></div>
+    </div>
+    
+    
+    
+    
+    
+    <footer>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/res/cc-cc.png" class="cc">
+        <img src="/res/cc-by.png" class="cc"></a>
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
+      </p>
+    </footer>
+    
+    
+    <script>
+  // curry pre < code to be able to get prettified
+  // If the first line is
+  //   #!-langname\n
+  // Then that line is removed from the code and "langname" is given to prettify.
+  // If "langname" is "none", that prettify is not applied at all.
+  var n,i,L,cn,lang,v = document.getElementsByTagName('pre');
+  var m,lang_re = /^#\!-([a-zA-Z0-9_-]+)\n/;
+  for (i=0,L=v.length;i<L;++i) {
+    n = v.item(i);
+    if ((cn = n.firstChild) && cn.nodeName == 'CODE') {
+      lang = null;
+      if (cn.firstChild.nodeType === Node.TEXT_NODE) {
+        m = lang_re.exec(cn.firstChild.nodeValue);
+        if (m) {
+          lang = m[1].toLowerCase();
+          cn.firstChild.nodeValue = cn.firstChild.nodeValue.substr(m[0].length);
+          if (lang === 'none') {
+            continue;
+          }
+        }
+      }
+      n.setAttribute('class', 'prettyprint'+(lang ? ' lang-' + lang : ''));
+    }
+  }
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28222168-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>
