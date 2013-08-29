@@ -3,7 +3,7 @@ title: "DB Bean Creator for Java and MySQL/PostgresQL"
 description: "DB Bean Creator for Java and MySQL/PostgresQL"
 og_image_url: "http://interhacker.files.wordpress.com/2011/12/dukewave1.png"
 image: "http://interhacker.files.wordpress.com/2011/12/dukewave1.png"
-image_content_type: "image/jpg"
+image_content_type: "image/png"
 layout: post
 tags: [tech, java]
 category: blog
