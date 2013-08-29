@@ -1,6 +1,7 @@
 pygments: false
 lsi: false
 permalink: /:year/:month/:day/:title.html
+relative_permalinks: false
 #paginate: 10
 markdown: rdiscount
 # enables SmartyPants (nice curly quotation marks, em/en dashes, elipses, etc):
