@@ -4,3 +4,5 @@ gem install rdiscount
 gem install jekyll-assets
 
 Theme by @rsms https://github.com/rsms/tumblr-theme-hunch
+
+Tags working with advice from http://charliepark.org/jekyll-with-plugins/
