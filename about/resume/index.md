@@ -13,6 +13,12 @@ I'm a [London-based](http://pits-to-palace.tumblr.com/) South African who has be
 
 Most information about said activity can be found on my [personal website](http://opyate.com), my [LinkedIn profile](http://www.linkedin.com/in/juanuys) or my [StackOverflow careers profile](http://careers.stackoverflow.com/opyate) (the latter is nicely key-worded for recruiters).
 
+## Freelance
+
+I'm currently a WFH dad. My work is a bit hush hush at the moment, but it involves data processing and machine learning in the finance sector, and scalability consulting for small startups taking the next step.
+
+Please see my blog for ongoing articles related to the work I do.
+
 ## [pollarize.me](http://app.pollarize.me)
 
 *Pollarize* is a decision-making platform that makes it quicker and easier for you to query your friends across multiple social networks and gather their responses into one concise answer. I co-founded *pollarize* at Startup Weekend London, March 2012, which we won. Shortly after, we were accepted into Wayra UK, who gave us enough money to work on releasing *pollarize* on iOS and web in December 2012. Sadly, we have since run out of cash and have failed to secure more funding.
