@@ -5,7 +5,7 @@ title: Net-A-Porter.com
 
 # My work with Net-A-Porter.com
 
-I have been working at Net-A-Porter.com for 7 years, and some of my achievements include implementing our first shared payment service, our first API and our first translations system. I have led teams, and I've also won a hack day with an iOS app.
+I worked at Net-A-Porter.com for almost 7 years, and some of my achievements include implementing our first shared payment service, our first API and our first translations system. I have led teams, and I've also won a hack day with an iOS app.
 
 # 2006
 

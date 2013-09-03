@@ -27,7 +27,7 @@ Please see my blog for ongoing articles related to the work I do.
 
 ## [Net-A-Porter.com](http://www.net-a-porter.com/)
 
-I have been working at Net-A-Porter.com for 7 years, and some of my achievements include implementing our first shared payment service, our first API and our first translations system. I have led teams, and I've also won a hack day with an iOS app.
+I worked at Net-A-Porter.com for almost 7 years, and some of my achievements include implementing our first shared payment service, our first API and our first translations system. I have led teams, and I've also won a hack day with an iOS app.
 
 [Read more about my work with Net-A-Porter.com &rarr;](/about/resume/netaporter/)
 
