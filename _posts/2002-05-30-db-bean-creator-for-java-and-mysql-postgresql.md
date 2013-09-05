@@ -27,7 +27,7 @@ When you submit the form, the servlet will spew out bean code, and/or create the
 
 # All of it
 
-[dbbeancreator.tgz](/projects/dbbeancreator/dbbeancreator.tgz) (36,897 bytes)
+[dbbeancreator.tgz](/projects/dbbeancreator/dbbeancreator.tgz) (23,678 bytes)
 
 Happy coding. I hope this shaves hours off your dev time too :-) Now you can get the DB schema perfect, and adapt the code on the run.
 
