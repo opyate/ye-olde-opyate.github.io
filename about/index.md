@@ -6,7 +6,7 @@ title: About
 
 <img src="http://www.gravatar.com/avatar/c22bbf2aac2a3841d80f5363d73e3ebe.png?s=512" width="240" height="240" align="right">
 
-Hi, I'm Juan. Check out my [Résumé](/about/resume/).
+Hi, I'm Juan. Check out my [Résumé](/about/resume/) or email me at <a href="mailto:%6F%70%79%61%74%65%40%67%6D%61%69%6C%2E%63%6F%6D" title="Contact me.">&#111;&#112;&#121;&#97;&#116;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>.
 
 ## Digital footprint
 
