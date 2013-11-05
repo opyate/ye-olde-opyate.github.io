@@ -15,13 +15,9 @@ category: blog
 
 I found jq to be especially useful for formatting JSON in vim. So, before ado can in any way be furthered:
 
-<code>
-curl http://stedolan.github.io/jq/download/linux64/jq -o ~/bin/jq
-</code>
-<br>
-<code>
-chmod +x ~/bin/jq
-</code>
+<code>curl http://stedolan.github.io/jq/download/linux64/jq -o ~/bin/jq</code>
+<span style='display:block;'>&nbsp;</span>
+<code>chmod +x ~/bin/jq</code>
 
 In vim, open your unformatted JSON file, then: <code>:%!jq '.'</code>.
 
