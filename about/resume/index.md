@@ -5,13 +5,28 @@ title: Résumé
 
 # Juan Uys
 
-<a href="#" title="Rarely am I in a suit jacket."><img src="/res/suited-side.jpg" align="right" alt="Picture of Juan Uys" style="margin-left:20px" width="120" height="277"/></a>
+<img src="http://www.gravatar.com/avatar/c22bbf2aac2a3841d80f5363d73e3ebe.png?s=512" width="160" height="160" align="right" class="pull-right">
+
+<a href="mailto:%6F%70%79%61%74%65%40%67%6D%61%69%6C%2E%63%6F%6D" title="Contact me.">
+  <img src="/res/icons/email.png">
+</a>
+<a href="http://uk.linkedin.com/in/juanuys/" title="My LinkedIn profile">
+  <img src="/res/icons/LinkedIN.png">
+</a>
+<a href="https://www.facebook.com/opyate" title="My Facebook profile">
+  <img src="/res/icons/facebook.png">
+</a>
+<a href="http://twitter.com/opyate" title="My Twitter profile">
+  <img src="/res/icons/twitter-2.png">
+</a>
 
 ## Introduction
 
 I'm a [London-based](http://pits-to-palace.tumblr.com/) South African who has been doing tech work since 2002. I've designed, architected and implemented entire social networks and ecommerce systems, while also assuming the role of developer, ops, analyst and tester throughout (a given for single tecnical co-founders).
 
 Most information about said activity can be found on my [personal website](http://opyate.com), my [LinkedIn profile](http://www.linkedin.com/in/juanuys) or my [StackOverflow careers profile](http://careers.stackoverflow.com/opyate) (the latter is nicely key-worded for recruiters).
+
+**I'm currently available for work.**
 
 ## Freelance
 
