@@ -1,6 +1,6 @@
 ---
-title: "A webwords cookbook"
-description: "A webwords cookbook"
+title: "A webwords Chef cookbook"
+description: "A webwords Chef cookbook"
 og_image_url: "http://www.gravatar.com/avatar/c22bbf2aac2a3841d80f5363d73e3ebe.png?s=512"
 image: "http://www.gravatar.com/avatar/c22bbf2aac2a3841d80f5363d73e3ebe.png?s=512"
 image_content_type: "image/jpeg"
@@ -12,7 +12,7 @@ category: blog
 
 There are a lot of [new examples](http://typesafe.com/activator/templates) up on the Typesafe website, a few with the word "Reactive" in them to drive home the [credo](http://www.reactivemanifesto.org/) behind the framework. One of my favourite examples, however, seem to have been demoted but still remains one of my favourites: [webwords](https://github.com/typesafehub/webwords).
 
-[The old Heroku link](http://webwords.herokuapp.com/) to the live running instance of webwords does not seem to be up anymore, so I whipped up a quick cookbook with which to spin up your own local instance.
+[The old Heroku link](http://webwords.herokuapp.com/) to the live running instance of webwords does not seem to be up anymore, so I whipped up a quick Chef cookbook with which to spin up your own local instance.
 
 You can find the Github repo [here](https://github.com/opyate/webwords-vm.git). Spin it up and have fun.
 
