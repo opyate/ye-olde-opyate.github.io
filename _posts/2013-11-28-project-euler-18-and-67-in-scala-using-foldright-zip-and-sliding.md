@@ -49,4 +49,4 @@ The easiest way was to just seed the foldRight with a list of zeros one element 
 
 
 
-No mutable state; no recursion; simple to understand. As [Erik Meijer](www.applied-duality.com) would say: "baby code".
+No mutable state; no recursion; simple to understand. As [Erik Meijer](http://www.applied-duality.com) would say: "baby code".
