@@ -36,4 +36,17 @@ Since you need to add the maximum of the two immediate children to the layer abo
 
 The easiest way was to just seed the foldRight with a list of zeros one element larger than the base layer. You then break it up into pairs using **sliding(2,1)**, take the max of the pairs, and sum the max with the corresponding (thanks to **zip**) element in the layer above.
 
+<pre>
+
+      1
+     / \
+    2   3
+   / \ / \
+  4   5   6
+ / \ / \ / \
+0   0   0   0    <- this becomes the new "base layer", or "seed"
+</pre>
+
+
+
 No mutable state; no recursion; simple to understand. As [Erik Meijer](www.applied-duality.com) would say: "baby code".
