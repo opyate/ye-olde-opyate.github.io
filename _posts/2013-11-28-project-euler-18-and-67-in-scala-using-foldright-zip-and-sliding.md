@@ -34,6 +34,6 @@ The triangle is represented as a nested list, like so: **List(List(1), List(2, 3
 
 Since you need to add the maximum of the two immediate children to the layer above, a foldRight wouldn't give me all the info I need in the curent iteration. Foldright for me means "the data is coming FROM the right", i.e. **List(4, 5, 6)** will be processed first, then **List(2, 3)** but at no point in the iteration will they be available together so I can do the sum. **List(4, 5, 6)** would need to come into the iteration with **List(2, 3)** in another way, and I realised I can use the foldRight's accumulator for that by seeding the foldRight with the base layer in the triangle (aka the last list **List(4, 5, 6)**).
 
-The easiest way was to just seed the foldRight with a list of zeros one element larger than the base layer. You then break it up into pairs using **sliding(2,1)**, take the max of the pairs, and sum the max with the corresponding element in the layer above.
+The easiest way was to just seed the foldRight with a list of zeros one element larger than the base layer. You then break it up into pairs using **sliding(2,1)**, take the max of the pairs, and sum the max with the corresponding (thanks to **zip**) element in the layer above.
 
 No mutable state; no recursion; simple to understand. As [Erik Meijer](www.applied-duality.com) would say: "baby code".
