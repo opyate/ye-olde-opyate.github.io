@@ -26,6 +26,8 @@ I'm a [London-based](http://pits-to-palace.tumblr.com/) South African who has be
 
 Most information about said activity can be found on my [personal website](http://opyate.com), my [LinkedIn profile](http://www.linkedin.com/in/juanuys) or my [StackOverflow careers profile](http://careers.stackoverflow.com/opyate) (the latter is nicely key-worded for recruiters).
 
+[opyate.com](http://opyate.com) is where I jot down thoughts and findings. I wouldn't call it a blog: my writing style is instant-gratification, and I try to not spend more than 10 minutes on a piece, as is clearly evident.
+
 **I'm currently available for work.**
 
 ## Freelance
