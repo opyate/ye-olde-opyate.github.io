@@ -28,7 +28,7 @@ Most information about said activity can be found on my [personal website](http:
 
 [opyate.com](http://opyate.com) is where I jot down thoughts and findings. I wouldn't call it a blog: my writing style is instant-gratification, and I try to not spend more than 10 minutes on a piece, as is clearly evident.
 
-**I'm currently available for work.**
+**I'm** *not* **currently available for work.**
 
 ## Freelance
 
