@@ -22,19 +22,29 @@ title: Résumé
 
 ## Introduction
 
-I'm a [London-based](http://pits-to-palace.tumblr.com/) South African who has been doing tech work since 2002. I've designed, architected and implemented entire social networks and ecommerce systems, while also assuming the role of developer, ops, analyst and tester throughout (a given for single tecnical co-founders).
+I'm a [London-based](http://pits-to-palace.tumblr.com/) South African who has been doing tech work since 2002. I've designed, architected and implemented entire social networks and ecommerce systems, while also assuming the role of developer, ops, analyst and tester throughout (a given for single technical co-founders).
 
-Most information about said activity can be found on my [personal website](http://opyate.com), my [LinkedIn profile](http://www.linkedin.com/in/juanuys) or my [StackOverflow careers profile](http://careers.stackoverflow.com/opyate) (the latter is nicely key-worded for recruiters).
+Most information about said activity can be found on my [personal](http://opyate.com) and [professional](http://uys.io) websites, my [LinkedIn profile](http://www.linkedin.com/in/juanuys) or my [StackOverflow careers profile](http://careers.stackoverflow.com/opyate).
 
-[opyate.com](http://opyate.com) is where I jot down thoughts and findings. I wouldn't call it a blog: my writing style is instant-gratification, and I try to not spend more than 10 minutes on a piece, as is clearly evident.
+## Unleash Your Server
 
-**I'm** *not* **currently available for work.**
+From server to app in 60 (to the power of 3.7 &#8432;) seconds.
+
+<em>*</em> custom development, estimate for typical consumer app. One day we will auto-generate these things.
+
+Over the years I've amassed and honed a bunch of skills that empowers me to take one or many bare-bones servers (e.g. EC2/app-cell/dyno) and turn it into an application comprised many moving parts and components, including messages queues, databases, web servers, caches, web APIs, responsive and easy-to-use frontends, and mobile clients &mdash; all backed by an agile development process and other pragmatic best practices, including full configuration management, continuous integration, source control, and a whole host of other things I consider obvious and take for granted. Full-stack developer? Maybe!
+
+I've always wanted to form a collective of capable and varied individuals to build beautiful things with me, because I believe teams are better than individuals. I have, however, failed to do so twice now, mostly due to shifting interests, or loosing team members to itches they just have to scratch.
+
+Unleash Your Server is a new endeavour, but I've started this one on my own. The name is a play on my surname, UYS, chosen by my mate and old business partner [@wehtam](http://twitter.com/wehtam) (yes, I suck at naming things, and besides &mdash; it's one of the two biggest problems in computer science, alongside cache invalidation, and off-by-one errors).
+
+Apart from finding new problems to solve and organically building businesses around them, I've had the immense privilege of starting my new journey with GOV.UK on the [transformation](https://gds.blog.gov.uk/2014/01/29/200-days-of-transformation-200-days-to-go/) project, until further notice. 
 
 ## Freelance
 
-I'm currently a WFH dad. My work is a bit hush hush at the moment, but it involves data processing and machine learning in the finance sector, and scalability consulting for small startups taking the next step.
+2 weeks is not enough paternity leave for any new father, so I embarked on a 10 month adventure as a WFH dad / freelancer.
 
-Please see my blog for ongoing articles related to the work I do.
+I mostly worked with start-ups from my network, and work included credit scoring, news generation by way of AI, a service marketplace, and solving the age-old British problem of the queue.
 
 ## [pollarize.me](http://app.pollarize.me)
 
