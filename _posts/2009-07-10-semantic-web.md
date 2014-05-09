@@ -1,5 +1,5 @@
 ---
-title: "Semantic Web &mdash; exciting times!"
+title: "Semantic Web — exciting times!"
 description: "Semantic Web"
 og_image_url: "http://www.w3.org/DesignIssues/diagrams/loop.gif"
 image: "http://www.w3.org/DesignIssues/diagrams/loop.gif"
