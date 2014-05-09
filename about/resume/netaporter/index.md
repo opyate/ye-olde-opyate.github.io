@@ -33,7 +33,7 @@ The company is not far off 5,000 employees strong, and our HQ is quite a sizeabl
 
 Net-A-Porter has become a very integrated part of my life. I remember shopping for a new TV on Tottenham Court Road one Saturday morning, when I got a call from ops saying the payment service is throwing a wobbly, and could I take a look. I'd whip the laptop out there and then, make the connection, troubleshoot, re-compile and deploy right there. Needless to say, it's 2013 now, and I've only recently got a TV and a license for one.
 
-I've also made many wonderful friends at NAP throughout the years. I've gone to my colleagues' house warmings, weddings, birthday parties and BBQs. They are truly a great bunch. My LinkedIn network is NAP/other to a ratio of almost 5:1.
+I've also made many wonderful friends at NAP throughout the years. I've gone to my colleagues' house warmings, weddings, birthday parties and BBQs. They are truly a great bunch.
 
 [![NAP tech circa 2007](https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-frc1/222537_8125517399_1278_n.jpg)](https://www.facebook.com/chiselwright/media_set?set=a.8125327399.23525.516677399&type=3)
 

@@ -10,9 +10,6 @@ title: Résumé
 <a href="mailto:%6F%70%79%61%74%65%40%67%6D%61%69%6C%2E%63%6F%6D" title="Contact me.">
   <img src="/res/icons/email.png">
 </a>
-<a href="http://uk.linkedin.com/in/juanuys/" title="My LinkedIn profile">
-  <img src="/res/icons/LinkedIN.png">
-</a>
 <a href="https://www.facebook.com/opyate" title="My Facebook profile">
   <img src="/res/icons/facebook.png">
 </a>
@@ -24,7 +21,7 @@ title: Résumé
 
 I'm a [London-based](http://pits-to-palace.tumblr.com/) South African who has been doing tech work since 2002. I've designed, architected and implemented entire social networks and ecommerce systems, while also assuming the role of developer, ops, analyst and tester throughout (a given for single technical co-founders).
 
-Most information about said activity can be found on my [personal](http://opyate.com) and [professional](http://uys.io) websites, my [LinkedIn profile](http://www.linkedin.com/in/juanuys) or my [StackOverflow careers profile](http://careers.stackoverflow.com/opyate).
+Most information about said activity can be found on my [personal](http://opyate.com) and [professional](http://uys.io) websites, or my [StackOverflow careers profile](http://careers.stackoverflow.com/opyate).
 
 ## Unleash Your Server
 
