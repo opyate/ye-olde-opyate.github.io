@@ -19,7 +19,7 @@ I was going to write a picture book. The poem it's based on came to me on a trai
 
 I [started in earnest](http://instagram.com/p/ZuRH9zAqm6/), but truth be told that a Picture Book is not an overnight endeavour.
 
-<img width="50%" src="http://distilleryimage10.ak.instagram.com/da482076c5eb11e3aaef0002c9db4c12_8.jpg" align="right"> Meanwhile, Little One was born. Slow and considered sketches were soon replaced by frantic nightly dashes finding nappies and milk. My fountain pen dried up and clogged sooner than one can say "prioriity shift".
+<img width="50%" src="http://distilleryimage10.ak.instagram.com/da482076c5eb11e3aaef0002c9db4c12_8.jpg" align="right"> Meanwhile, Little One was born. Slow and considered sketches were soon replaced by frantic nightly dashes finding nappies and milk. My fountain pen dried up and clogged sooner than one can say "priority shift".
 
 A few months ago it dawned on me that she'll turn one soon. I started to think of her first ever gift. The picture book was still months away from being completed. All along our Little Beloved pointed at "C for Cat" on her alphabet toy, and a light bulb appeared above my head: a cat book!
 
