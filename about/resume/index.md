@@ -23,6 +23,12 @@ I'm a [London-based](http://pits-to-palace.tumblr.com/) South African who has be
 
 Most information about said activity can be found on my [personal](http://opyate.com) and [professional](http://uys.io) websites, or my [StackOverflow careers profile](http://careers.stackoverflow.com/opyate).
 
+## pdfcrun.ch (as Unleash Your Server)
+
+Latterly, I started a new business called <a href="https://pdfcrun.ch">pdfcrunch</a>. It turns PDFs into data. It's been quite computer vision -heavy, and I've been spending a lot of time in iPython notebooks tweaking algorithms.
+
+The tech stack comprises Python (with scikit/numpy/etc for the CV stuff, and Tornado/Flask/Pika for the API glue), Scala and Clojure (to interface with some existing Java-based PDF tools), Docker (running a cluster on EC2 using tutum.co), PostgresQL, RabbitMQ (to de-couple the many different types of background workers), with AngularJS on the frontend (for editing stencils). 
+
 ## Unleash Your Server
 
 From server to app in 60 (to the power of 3.7 &#8432;) seconds.
@@ -35,7 +41,7 @@ I've always wanted to form a collective of capable and varied individuals to bui
 
 Unleash Your Server is a new endeavour, but I've started this one on my own. The name is a play on my surname, UYS, chosen by my mate and old business partner [@wehtam](http://twitter.com/wehtam) (yes, I suck at naming things, and besides &mdash; it's one of the two biggest problems in computer science, alongside cache invalidation, and off-by-one errors).
 
-Apart from finding new problems to solve and organically building businesses around them, I've had the immense privilege of starting my new journey with GOV.UK on the [transformation](https://gds.blog.gov.uk/2014/01/29/200-days-of-transformation-200-days-to-go/) project, until further notice. 
+Apart from finding new problems to solve and organically building businesses around them, I've had the immense privilege of starting my new journey with GOV.UK on the [transformation](https://gds.blog.gov.uk/2014/01/29/200-days-of-transformation-200-days-to-go/) project.
 
 ## Freelance
 
