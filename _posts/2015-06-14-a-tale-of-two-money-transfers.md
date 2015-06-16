@@ -27,3 +27,32 @@ It was all completely my fault, but still feel that in this day and age of moder
 Also, Barclays: that last confirm button is a major call-to-action, and should be high viz.
 
 Now, I just have to remember to pay my contractor :-)
+
+**UPDATE 2015-06-16**
+
+Oh, bloody hell. An email from TransferWise. Thanks for nothing, Paul@Barclays!
+
+<pre>
+Hi Juan,
+
+Hope this email finds you well.
+
+We have still received a deposit for 500 USD from you.
+Please confirm if you wish us to proceed with the payment
+#0123456 or we’ll refund it back to you to the originating
+bank account.
+
+But please be advised, that if we will issue a refund it will be
+through a SWIFT payment, this involve extra cost so you will not
+get exactly 500 USD back to the originating account.
+
+- our bank will charge a fee (7 EUR) for the transfer
+- intermediate banks will take a fee (anywhere between
+10-20 USD each, up to 3 banks)
+- your USD dominated bank may charge a fee for accepting an
+international bank transfer (fee depends on your bank)
+
+You can read more about SWIFT payments here.
+
+Waiting for your reply!
+</pre>
