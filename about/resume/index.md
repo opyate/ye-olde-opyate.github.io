@@ -23,13 +23,19 @@ I'm a [London-based](http://pits-to-palace.tumblr.com/) South African who has be
 
 Most information about said activity can be found on my [personal](http://opyate.com) and [professional](http://uys.io) websites, or my [StackOverflow careers profile](http://careers.stackoverflow.com/opyate).
 
-## pdfcrun.ch (as Unleash Your Server)
+## Conde Nast Commerce (as [Unleash Your Server](http://www.uys.io))
+
+Helping [style.com](http://style.com) build their new ecommerce website.
+
+## pdfcrun.ch (as [Unleash Your Server](http://www.uys.io))
 
 Latterly, I started a new business called <a href="https://pdfcrun.ch">pdfcrunch</a>. It turns PDFs into data. It's been quite computer vision -heavy, and I've been spending a lot of time in iPython notebooks tweaking algorithms.
 
 The tech stack comprises Python (with scikit/numpy/etc for the CV stuff, and Tornado/Flask/Pika for the API glue), Scala and Clojure (to interface with some existing Java-based PDF tools), Docker (running a cluster on EC2 using tutum.co), PostgresQL, RabbitMQ (to de-couple the many different types of background workers), with AngularJS on the frontend (for editing stencils). 
 
 ## Unleash Your Server
+
+[Unleash Your Server](http://www.uys.io) is my company.
 
 From server to app in 60 (to the power of 3.7 &#8432;) seconds.
 
