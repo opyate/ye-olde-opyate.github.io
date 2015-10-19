@@ -1,8 +1,0 @@
-rvm use 2.0.0-p247@opyate.com-jekyll --create --default
-gem install jekyll
-gem install rdiscount
-gem install jekyll-assets
-
-Theme by @rsms https://github.com/rsms/tumblr-theme-hunch
-
-Tags working with advice from http://charliepark.org/jekyll-with-plugins/
