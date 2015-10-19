@@ -20,9 +20,8 @@ Tags working with advice from:
 And then:
 
     jekyll build
-    mv _site/* ../opyate.github.io
+    cp _site/* ../opyate.github.io
     pushd ../opyate.github.io
-    git add .
-    git commit -m "new post"
+    git add . && git commit -m "opyate/opyate.github.io-src updated"
     git push origin master
     popd
