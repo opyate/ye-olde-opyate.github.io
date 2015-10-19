@@ -1,10 +1,878 @@
----
-layout: default
----
-<div class="posts">
-  {% for post in site.posts limit:10 %}
+<!DOCTYPE HTML>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+	<meta name="robots" content="INDEX,FOLLOW" />
+    <title>Juan Uys</title>
+    <meta name="keywords" content="opyate, juan m uys, juan uys, south african programmer, south african hacker" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href='http://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="screen, projection" href="/res/screen.css" type="text/css">
+    <link rel="stylesheet" media="print" href="/res/print.css" type="text/css">
+    <link rel="alternate" type="application/atom+xml" title="Juan Uys" href="http://feeds.feedburner.com/opyate">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/res/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/res/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/res/apple-touch-icon-114x114-precomposed.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@opyate">
+    
+    
+      <meta name="description" content="More noise by Juan Uys-- a South African techie and doodler residing in London.">
+    
+    
+    <meta property="og:url" content="http://opyate.com/">
+    <meta property="og:site_name" content="opyate.com">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_GB" />
+    
+    
+    <script>
+  //html { zoom:50%; }
+  if (window.addEventListener) {
+    var sidebarAdjustTimer;
+    function updateOrientation(orientationChangeEvent) {
+      if (sidebarAdjustTimer) clearInterval(sidebarAdjustTimer);
+      //console.log('window.orientation -> '+window.orientation);
+      if (window.orientation === -90 || window.orientation === 90) {
+        // landscape
+        var sidebar = document.getElementById('sidebar');
+        if (!sidebar.src || sidebar.src === '') {
+          sidebar.src = '/archive/sidebar.html';
+        }
+        sidebarAdjustTimer = setInterval(function() {
+          var height = Math.round(document.height * 1.6);
+          if (sidebar.height != height) {
+            sidebar.height = height;
+            sidebar.style.height = height + 'px';
+          }
+        },500);
+      } else {
+        // portrait
+      }
+    }
+    window.addEventListener('orientationchange', updateOrientation);
+    document.addEventListener('DOMSubtreeModified', function(ev) {
+      if (document.getElementById('sidebar')) {
+        document.removeEventListener('DOMSubtreeModified', arguments.callee);
+        updateOrientation();
+      }
+    });
+  }
+</script>
+    
+    
+  </head>
+  <body>
+    <script>
+      if (window.navigator.userAgent.indexOf('iPad') != -1) {
+        document.documentElement.className = 'ios ipad';
+        window.opyateHostIsIOS = 'ipad';
+      } else if (window.navigator.userAgent.indexOf('iPhone') != -1) {
+        document.documentElement.className = 'ios iphone';
+        window.opyateHostIsIOS = 'iphone';
+      }
+    </script>
+    <iframe id="sidebar"></iframe>
+    <header>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/res/signature-2-2.png" width="160" height="50" alt="Signature"></a></h1>
+      <ul class="navigation">
+        <li><a href="/projects/" title="Projects I am or was involved in">Projects</a></li>
+        <li><a href="/archive/" title="Archived articles">Archive</a></li>
+        <li><a href="/about/resume/">About me</a></li>
+      </ul>
+    </header>
+    <!--div class="wrapper content"-->
+      <div class="posts">
+  
   <div class="content">
-  {% include listed-post.html %}
-  </div>
-  {% endfor %}
+  <div class="post">
+
+	<div class="meta">
+		<p class="item tags small">
+		<a href="/tag/postgresql" class="tag">postgresql</a><a href="/tag/docker" class="tag">docker</a>
+		</p>
+	</div>
+	<div class="breaker"></div>
+	<h1 class="title"><a href="/2015/06/17/add-logging-to-postgresql-on-docker.html">Add logging to PostgresQL on Docker</a></h1>
+
+	<info datetime="">
+	Jun 17, 2015
+	</info>
+
+
+	<div class="body">
+		<p>Normally, in <code>docker-compose.yml</code>  I would just configure a database like this:</p>
+
+<pre><code>db:
+  image: postgres:9.4
+</code></pre>
+
+<p>However, to customise the image, we use our own Dockerfile:</p>
+
+<pre><code>FROM postgres:9.4
+ADD config.sh /docker-entrypoint-initdb.d/
+</code></pre>
+
+<p>The contents of <code>config.sh</code>:</p>
+
+<pre><code>perl -pi -e "s/#log_statement = 'none'/log_statement = 'all'/g" \
+/var/lib/postgresql/data/postgresql.conf
+</code></pre>
+
+<p>And <code>docker-compose.yml</code> now becomes:</p>
+
+<pre><code>db:
+  build: location/of/new/docker/file
+</code></pre>
+
+<p>Link your app, launch the stack, and start seeing log statements on STDIN:</p>
+
+<pre><code>db_1         | LOG:  statement: BEGIN
+db_1         | LOG:  statement: SELECT etc etc
+</code></pre>
 </div>
+	<div class="breaker"></div>
+	<info class="empty after">
+	</info>
+</div>
+
+  </div>
+  
+  <div class="content">
+  <div class="post">
+
+	<div class="meta">
+		<p class="item tags small">
+		<a href="/tag/life" class="tag">life</a>
+		</p>
+	</div>
+	<div class="breaker"></div>
+	<h1 class="title"><a href="/2015/06/14/a-tale-of-two-money-transfers.html">A tale of two money transfers</a></h1>
+
+	<info datetime="">
+	Jun 14, 2015
+	</info>
+
+
+	<div class="body">
+		<p>I use GBP, and my contractor in Italy uses EUR, but we &ldquo;talk&rdquo; USD. The first payment came up, and I was recommended <a href="https://transferwise.com">TransferWise</a> by my friends in the trenches. I go online to TransferWise and select USD from the dropdown, and go through all the steps. Finally, TransferWise tells me to send them money in Estonia from my Internet banking account, which I do.</p>
+
+<p>But &mdash; weird &mdash; I thought. Weren&rsquo;t they supposed to make all this easier for me?</p>
+
+<p>I open up a TransferWise chat with Jorgen in support and ask them if I had done something wrong. Yes, of course &mdash; I had to select GBP from the dropdown.</p>
+
+<p>A bit of confusion ensues and my transaction on TransferWise gets cancelled, when instead I meant for them to decline anything coming into their Estonian account from my Barclays UK bank account. I then loose my connection, and end up with another agent called Monica whom I end up repeating the entire story to, and she says she&rsquo;ll make a note with the payments team to decline my money.</p>
+
+<p>Hang on, I think &mdash; why don&rsquo;t I just phone Barclays and ask them to cancel the international transfer. It&rsquo;s Sunday, after all. Nothing would&rsquo;ve gone through yet.</p>
+
+<p>&ldquo;I don&rsquo;t see anything, sir.&rdquo; says Paul, the telephone support guy. Me neither. I little light goes off in my head: I must&rsquo;ve forgotten the &ldquo;Confirm&rdquo; button on the last screen of the transfer. I always do this &mdash; pay myself my salary then wonder why it didn&rsquo;t reach my personal account. (Thank goodness I&rsquo;m the only employee!)</p>
+
+<p>The problem is resolved. Bless the Barclays phone operator Paul, and bless TransferWise&rsquo;s Jorgen and Monica.</p>
+
+<p>It was all completely my fault, but still feel that in this day and age of modern online services like Barclays Internet banking and TransferWise, user experience issues should be fully addressed.</p>
+
+<p>&ldquo;We see you&rsquo;re using USD. Is the source funds also USD?&rdquo;. Or have a separate 3-way calculator.</p>
+
+<p>Also, Barclays: that last confirm button is a major call-to-action, and should be high viz.</p>
+
+<p>Now, I just have to remember to pay my contractor :-)</p>
+
+<p><strong>UPDATE 2015-06-16</strong></p>
+
+<p>Oh, bloody hell. An email from TransferWise. Thanks for nothing, Paul@Barclays!</p>
+
+<pre>
+Hi Juan,
+
+Hope this email finds you well.
+
+We have still received a deposit for 500 USD from you.
+Please confirm if you wish us to proceed with the payment
+#0123456 or we’ll refund it back to you to the originating
+bank account.
+
+But please be advised, that if we will issue a refund it will be
+through a SWIFT payment, this involve extra cost so you will not
+get exactly 500 USD back to the originating account.
+
+- our bank will charge a fee (7 EUR) for the transfer
+- intermediate banks will take a fee (anywhere between
+10-20 USD each, up to 3 banks)
+- your USD dominated bank may charge a fee for accepting an
+international bank transfer (fee depends on your bank)
+
+You can read more about SWIFT payments here.
+
+Waiting for your reply!
+</pre>
+
+</div>
+	<div class="breaker"></div>
+	<info class="empty after">
+	</info>
+</div>
+
+  </div>
+  
+  <div class="content">
+  <div class="post">
+
+	<div class="meta">
+		<p class="item tags small">
+		<a href="/tag/tech" class="tag">tech</a><a href="/tag/life" class="tag">life</a>
+		</p>
+	</div>
+	<div class="breaker"></div>
+	<h1 class="title"><a href="/2014/12/31/2014-in-review.html">2014 — the year in review</a></h1>
+
+	<info datetime="">
+	Dec 31, 2014
+	</info>
+
+
+	<div class="body">
+		<h1>Firstly&hellip;</h1>
+
+<p>&hellip;let&rsquo;s get the big news out of the way.</p>
+
+<p>This year I got married. We have a lovely daughter, made a beautiful home together, and a few years of togetherness, and really just wanted to celebrate these blessings with friends and family. Besides, my partner is gorgeous, and I just had to go ball &amp; chain on her :-P</p>
+
+<p><img src="https://raw.githubusercontent.com/opyate/opyate.github.io/master/res/bnj.jpg" width="100%"></p>
+
+<h1>The tech</h1>
+
+<h2>Docker</h2>
+
+<p>This year saw me Dockerize all the things. Linux containers is the best thing since diced bacon, and really <a href="http://uys.io">unleashes servers</a> everywhere.</p>
+
+<h2>Python</h2>
+
+<p>Loads and loads more Python, especially for APIs. Python is awesome. Especially paired with other awesome tools like PostgresQL, for example: no more &ldquo;WHERE user = %s&rdquo; to filter on user data. Let&rsquo;s just say I devised a clever trick using flask-sqlalchemy, PostgresQL schemas, before_request and search_path to give every user their own database.</p>
+
+<h2>Scala</h2>
+
+<p>Still my tool of choice for interfacing with tried-and-trusted Java libs to build those blazing fast, functional and correct back-end processes.</p>
+
+<h2>JavaScript</h2>
+
+<p>Can&rsquo;t get away from this one. But starting to wonder if ClojureScript is the way to go. Besides, I always ALWAYS use <a href="https://lodash.com/">lodash</a> (replacing <a href="http://underscorejs.org/">underscore</a> recently).</p>
+
+<h2>Clojure</h2>
+
+<p>I&rsquo;ve been really doubling down on Clojure this year for fun, throw-away side projects. I really want it to replace Scala. And OMG how awesome is it to code a Lisp using Emacs. It reminded me of those early 2000s Scheme days&hellip;</p>
+
+<h2>Elixir</h2>
+
+<p>So, I&rsquo;ve always been a Ruby fan, and always wanted to be able to mention Erlang as one of my top few skills, but yuck&hellip; Erlang! It&rsquo;s like trying to do a Shakespeare recital with a mouth full of mud. That didn&rsquo;t make any sense, but Elixir does. Still a bit fast moving, so I&rsquo;m not doing anything big in it, but watch this space.</p>
+
+<p><strong>UPDATE 2015-03-13</strong></p>
+
+<p>After working with Erlang a bit more (and reading <a href="http://ferd.ca/on-erlang-s-syntax.html">this</a>), I stand thoroughly corrected, and don&rsquo;t mind it at all.</p>
+
+<h1>Optimisation</h1>
+
+<p>My life, that is.</p>
+
+<h2>News</h2>
+
+<p>Let&rsquo;s see&hellip; I don&rsquo;t watch or read any news (be it news news, or tech news). There was one event in the last quarter which my family says changed their perspective on things, which turns out to not affect me. I&rsquo;m really happy with this arrangement.</p>
+
+<p>I&rsquo;ll change HNWatcher on occasion to send me alerts for tech I&rsquo;m following, but I mostly archive those.</p>
+
+<h2>Health</h2>
+
+<p><a href="http://mobile.nytimes.com/blogs/well/2013/05/09/the-scientific-7-minute-workout/">7 minute scientific workouts</a>, 3-weekly runs to the local <a href="http://www.tgogc.com/">free gym</a> where I break some more sweat, and loads of activities with my daughter.</p>
+
+<p>I had a health check, and all is perfect, and will make it a yearly thing now.</p>
+
+<p>8 hours sleep a day, at least.</p>
+
+<p>Painting and drawing in the evening to clear the mind and splatter watercolours everywhere.</p>
+
+<h2>Time</h2>
+
+<p>Time is precious and not to be wasted. I&rsquo;ve little tweaks with which to save a bit of time. E.g. when reading an article, and mind wanders / eyes start blurring, I close the tab or delete the eBook and move on with my life.</p>
+
+<p>My phone now has 2 main apps: Kindle, and Pocket Casts. No more games. In fact, the only games I play are board games with my family.</p>
+
+<p>If I can pay for it to be done, I do just that.</p>
+
+<p>I unsubscribed from everything. E.g., I closed my LinkedIn account, and delete all new messages from them.</p>
+
+<h1>Setbacks</h1>
+
+<p>It wasn&rsquo;t a perfect year, after all.</p>
+
+<p>My wife got made redundant.</p>
+
+<p>A client of mine confused the words &ldquo;contractor&rdquo; with &ldquo;employee&rdquo; and I wrote off a significant amount of money as bad debt in a time when the money would have helped with a problem. I get all my work from my personal network, and agree to things with the shake of the hand, and this particular fella is making me reconsider.</p>
+
+<p>My dad took his own life this year, and I&rsquo;m especially remembering him tonight.</p>
+
+<p>15 years ago today was the most significant NYE of our generation. I spent it with my dad as my mom had just left us a few days prior. We were sitting on the balcony in total darkness, staring out, with the odd firework illuminating his face. Had my sister been a grownup then, who knows what he would have done, but he chose to be there for us.</p>
+
+<h1>Next?</h1>
+
+<p>Since catching up over eggs and coffee is the new catching up over a beer, let&rsquo;s have breakfast some time and I&rsquo;ll tell you my plans.</p>
+
+<p>Meanwhile, live life and don&rsquo;t take shizzle from see you next Tuesdays.</p>
+</div>
+	<div class="breaker"></div>
+	<info class="empty after">
+	</info>
+</div>
+
+  </div>
+  
+  <div class="content">
+  <div class="post">
+
+	<div class="meta">
+		<p class="item tags small">
+		<a href="/tag/book" class="tag">book</a><a href="/tag/fatherhood" class="tag">fatherhood</a>
+		</p>
+	</div>
+	<div class="breaker"></div>
+	<h1 class="title"><a href="/2014/04/17/i-made-my-daughter-a-book-for-her-first-birthday.html">I made my daughter a book for her first birthday.</a></h1>
+
+	<info datetime="">
+	Apr 17, 2014
+	</info>
+
+
+	<div class="body">
+		<p><em>Made? Yes, made &ndash; not wrote. See below.</em></p>
+
+<p>My day is a grab-bag of abstract concepts, data as shapes moving from system to system on pathways built with tools I love dearly. However, every now and then I want to inject some characters and narrative into my life.</p>
+
+<p>A previous, on-ice-yet-ongoing foray into Story Land is when we learnt we were pregnant. My world was shaken, and in a nervous panic I wanted to surround myself with things that will cleanse my mind, prepare my heart, and re-awaken the child in me. All in preparation for the Little Being that was to join us in June 2013.</p>
+
+<p>I was going to write a picture book. The poem it&rsquo;s based on came to me on a train journey to the Cotswolds. It was going to be perfect. But, I had to practice. Doodle, draw, illustrate. Devour colours. Try and not be precious about my Moleskine notebooks. Scribble, then scribble some more. Rip out pages, and throw stuff away.</p>
+
+<p>I <a href="http://instagram.com/p/ZuRH9zAqm6/">started in earnest</a>, but truth be told that a Picture Book is not an overnight endeavour.</p>
+
+<p><img width="50%" src="http://distilleryimage10.ak.instagram.com/da482076c5eb11e3aaef0002c9db4c12_8.jpg" align="right"> Meanwhile, Little One was born. Slow and considered sketches were soon replaced by frantic nightly dashes finding nappies and milk. My fountain pen dried up and clogged sooner than one can say &ldquo;priority shift&rdquo;.</p>
+
+<p>A few months ago it dawned on me that she&rsquo;ll turn one soon. I started to think of her first ever gift. The picture book was still months away from being completed. All along our Little Beloved pointed at &ldquo;C for Cat&rdquo; on her alphabet toy, and a light bulb appeared above my head: a cat book!</p>
+
+<p>The birthday is now imminent, and something needed to be sent to the print shop pronto. Inspired by &ldquo;famous cats&rdquo; from a <a href="http://www.quizmasters.biz/DB/Pic/Famous_Cats/Famous_Cats.html">pub quiz</a>, I went on to <a href="http://cdn.opyate.com/books/AnnabellesEnCATlopediaVolume1CatsonTV.pdf">create this</a>. Heavily cribbed and everything stolen from far flung corners of the Interwebs, but hey &ndash; it&rsquo;s not like I&rsquo;ll be making money off it!</p>
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/ZATqOT5IzEw?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+
+
+<p>Fun was had, and Father Time once again looks down favourably on my poem-inspired work of art which will soon sit alongside our Little One&rsquo;s other precious things.</p>
+</div>
+	<div class="breaker"></div>
+	<info class="empty after">
+	</info>
+</div>
+
+  </div>
+  
+  <div class="content">
+  <div class="post">
+
+	<div class="meta">
+		<p class="item tags small">
+		<a href="/tag/tech" class="tag">tech</a>
+		</p>
+	</div>
+	<div class="breaker"></div>
+	<h1 class="title"><a href="/2014/01/29/more-jq-fun.html">More jq fun</a></h1>
+
+	<info datetime="">
+	Jan 29, 2014
+	</info>
+
+
+	<div class="body">
+		<p>I&rsquo;ve <a href="2013/11/05/my-new-favourite-way-to-pretty-print-json-in-vim.html">written about</a> <a href="http://stedolan.github.io/jq/">jq</a> before, but I mention it again here as a very useful tool for parsing JSON on the command line.</p>
+
+<p>I needed to grab some England Bank holidays for a <a href="https://github.com/opyate/taximeter">quick hack</a> the other day, and found that the GOV.UK team made web better by allowing you to append <em>.json</em> to any of their links to get to the data.</p>
+
+<p>Hold onto yer hats:</p>
+
+<script src="https://gist.github.com/8773005.js"> </script>
+
+</div>
+	<div class="breaker"></div>
+	<info class="empty after">
+	</info>
+</div>
+
+  </div>
+  
+  <div class="content">
+  <div class="post">
+
+	<div class="meta">
+		<p class="item tags small">
+		<a href="/tag/tech" class="tag">tech</a><a href="/tag/life" class="tag">life</a>
+		</p>
+	</div>
+	<div class="breaker"></div>
+	<h1 class="title"><a href="/2013/12/31/code-and-tools-the-year-in-review.html">2103 — the year's code and tooling in review</a></h1>
+
+	<info datetime="">
+	Dec 31, 2013
+	</info>
+
+
+	<div class="body">
+		<p><img src="http://25.media.tumblr.com/650a566e7ccb9b0f292ce9c016206c14/tumblr_mygpxoJUpY1ri2z5io1_1280.jpg" width="50%" align="right"> I saw the #code2013 hashtag on Twitter last night and <a href="https://twitter.com/opyate/status/417785250308444160">joined in</a>. It got me thinking about the stuff around the programming languages I use, and my professional skillset in general.</p>
+
+<p>I&rsquo;ll briefly touch on how a few major events in my life forced me to cut the fat and become more focused.</p>
+
+<p>A few notes, then.</p>
+
+<h1>The programming languages</h1>
+
+<h2>Scala</h2>
+
+<p>My new, old favourite. My go-to language since 2009. I can&rsquo;t add much for 2013 apart from that I&rsquo;m happy to see the community mature around it. We&rsquo;ve gone from &ldquo;How we adopted Scala at company X&rdquo; to &ldquo;How to go back in time using Akka, Play! and XYZ&rdquo;. Oh, and then the <a href="https://www.coursera.org/course/reactive">reactive course</a> was fun too, and highlighted a few holes in my Akka education.</p>
+
+<h2>Java</h2>
+
+<p>Java still mostly pays the bills, and I&rsquo;m writing even better Java thanks to Scala. My editor is told to highlight everything in a shade of gray, apart from re-assignables which are red. It all just flows.</p>
+
+<h2>Python</h2>
+
+<p>I&rsquo;m a big fan of <a href="http://www.pylonsproject.org/">Pylons</a> and have used Python since 2006-ish for tiny webapps, but this year sees me going down the finance route with <a href="http://www.scipy.org/">SciPy</a> and <a href="http://pandas.pydata.org/">Pandas</a> thanks to a <a href="https://www.coursera.org/course/dataanalysis">handful</a> <a href="https://www.coursera.org/course/bigdata">of</a> <a href="https://www.coursera.org/course/compinvesting1">courses</a> I did recently.</p>
+
+<h2>R</h2>
+
+<p>Strangely addictive. I did a <a href="https://www.coursera.org/course/dataanalysis">data analysis course</a> with the famed Johns Hopkins university earlier this year, and thought I would be &ldquo;learning&rdquo; R along the way. If anything, it felt like I already knew R, and the thing that I learned was making a good analysis, writing it perfectly and succintly, and performing an honest peer review. R is perfect for slicing and dicing your data, and it doesn&rsquo;t get in the way.</p>
+
+<h2>Dart</h2>
+
+<p>The main attraction to Dart for me was the promise of compiling to a better Javascript which you can ever hope to write by hand. The Dart syntax itself is familiar, and then you have the odd goodies like the <a href="http://news.dartlang.org/2012/02/method-cascades-in-dart-posted-by-gilad.html">cascade operator</a> (borrowed from Smalltalk) which lets you chain methods without having to return the instance in your API, and being a Scala guy, I love having rockets (=>) scattered all over my code (Dart&rsquo;s syntactic sugar for concise getters).</p>
+
+<h2>Javascript</h2>
+
+<p>Being a backend programmer by trade, I usually don&rsquo;t go for frontend gigs, but a client this year said they don&rsquo;t mind me learning on the job, and I&rsquo;ve heard good things about AngularJS, so I dove right in. I&rsquo;ve touched on Javascript a lot in the past, but this year I spent a significant tenth of my professional time fiddling with it.</p>
+
+<h2>Haskell</h2>
+
+<p>Yes, I really did spend the tiniest amount of time with Haskell, but enough to mention it here. I downloaded, chopped and changed the XMonad code and the take-away for me was that 2014 will see more Haskell.</p>
+
+<h2>Other languages, not-so-much-languages, and tools</h2>
+
+<p>My starter Dart project is a game (where do I find the time?), hence WebGL and subsequently <a href="http://en.wikipedia.org/wiki/OpenGL_Shading_Language">GLSL</a>. I&rsquo;m particularly excited about getting my hands even dirtier with shaders with Mozilla <a href="https://hacks.mozilla.org/2013/11/live-editing-webgl-shaders-with-firefox-developer-tools/">recently announcing</a> live-editing of shaders using Firefox.</p>
+
+<p>I&rsquo;ve always used Capistrano and Chef for my provisioning and configuration needs, but this year I gave Ansible a shot. I hope Ansible stays the way it is: small, simple, elegant. No agents; just SSH.</p>
+
+<h1>Conclusion</h1>
+
+<p>2013 was a bumpy ride. We had a beautiful daughter in June, and I quit my job soon after to freelance from home and be 2 flights of stairs away from her. To be able to learn a few new skills and do 4 courses, I had to make some changes. There are the 5AM starts, the <a href="http://well.blogs.nytimes.com/2013/05/09/the-scientific-7-minute-workout">highly-condensed exercise routine in the morning</a>, diligently deleting anything which doesn&rsquo;t contribute to the plan I have for our life (this includes articles, emails, etc), and just generally getting things done.</p>
+
+<p><img src="http://24.media.tumblr.com/abbc16af261cffe6a867bfbcb4f380e2/tumblr_myfbtyAEiW1ri2z5io1_1280.jpg" width="50%" align="left" alt="The Polar Bear who might have eaten Xmas"> The game I mentioned seems like a distraction, but I feel it&rsquo;s important that I do it. I&rsquo;ve been in love with doodling since I was a kid, and really took it up this year. I&rsquo;m an able musician, and since I can code I thought I&rsquo;d bring these ingredients together and make something nice. (Those umpteen characters and storylines in my head will finally be unleashed!).</p>
+
+<p>Thanks for reading this far. May you have a great 2014.</p>
+
+<p><em>I leave you with a doodle I made a few days ago entitled &ldquo;The Polar Bear who might have eaten Xmas&rdquo;. (Don&rsquo;t worry &mdash; this isn&rsquo;t one of my games ideas ;-)</em></p>
+</div>
+	<div class="breaker"></div>
+	<info class="empty after">
+	</info>
+</div>
+
+  </div>
+  
+  <div class="content">
+  <div class="post">
+
+	<div class="meta">
+		<p class="item tags small">
+		<a href="/tag/scala" class="tag">scala</a>
+		</p>
+	</div>
+	<div class="breaker"></div>
+	<h1 class="title"><a href="/2013/12/27/using-single-and-double-pipes-in-scala-conditionals.html">Using single and double pipes in Scala conditionals</a></h1>
+
+	<info datetime="">
+	Dec 27, 2013
+	</info>
+
+
+	<div class="body">
+		<p>In a nutshell, use a single pipe if you want all the expressions in your conditionals to be evaluated, and a double pipe to conk out as soon as you have <code>true</code>.</p>
+
+<pre>
+scala> def a = { println("a") ; true }
+a: Boolean
+
+scala> def b = { println("b") ; true }
+b: Boolean
+
+scala> def c = { println("c") ; true }
+c: Boolean
+
+scala> if (a || b || c) println("true") else println("false")
+a
+true
+
+scala> if (a | b | c) println("true") else println("false")
+a
+b
+c
+true
+</pre>
+
+</div>
+	<div class="breaker"></div>
+	<info class="empty after">
+	</info>
+</div>
+
+  </div>
+  
+  <div class="content">
+  <div class="post">
+
+	<div class="meta">
+		<p class="item tags small">
+		<a href="/tag/tech" class="tag">tech</a>
+		</p>
+	</div>
+	<div class="breaker"></div>
+	<h1 class="title"><a href="/2013/12/13/heuristics.html">Heuristics</a></h1>
+
+	<info datetime="">
+	Dec 13, 2013
+	</info>
+
+
+	<div class="body">
+		<p>I recently saw a talk by Jack Dorsey where he iterates a list of commandments for this life, and number three is &ldquo;drink only lemon water and red wine&rdquo;.</p>
+
+<iframe width="640" height="360" src="//www.youtube.com/embed/wEQawgkCMOU?feature=player_detailpage&start=1220" frameborder="0" allowfullscreen></iframe>
+
+
+<p>I love red wine, and was intrigued by this lemon water idea. I investigated and it led me to <a href="http://www.lifehack.org/articles/lifestyle/11-benefits-lemon-water-you-didnt-know-about.html">an article</a> which asks how much lemon water is needed. They quote a heuristic:</p>
+
+<p><em>For those who weigh less than 150 pounds, squeeze half a lemon’s worth of juice into a glass of water. If over 150 pounds, use an entire lemon’s juice.</em></p>
+
+<p>This is a heuristic, and it is beautiful. It saved the author from quoting an entire &ldquo;weight in pounds to amount of lemon&rdquo; table.</p>
+
+<p>The heuristic is one of my favourite concepts of all time. During engineering school in the late nineties it became ever more apparent what a powerful concept it is, e.g. using lookup tables when designing flow systems with complex flow dynamics. It makes applied rocket science a bit easier. Or when solving path finding problems where the brute force method is just not a viable option in terms of time complexity.</p>
+
+<p>Anyhoo, I&rsquo;ve reached my 10 minute limit for writing ★, and since I can&rsquo;t do this powerful concept any justice with just a few words, I&rsquo;ll let the <a href="http://en.wikipedia.org/wiki/Heuristic">editors of Wikipedia englighten you</a> further.</p>
+
+<p>★ this is my own heuristic (aka &ldquo;rule of thumb&rdquo;) for not spending too much time on writing.</p>
+</div>
+	<div class="breaker"></div>
+	<info class="empty after">
+	</info>
+</div>
+
+  </div>
+  
+  <div class="content">
+  <div class="post">
+
+	<div class="meta">
+		<p class="item tags small">
+		<a href="/tag/scala" class="tag">scala</a>
+		</p>
+	</div>
+	<div class="breaker"></div>
+	<h1 class="title"><a href="/2013/11/28/project-euler-18-and-67-in-scala-using-foldright-zip-and-sliding.html">Project Euler 18 and 67 in Scala using foldRight, zip and sliding</a></h1>
+
+	<info datetime="">
+	Nov 28, 2013
+	</info>
+
+
+	<div class="body">
+		<p><img src="http://distilleryimage6.ak.instagram.com/267f6626581311e3986c12b308e0cf9c_8.jpg" width="50%" align="right"> I&rsquo;ve recently applied to <a href="http://www.toptal.com/?ref=14568">Toptal</a> and sucked miserably at the entry exam. My algo chops were blunt and I thought I&rsquo;d rectify it by revisiting <a href="http://projecteuler.net/">Project Euler</a>. With the startup last year and the baby this year I just haven&rsquo;t been able to find the time for programming challenges, but that has to change.</p>
+
+<p>Looking at my Project Euler source directory, I saw that I left it at <a href="http://projecteuler.net/problem=17">problem 17</a>, so next up will be <a href="http://projecteuler.net/problem=18">18</a>. The problem description, however, mentions that the <a href="http://projecteuler.net/problem=67">problem repeats itselt as 67</a>, but with a bigger input that will run 20 billion years if you go the brute force route.</p>
+
+<p>I worked a little on this problem last night, and decided to by-pass the brute force solution completely. It was a bit late, though, and I pulled my eyelids open far enough to make it to bed. I then went on to dream about the damn problem all night. I knew there had to be a simple bottom-up fold-based solution, and the <em>voila</em> moment came for me when I realised I had to seed the fold computation with the base layer in the triangle.</p>
+
+<p>Here you go:</p>
+
+<script src="https://gist.github.com/7689573.js"> </script>
+
+
+<h1>A little explanation</h1>
+
+<p>The triangle is represented as a nested list, like so: <strong>List(List(1), List(2, 3), List(4, 5, 6))</strong> and so forth.</p>
+
+<pre>
+
+     1
+    / \
+   2   3
+  / \ / \
+ 4   5   6    <- this is the "base layer" in my explanation.
+</pre>
+
+
+<p>Since you need to add the maximum of the two immediate children to the layer above, a foldRight wouldn&rsquo;t give me all the info I need in the curent iteration. Foldright for me means &ldquo;the data is coming FROM the right&rdquo;, i.e. <strong>List(4, 5, 6)</strong> will be processed first, then <strong>List(2, 3)</strong> but at no point in the iteration will they be available together so I can do the sum. <strong>List(4, 5, 6)</strong> would need to come into the iteration with <strong>List(2, 3)</strong> in another way, and I realised I can use the foldRight&rsquo;s accumulator for that by seeding the foldRight with the base layer in the triangle (aka the last list <strong>List(4, 5, 6)</strong>).</p>
+
+<p>The easiest way was to just seed the foldRight with a list of zeros one element larger than the base layer. You then break it up into pairs using <strong>sliding(2,1)</strong>, take the max of the pairs, and sum the max with the corresponding (thanks to <strong>zip</strong>) element in the layer above.</p>
+
+<pre>
+
+      1
+     / \
+    2   3
+   / \ / \
+  4   5   6
+ / \ / \ / \
+0   0   0   0    <- this becomes the new "base layer", or "seed"
+</pre>
+
+
+<p>No mutable state; no recursion; simple to understand. As <a href="http://www.applied-duality.com">Erik Meijer</a> would say: &ldquo;baby code&rdquo;.</p>
+</div>
+	<div class="breaker"></div>
+	<info class="empty after">
+	</info>
+</div>
+
+  </div>
+  
+  <div class="content">
+  <div class="post">
+
+	<div class="meta">
+		<p class="item tags small">
+		<a href="/tag/tech" class="tag">tech</a>
+		</p>
+	</div>
+	<div class="breaker"></div>
+	<h1 class="title"><a href="/2013/11/10/the-quickest-way-to-get-started-with-dev-vms.html">A webwords Chef cookbook</a></h1>
+
+	<info datetime="">
+	Nov 10, 2013
+	</info>
+
+
+	<div class="body">
+		<p>There are a lot of <a href="http://typesafe.com/activator/templates">new examples</a> up on the Typesafe website, a few with the word &ldquo;Reactive&rdquo; in them to drive home the <a href="http://www.reactivemanifesto.org/">credo</a> behind the framework. One of my favourite examples, however, seem to have been demoted but still remains one of my favourites: <a href="https://github.com/typesafehub/webwords">webwords</a>.</p>
+
+<p><a href="http://webwords.herokuapp.com/">The old Heroku link</a> to the live running instance of webwords does not seem to be up anymore, so I whipped up a quick Chef cookbook with which to spin up your own local instance.</p>
+
+<p>You can find the Github repo <a href="https://github.com/opyate/webwords-vm.git">here</a>. Spin it up and have fun.</p>
+
+<p><em>BTW, join us in doing the <a href="https://www.coursera.org/course/reactive">Principles of Reactive Programming course</a></em></p>
+
+<!--
+
+The original blog post was going to be a guide to getting webwords cookbook working the old fashioned way, but then I discovered Berkshelf and thought it all a bit pointless.
+
+~/C/s/webwords-vm ❯❯❯ du -chs /home/opyate/.rvm/gems/ruby-2.0.0-p247@vagrant
+147M    /home/opyate/.rvm/gems/ruby-2.0.0-p247@vagrant
+147M    total
+
+Remove these two lines from the newly-generated Vagrantfile:
+
+  config.ssh.max_tries = 40
+  config.ssh.timeout   = 120 
+
+These switches have been deprecated.
+
+# Chef server
+
+git clone https://github.com/opscode-cookbooks/chef-server.git
+cd chef-server
+vagrant plugin install vagrant-berkshelf
+vagrant plugin install vagrant-omnibus
+vagrant up
+
+Et voila! Now you have a Chef server.
+
+After logging into the Chef server, it shows the following message, which in turn shows a few things I'll definitely check out and bog about at another time, e.g. Juju and Landscape.
+
+<code>
+~/V/chef-server git:master ❯❯❯ vagrant ssh                                                                                                                                                                         ✱
+Welcome to Ubuntu 12.04.3 LTS (GNU/Linux 3.2.0-55-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Sat Nov  2 20:24:46 UTC 2013
+
+  System load:  1.04              Processes:           137
+  Usage of /:   5.0% of 39.37GB   Users logged in:     0
+  Memory usage: 65%               IP address for eth0: 10.0.2.15
+  Swap usage:   0%                IP address for eth1: 33.33.33.50
+
+  Graph this data and manage this system at https://landscape.canonical.com/
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+  Use Juju to deploy your cloud instances and workloads:
+    https://juju.ubuntu.com/#cloud-precise
+
+0 packages can be updated.
+0 updates are security updates.
+
+vagrant@chef-server:~$ 
+
+</code>
+
+You can see your server at https://33.33.33.50 in your web browser to get started. (the sidebar says to log in with 'admin' and 'p@ssw0rd1', in case you missed it).
+
+# Client
+
+Now, turn your workstation into a chef client.
+
+Firstly, we need knife. Since I rarely muddy my *entire* system with Ruby packages, I localise stuff to gemsets:
+
+rvm use 2.0.0-p247@chef-client --create --default
+sudo apt-get install ruby-bundler
+
+I then use the following Gemfile, and run 'bundle install' on it:
+
+<todo the gemfile>
+
+See ~/VMs/chef-client
+</todo>
+
+
+I re-iterate the important steps from the [official documentation](http://www.opscode.com/blog/2013/03/11/chef-11-server-up-and-running/):
+(please match my steps with the steps on the above blog since I don't provide as much detail)
+
+* copy chef-validator.pem from the chef server to ~/.chef (create the latter if it doesn't exist)
+
+On the chef server, do:
+
+<code>
+vagrant@chef-server:~$ sudo cp /etc/chef-server/chef-validator.pem /vagrant/
+vagrant@chef-server:~$ sudo cp /etc/chef-server/admin.pem /vagrant/
+</code>
+
+Then back in the cloned directory (the directory containing Vagrantfile):
+
+<code>
+mv admin.pem chef-validator.pem ~/.chef  
+</code>
+
+Add the following to the /etc/hosts:
+
+33.33.33.50 chef-server
+
+In the same folder where we installed the Chef gem, run:
+
+knife configure -i
+
+Output should look like the following:
+
+<pre>
+~/V/chef-client ❯❯❯ knife configure -i
+WARNING: No knife configuration file found
+Where should I put the config file? [/home/opyate/.chef/knife.rb] 
+Please enter the chef server URL: [https://annabelle:443] https://chef-server:443
+Please enter a name for the new user: [opyate] 
+Please enter the existing admin name: [admin] 
+Please enter the location of the existing admin's private key: [/etc/chef-server/admin.pem] ~/.chef/admin.pem
+Please enter the validation clientname: [chef-validator] 
+Please enter the location of the validation key: [/etc/chef-server/chef-validator.pem] ~/.chef/chef-validator.pem
+Please enter the path to a chef repository (or leave blank): 
+Creating initial API user...
+Please enter a password for the new user: 
+Created user[opyate]
+Configuration file written to /home/opyate/.chef/knife.rb
+~/V/chef-client ❯❯❯ 
+
+</pre>
+
+For simplicity, I keep my roles and cookbooks in ~/.chef, so I add the following lines to ~/.chef/knife.rb
+
+<code>
+
+current_dir = File.dirname(__FILE__)
+cookbook_path            ["#{current_dir}/cookbooks"]
+role_path                ["#{current_dir}/roles"]
+</code>
+
+I create my first cookbook with:
+
+knife  cookbook create gulp -C "Juan Uys" -m "opyate@gmail.com" -I mit -r md
+
+(gulp = Gullible Unnatural Language Processor)
+
+knife cookbook role create gulp
+
+...and then add to run_list: "recipe[gulp]"
+
+We'll add our own custom Java recipe which will use different defaults, e.g. version 7 instead of 6.
+
+<todo include Java7 recipe here>
+
+Also, instead of downloading Java7's dependencies (i.e. java and apt), Berkshelf now kicks in and manages the cookbook dependencies for us.
+
+-->
+
+</div>
+	<div class="breaker"></div>
+	<info class="empty after">
+	</info>
+</div>
+
+  </div>
+  
+</div>
+
+    <!--/div-->
+    
+    
+    
+    
+    <footer>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/res/cc-cc.png" class="cc">
+        <img src="/res/cc-by.png" class="cc"></a>
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
+      </p>
+    </footer>
+    
+    
+    <script>
+  // curry pre < code to be able to get prettified
+  // If the first line is
+  //   #!-langname\n
+  // Then that line is removed from the code and "langname" is given to prettify.
+  // If "langname" is "none", that prettify is not applied at all.
+  var n,i,L,cn,lang,v = document.getElementsByTagName('pre');
+  var m,lang_re = /^#\!-([a-zA-Z0-9_-]+)\n/;
+  for (i=0,L=v.length;i<L;++i) {
+    n = v.item(i);
+    if ((cn = n.firstChild) && cn.nodeName == 'CODE') {
+      lang = null;
+      if (cn.firstChild.nodeType === Node.TEXT_NODE) {
+        m = lang_re.exec(cn.firstChild.nodeValue);
+        if (m) {
+          lang = m[1].toLowerCase();
+          cn.firstChild.nodeValue = cn.firstChild.nodeValue.substr(m[0].length);
+          if (lang === 'none') {
+            continue;
+          }
+        }
+      }
+      n.setAttribute('class', 'prettyprint'+(lang ? ' lang-' + lang : ''));
+    }
+  }
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28222168-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+	<meta name="robots" content="INDEX,FOLLOW" />
+    <title>Web TV (2004) &mdash; Juan Uys</title>
+    <meta name="keywords" content="opyate, juan m uys, juan uys, south african programmer, south african hacker" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href='http://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="screen, projection" href="/res/screen.css" type="text/css">
+    <link rel="stylesheet" media="print" href="/res/print.css" type="text/css">
+    <link rel="alternate" type="application/atom+xml" title="Juan Uys" href="http://feeds.feedburner.com/opyate">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/res/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/res/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/res/apple-touch-icon-114x114-precomposed.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@opyate">
+    
+    
+    <meta property="og:title" content="Web TV (2004)">
+      
+      <meta name="description" content="This project failed miserably. Imagine a modern-day MPEG being decoded by a 25MHz 386 PC. Painfull. Well, that exactly what this project does for the...">
+      <meta name="og:description" content="This project failed miserably. Imagine a modern-day MPEG being decoded by a 25MHz 386 PC. Painfull. Well, that exactly what this project does for the...">
+      
+    
+    
+    <meta property="og:url" content="http://opyate.com/projects/webtv/">
+    <meta property="og:site_name" content="opyate.com">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_GB" />
+    
+    
+    <script>
+  //html { zoom:50%; }
+  if (window.addEventListener) {
+    var sidebarAdjustTimer;
+    function updateOrientation(orientationChangeEvent) {
+      if (sidebarAdjustTimer) clearInterval(sidebarAdjustTimer);
+      //console.log('window.orientation -> '+window.orientation);
+      if (window.orientation === -90 || window.orientation === 90) {
+        // landscape
+        var sidebar = document.getElementById('sidebar');
+        if (!sidebar.src || sidebar.src === '') {
+          sidebar.src = '/archive/sidebar.html';
+        }
+        sidebarAdjustTimer = setInterval(function() {
+          var height = Math.round(document.height * 1.6);
+          if (sidebar.height != height) {
+            sidebar.height = height;
+            sidebar.style.height = height + 'px';
+          }
+        },500);
+      } else {
+        // portrait
+      }
+    }
+    window.addEventListener('orientationchange', updateOrientation);
+    document.addEventListener('DOMSubtreeModified', function(ev) {
+      if (document.getElementById('sidebar')) {
+        document.removeEventListener('DOMSubtreeModified', arguments.callee);
+        updateOrientation();
+      }
+    });
+  }
+</script>
+    
+    
+  </head>
+  <body>
+    <script>
+      if (window.navigator.userAgent.indexOf('iPad') != -1) {
+        document.documentElement.className = 'ios ipad';
+        window.opyateHostIsIOS = 'ipad';
+      } else if (window.navigator.userAgent.indexOf('iPhone') != -1) {
+        document.documentElement.className = 'ios iphone';
+        window.opyateHostIsIOS = 'iphone';
+      }
+    </script>
+    <iframe id="sidebar"></iframe>
+    <header>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/res/signature-2-2.png" width="160" height="50" alt="Signature"></a></h1>
+      <ul class="navigation">
+        <li><a href="/projects/"class="active" title="Projects I am or was involved in">Projects</a></li>
+        <li><a href="/archive/" title="Archived articles">Archive</a></li>
+        <li><a href="/about/resume/">About me</a></li>
+      </ul>
+    </header>
+    <!--div class="wrapper content"-->
+      <div class="content">
+  <p>This project failed miserably. Imagine a modern-day MPEG being decoded by a 25MHz 386 PC. Painfull. Well, that exactly what this project does for the modern computer (1.7GHz Pentium M).</p>
+
+<p>Basically, I tried to emulate a video monitor by drawing web-based pixels on the screen. A pixel can be either:</p>
+
+<ul>
+<li>a DIV tag</li>
+<li>an IMG tag with a 1x1 GIF, and you&rsquo;d need 256 individual GIFs for this (or more)</li>
+<li>a SPAN tag containing a character with HTML code 9606 which yields a little square like this: ▆</li>
+</ul>
+
+
+<p>The aim was to convert an MPEG movie into a Javascript array so that anyone with a Javascript web browser can watch a clip from anywhere. They wouldn&rsquo;t need any plugins.</p>
+
+<p>Before I came to that part I did some tests on the WebTV. I tried to write random arrays to the WebTV to see how fast it can draw. Here are the findings for a tv with 7 548 pixels:</p>
+
+<ul>
+<li>DIV tags fails miserably in all tests. They are slow to alter.</li>
+<li>GIFs are ok if you are going monochrome (jumping between two states). Check out <a href="http://bitconjurer.org/life/">life by Bram Cohen</a>.</li>
+<li>The SPAN tag takes up to 30 seconds to draw a new frame. The performance becomes acceptable when the tv has about 60 pixels.</li>
+</ul>
+
+
+<p>Anyway, the tv can be seen <a href="/projects/webtv/webtv.html">here</a> happily drawing random pixels <em>[EDIT: this doesn&rsquo;t work on IE]</em>. Maybe the code can be optimised some more, or the Javascript engine for Firefox can use a bit of tweaking, in my case. Either way, on to the next project for now.</p>
+
+</div>
+
+    <!--/div-->
+    
+    
+    
+    
+    <footer>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/res/cc-cc.png" class="cc">
+        <img src="/res/cc-by.png" class="cc"></a>
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
+      </p>
+    </footer>
+    
+    
+    <script>
+  // curry pre < code to be able to get prettified
+  // If the first line is
+  //   #!-langname\n
+  // Then that line is removed from the code and "langname" is given to prettify.
+  // If "langname" is "none", that prettify is not applied at all.
+  var n,i,L,cn,lang,v = document.getElementsByTagName('pre');
+  var m,lang_re = /^#\!-([a-zA-Z0-9_-]+)\n/;
+  for (i=0,L=v.length;i<L;++i) {
+    n = v.item(i);
+    if ((cn = n.firstChild) && cn.nodeName == 'CODE') {
+      lang = null;
+      if (cn.firstChild.nodeType === Node.TEXT_NODE) {
+        m = lang_re.exec(cn.firstChild.nodeValue);
+        if (m) {
+          lang = m[1].toLowerCase();
+          cn.firstChild.nodeValue = cn.firstChild.nodeValue.substr(m[0].length);
+          if (lang === 'none') {
+            continue;
+          }
+        }
+      }
+      n.setAttribute('class', 'prettyprint'+(lang ? ' lang-' + lang : ''));
+    }
+  }
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28222168-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE HTML>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+	<meta name="robots" content="INDEX,FOLLOW" />
+    <title>A webwords Chef cookbook &mdash; Juan Uys</title>
+    <meta name="keywords" content="opyate, juan m uys, juan uys, south african programmer, south african hacker" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href='http://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="screen, projection" href="/res/screen.css" type="text/css">
+    <link rel="stylesheet" media="print" href="/res/print.css" type="text/css">
+    <link rel="alternate" type="application/atom+xml" title="Juan Uys" href="http://feeds.feedburner.com/opyate">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/res/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/res/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/res/apple-touch-icon-114x114-precomposed.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@opyate">
+    
+    
+    <meta property="og:title" content="A webwords Chef cookbook">
+      
+      <meta name="description" content="A webwords Chef cookbook">
+      <meta name="og:description" content="A webwords Chef cookbook">
+      
+    
+    
+    <meta property="og:image" content="http://www.gravatar.com/avatar/c22bbf2aac2a3841d80f5363d73e3ebe.png?s=512">
+    
+    <meta property="og:url" content="http://opyate.com/2013/11/10/the-quickest-way-to-get-started-with-dev-vms.html">
+    <meta property="og:site_name" content="opyate.com">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_GB" />
+    
+    <meta property="article:published_time" content="2013-11-10">
+    
+    
+    <script>
+  //html { zoom:50%; }
+  if (window.addEventListener) {
+    var sidebarAdjustTimer;
+    function updateOrientation(orientationChangeEvent) {
+      if (sidebarAdjustTimer) clearInterval(sidebarAdjustTimer);
+      //console.log('window.orientation -> '+window.orientation);
+      if (window.orientation === -90 || window.orientation === 90) {
+        // landscape
+        var sidebar = document.getElementById('sidebar');
+        if (!sidebar.src || sidebar.src === '') {
+          sidebar.src = '/archive/sidebar.html';
+        }
+        sidebarAdjustTimer = setInterval(function() {
+          var height = Math.round(document.height * 1.6);
+          if (sidebar.height != height) {
+            sidebar.height = height;
+            sidebar.style.height = height + 'px';
+          }
+        },500);
+      } else {
+        // portrait
+      }
+    }
+    window.addEventListener('orientationchange', updateOrientation);
+    document.addEventListener('DOMSubtreeModified', function(ev) {
+      if (document.getElementById('sidebar')) {
+        document.removeEventListener('DOMSubtreeModified', arguments.callee);
+        updateOrientation();
+      }
+    });
+  }
+</script>
+    
+    
+  </head>
+  <body>
+    <script>
+      if (window.navigator.userAgent.indexOf('iPad') != -1) {
+        document.documentElement.className = 'ios ipad';
+        window.opyateHostIsIOS = 'ipad';
+      } else if (window.navigator.userAgent.indexOf('iPhone') != -1) {
+        document.documentElement.className = 'ios iphone';
+        window.opyateHostIsIOS = 'iphone';
+      }
+    </script>
+    <iframe id="sidebar"></iframe>
+    <header>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/res/signature-2-2.png" width="160" height="50" alt="Signature"></a></h1>
+      <ul class="navigation">
+        <li><a href="/projects/" title="Projects I am or was involved in">Projects</a></li>
+        <li><a href="/archive/" title="Archived articles">Archive</a></li>
+        <li><a href="/about/resume/">About me</a></li>
+      </ul>
+    </header>
+    <!--div class="wrapper content"-->
+      <div class="content">
+  <div class="post single">
+	<div class="meta">
+		<p class="item tags small">
+		<a href="/tag/tech" class="tag">tech</a>
+		</p>
+	</div>
+	<div class="breaker"></div>
+    <h1>A webwords Chef cookbook</h1>
+
+    <info datetime="2013-11-10">
+      Nov 10, 2013
+    </info>
+
+
+    <div class="body"><p>There are a lot of <a href="http://typesafe.com/activator/templates">new examples</a> up on the Typesafe website, a few with the word &ldquo;Reactive&rdquo; in them to drive home the <a href="http://www.reactivemanifesto.org/">credo</a> behind the framework. One of my favourite examples, however, seem to have been demoted but still remains one of my favourites: <a href="https://github.com/typesafehub/webwords">webwords</a>.</p>
+
+<p><a href="http://webwords.herokuapp.com/">The old Heroku link</a> to the live running instance of webwords does not seem to be up anymore, so I whipped up a quick Chef cookbook with which to spin up your own local instance.</p>
+
+<p>You can find the Github repo <a href="https://github.com/opyate/webwords-vm.git">here</a>. Spin it up and have fun.</p>
+
+<p><em>BTW, join us in doing the <a href="https://www.coursera.org/course/reactive">Principles of Reactive Programming course</a></em></p>
+
+<!--
+
+The original blog post was going to be a guide to getting webwords cookbook working the old fashioned way, but then I discovered Berkshelf and thought it all a bit pointless.
+
+~/C/s/webwords-vm ❯❯❯ du -chs /home/opyate/.rvm/gems/ruby-2.0.0-p247@vagrant
+147M    /home/opyate/.rvm/gems/ruby-2.0.0-p247@vagrant
+147M    total
+
+Remove these two lines from the newly-generated Vagrantfile:
+
+  config.ssh.max_tries = 40
+  config.ssh.timeout   = 120 
+
+These switches have been deprecated.
+
+# Chef server
+
+git clone https://github.com/opscode-cookbooks/chef-server.git
+cd chef-server
+vagrant plugin install vagrant-berkshelf
+vagrant plugin install vagrant-omnibus
+vagrant up
+
+Et voila! Now you have a Chef server.
+
+After logging into the Chef server, it shows the following message, which in turn shows a few things I'll definitely check out and bog about at another time, e.g. Juju and Landscape.
+
+<code>
+~/V/chef-server git:master ❯❯❯ vagrant ssh                                                                                                                                                                         ✱
+Welcome to Ubuntu 12.04.3 LTS (GNU/Linux 3.2.0-55-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Sat Nov  2 20:24:46 UTC 2013
+
+  System load:  1.04              Processes:           137
+  Usage of /:   5.0% of 39.37GB   Users logged in:     0
+  Memory usage: 65%               IP address for eth0: 10.0.2.15
+  Swap usage:   0%                IP address for eth1: 33.33.33.50
+
+  Graph this data and manage this system at https://landscape.canonical.com/
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+  Use Juju to deploy your cloud instances and workloads:
+    https://juju.ubuntu.com/#cloud-precise
+
+0 packages can be updated.
+0 updates are security updates.
+
+vagrant@chef-server:~$ 
+
+</code>
+
+You can see your server at https://33.33.33.50 in your web browser to get started. (the sidebar says to log in with 'admin' and 'p@ssw0rd1', in case you missed it).
+
+# Client
+
+Now, turn your workstation into a chef client.
+
+Firstly, we need knife. Since I rarely muddy my *entire* system with Ruby packages, I localise stuff to gemsets:
+
+rvm use 2.0.0-p247@chef-client --create --default
+sudo apt-get install ruby-bundler
+
+I then use the following Gemfile, and run 'bundle install' on it:
+
+<todo the gemfile>
+
+See ~/VMs/chef-client
+</todo>
+
+
+I re-iterate the important steps from the [official documentation](http://www.opscode.com/blog/2013/03/11/chef-11-server-up-and-running/):
+(please match my steps with the steps on the above blog since I don't provide as much detail)
+
+* copy chef-validator.pem from the chef server to ~/.chef (create the latter if it doesn't exist)
+
+On the chef server, do:
+
+<code>
+vagrant@chef-server:~$ sudo cp /etc/chef-server/chef-validator.pem /vagrant/
+vagrant@chef-server:~$ sudo cp /etc/chef-server/admin.pem /vagrant/
+</code>
+
+Then back in the cloned directory (the directory containing Vagrantfile):
+
+<code>
+mv admin.pem chef-validator.pem ~/.chef  
+</code>
+
+Add the following to the /etc/hosts:
+
+33.33.33.50 chef-server
+
+In the same folder where we installed the Chef gem, run:
+
+knife configure -i
+
+Output should look like the following:
+
+<pre>
+~/V/chef-client ❯❯❯ knife configure -i
+WARNING: No knife configuration file found
+Where should I put the config file? [/home/opyate/.chef/knife.rb] 
+Please enter the chef server URL: [https://annabelle:443] https://chef-server:443
+Please enter a name for the new user: [opyate] 
+Please enter the existing admin name: [admin] 
+Please enter the location of the existing admin's private key: [/etc/chef-server/admin.pem] ~/.chef/admin.pem
+Please enter the validation clientname: [chef-validator] 
+Please enter the location of the validation key: [/etc/chef-server/chef-validator.pem] ~/.chef/chef-validator.pem
+Please enter the path to a chef repository (or leave blank): 
+Creating initial API user...
+Please enter a password for the new user: 
+Created user[opyate]
+Configuration file written to /home/opyate/.chef/knife.rb
+~/V/chef-client ❯❯❯ 
+
+</pre>
+
+For simplicity, I keep my roles and cookbooks in ~/.chef, so I add the following lines to ~/.chef/knife.rb
+
+<code>
+
+current_dir = File.dirname(__FILE__)
+cookbook_path            ["#{current_dir}/cookbooks"]
+role_path                ["#{current_dir}/roles"]
+</code>
+
+I create my first cookbook with:
+
+knife  cookbook create gulp -C "Juan Uys" -m "opyate@gmail.com" -I mit -r md
+
+(gulp = Gullible Unnatural Language Processor)
+
+knife cookbook role create gulp
+
+...and then add to run_list: "recipe[gulp]"
+
+We'll add our own custom Java recipe which will use different defaults, e.g. version 7 instead of 6.
+
+<todo include Java7 recipe here>
+
+Also, instead of downloading Java7's dependencies (i.e. java and apt), Berkshelf now kicks in and manages the cookbook dependencies for us.
+
+-->
+
+</div>
+    <div class="breaker"></div>
+
+    <info class="after">
+<div class="fb-like" data-href="http://opyate.com/2013/11/10/the-quickest-way-to-get-started-with-dev-vms.html" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
+    </info>
+
+  
+  </div>
+</div>
+
+<script type="text/javascript">
+(function() {
+var qs = document.location.search;
+var current_etag = qs.match(/etag=("?[a-zA-Z0-9_-]+)/);
+if (current_etag !== null) { current_etag = current_etag[1]; }
+var scrolly = qs.match(/scrolly=([0-9]+)/);
+if (scrolly) {
+  scrolly = parseInt(scrolly[1]);
+  window.scrollTo(window.scrollX, scrolly);
+  setTimeout(function () {
+    window.scrollTo(window.scrollX, scrolly);
+  }, 10);
+}
+
+function check() {
+  var r = new XMLHttpRequest();
+  var url = document.location.href + ((qs && qs !== '') ? '&' : '?') + 'r=' + Math.random();
+  r.open('GET', url, true);
+  r.onreadystatechange = function() {
+    if (r.readyState == 4){
+      var found_etag = r.getResponseHeader('Etag').replace(/^"|"$/g);
+      //console.log('current_etag:', current_etag, 'found_etag:', found_etag);
+      if (current_etag === null) {
+        current_etag = found_etag;
+      } else if (found_etag !== current_etag) {
+        document.location.search =
+          '?etag=' + encodeURIComponent(found_etag) +
+          '&scrolly=' + window.scrollY;
+        return;
+      }
+      setTimeout(check, 500);
+    }
+  };
+  r.send(null);
+}
+check();
+})();
+</script>
+
+
+    <!--/div-->
+    
+    
+    
+    
+    <footer>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/res/cc-cc.png" class="cc">
+        <img src="/res/cc-by.png" class="cc"></a>
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
+      </p>
+    </footer>
+    
+    
+    <script>
+  // curry pre < code to be able to get prettified
+  // If the first line is
+  //   #!-langname\n
+  // Then that line is removed from the code and "langname" is given to prettify.
+  // If "langname" is "none", that prettify is not applied at all.
+  var n,i,L,cn,lang,v = document.getElementsByTagName('pre');
+  var m,lang_re = /^#\!-([a-zA-Z0-9_-]+)\n/;
+  for (i=0,L=v.length;i<L;++i) {
+    n = v.item(i);
+    if ((cn = n.firstChild) && cn.nodeName == 'CODE') {
+      lang = null;
+      if (cn.firstChild.nodeType === Node.TEXT_NODE) {
+        m = lang_re.exec(cn.firstChild.nodeValue);
+        if (m) {
+          lang = m[1].toLowerCase();
+          cn.firstChild.nodeValue = cn.firstChild.nodeValue.substr(m[0].length);
+          if (lang === 'none') {
+            continue;
+          }
+        }
+      }
+      n.setAttribute('class', 'prettyprint'+(lang ? ' lang-' + lang : ''));
+    }
+  }
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28222168-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

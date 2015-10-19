@@ -1,9 +1,97 @@
----
-layout: page
-title: Archive
----
-
-<script>
+<!DOCTYPE HTML>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+	<meta name="robots" content="INDEX,FOLLOW" />
+    <title>Archive &mdash; Juan Uys</title>
+    <meta name="keywords" content="opyate, juan m uys, juan uys, south african programmer, south african hacker" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href='http://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="screen, projection" href="/res/screen.css" type="text/css">
+    <link rel="stylesheet" media="print" href="/res/print.css" type="text/css">
+    <link rel="alternate" type="application/atom+xml" title="Juan Uys" href="http://feeds.feedburner.com/opyate">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/res/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/res/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/res/apple-touch-icon-114x114-precomposed.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@opyate">
+    
+    
+    <meta property="og:title" content="Archive">
+      
+      <meta name="description" content="Jun 17, 2015 &mdash; Add logging to PostgresQL on Docker (tagged postgresql docker ) Jun 14, 2015 &mdash; A tale of two money transfers (tagged...">
+      <meta name="og:description" content="Jun 17, 2015 &mdash; Add logging to PostgresQL on Docker (tagged postgresql docker ) Jun 14, 2015 &mdash; A tale of two money transfers (tagged...">
+      
+    
+    
+    <meta property="og:url" content="http://opyate.com/archive/">
+    <meta property="og:site_name" content="opyate.com">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_GB" />
+    
+    
+    <script>
+  //html { zoom:50%; }
+  if (window.addEventListener) {
+    var sidebarAdjustTimer;
+    function updateOrientation(orientationChangeEvent) {
+      if (sidebarAdjustTimer) clearInterval(sidebarAdjustTimer);
+      //console.log('window.orientation -> '+window.orientation);
+      if (window.orientation === -90 || window.orientation === 90) {
+        // landscape
+        var sidebar = document.getElementById('sidebar');
+        if (!sidebar.src || sidebar.src === '') {
+          sidebar.src = '/archive/sidebar.html';
+        }
+        sidebarAdjustTimer = setInterval(function() {
+          var height = Math.round(document.height * 1.6);
+          if (sidebar.height != height) {
+            sidebar.height = height;
+            sidebar.style.height = height + 'px';
+          }
+        },500);
+      } else {
+        // portrait
+      }
+    }
+    window.addEventListener('orientationchange', updateOrientation);
+    document.addEventListener('DOMSubtreeModified', function(ev) {
+      if (document.getElementById('sidebar')) {
+        document.removeEventListener('DOMSubtreeModified', arguments.callee);
+        updateOrientation();
+      }
+    });
+  }
+</script>
+    
+    
+  </head>
+  <body>
+    <script>
+      if (window.navigator.userAgent.indexOf('iPad') != -1) {
+        document.documentElement.className = 'ios ipad';
+        window.opyateHostIsIOS = 'ipad';
+      } else if (window.navigator.userAgent.indexOf('iPhone') != -1) {
+        document.documentElement.className = 'ios iphone';
+        window.opyateHostIsIOS = 'iphone';
+      }
+    </script>
+    <iframe id="sidebar"></iframe>
+    <header>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/res/signature-2-2.png" width="160" height="50" alt="Signature"></a></h1>
+      <ul class="navigation">
+        <li><a href="/projects/" title="Projects I am or was involved in">Projects</a></li>
+        <li><a href="/archive/"class="active" title="Archived articles">Archive</a></li>
+        <li><a href="/about/resume/">About me</a></li>
+      </ul>
+    </header>
+    <!--div class="wrapper content"-->
+      <div class="content">
+  <script>
   (function() {
     var cx = '018216771086175506263:s2hxojes3vm';
     var gcse = document.createElement('script');
@@ -18,22 +106,553 @@ title: Archive
 <gcse:search></gcse:search>
 <!--
 <ul>
-{% for post in site.posts %}
+
   <li>
-    {{ post.date | date: "%b %d, %Y"  }} &mdash; <a href="{{ post.url }}">{{ post.title }}</a>
+    Jun 17, 2015 &mdash; <a href="/2015/06/17/add-logging-to-postgresql-on-docker.html">Add logging to PostgresQL on Docker</a>
   </li>
-{% endfor %}
+
+  <li>
+    Jun 14, 2015 &mdash; <a href="/2015/06/14/a-tale-of-two-money-transfers.html">A tale of two money transfers</a>
+  </li>
+
+  <li>
+    Dec 31, 2014 &mdash; <a href="/2014/12/31/2014-in-review.html">2014 — the year in review</a>
+  </li>
+
+  <li>
+    Apr 17, 2014 &mdash; <a href="/2014/04/17/i-made-my-daughter-a-book-for-her-first-birthday.html">I made my daughter a book for her first birthday.</a>
+  </li>
+
+  <li>
+    Jan 29, 2014 &mdash; <a href="/2014/01/29/more-jq-fun.html">More jq fun</a>
+  </li>
+
+  <li>
+    Dec 31, 2013 &mdash; <a href="/2013/12/31/code-and-tools-the-year-in-review.html">2103 — the year's code and tooling in review</a>
+  </li>
+
+  <li>
+    Dec 27, 2013 &mdash; <a href="/2013/12/27/using-single-and-double-pipes-in-scala-conditionals.html">Using single and double pipes in Scala conditionals</a>
+  </li>
+
+  <li>
+    Dec 13, 2013 &mdash; <a href="/2013/12/13/heuristics.html">Heuristics</a>
+  </li>
+
+  <li>
+    Nov 28, 2013 &mdash; <a href="/2013/11/28/project-euler-18-and-67-in-scala-using-foldright-zip-and-sliding.html">Project Euler 18 and 67 in Scala using foldRight, zip and sliding</a>
+  </li>
+
+  <li>
+    Nov 10, 2013 &mdash; <a href="/2013/11/10/the-quickest-way-to-get-started-with-dev-vms.html">A webwords Chef cookbook</a>
+  </li>
+
+  <li>
+    Nov 05, 2013 &mdash; <a href="/2013/11/05/my-new-favourite-way-to-pretty-print-json-in-vim.html">Pretty-print JSON in vim</a>
+  </li>
+
+  <li>
+    Nov 02, 2013 &mdash; <a href="/2013/11/02/dell-xps-13-linux-edition-makes-me-happy.html">Dell XPS 13 LE</a>
+  </li>
+
+  <li>
+    Nov 01, 2013 &mdash; <a href="/2013/11/01/angularjs-and-internet-explorer-woes.html">AngularJS and Internet Explorer woes</a>
+  </li>
+
+  <li>
+    Jul 19, 2013 &mdash; <a href="/2013/07/19/failed-startup-2.html">Failed startup #2</a>
+  </li>
+
+  <li>
+    Jul 16, 2013 &mdash; <a href="/2013/07/16/redefine-thyself.html">Redefine thyself.</a>
+  </li>
+
+  <li>
+    Nov 20, 2012 &mdash; <a href="/2012/11/20/pollarize-architecture-at-a-glance.html">Pollarize architecture at a glance</a>
+  </li>
+
+  <li>
+    Oct 15, 2012 &mdash; <a href="/2012/10/15/adding-sms-functionality-with-twilio.html">Adding SMS functionality with Twilio</a>
+  </li>
+
+  <li>
+    Jul 31, 2012 &mdash; <a href="/2012/07/31/semantic-web-deep-dive.html">Semantic Web Deep Dive</a>
+  </li>
+
+  <li>
+    Feb 27, 2012 &mdash; <a href="/2012/02/27/consistent-hashing-using-scala-and-gnuplot.html">Consistent hashing with Scala</a>
+  </li>
+
+  <li>
+    Feb 24, 2012 &mdash; <a href="/2012/02/24/programmers-bill-of-rights-2012.html">Programmer’s Bill Of Rights 2012</a>
+  </li>
+
+  <li>
+    Feb 24, 2012 &mdash; <a href="/2012/02/24/be-careful-what-you-type.html">Be careful what you type when using a terminal emulator…</a>
+  </li>
+
+  <li>
+    Jan 25, 2012 &mdash; <a href="/2012/01/25/read-receipts-for-the-rest-of-us.html">Read Receipts for the rest of us</a>
+  </li>
+
+  <li>
+    Jan 17, 2012 &mdash; <a href="/2012/01/17/a-dream-and-a-lesson.html">A dream and a lesson</a>
+  </li>
+
+  <li>
+    Jan 16, 2012 &mdash; <a href="/2012/01/16/failed-startup-1.html">Failed startup #1</a>
+  </li>
+
+  <li>
+    Sep 13, 2010 &mdash; <a href="/2010/09/13/startup-day-6-doubts-and-hamsters.html">Startup Day #6 — Doubts and hamsters</a>
+  </li>
+
+  <li>
+    Sep 09, 2010 &mdash; <a href="/2010/09/09/startup-day-2.html">Startup Day #2</a>
+  </li>
+
+  <li>
+    Sep 08, 2010 &mdash; <a href="/2010/09/08/startup-day-1.html">Startup Day #1</a>
+  </li>
+
+  <li>
+    Sep 07, 2010 &mdash; <a href="/2010/09/07/just-do-it.html">Just do it.</a>
+  </li>
+
+  <li>
+    Apr 05, 2010 &mdash; <a href="/2010/04/05/clear-the-java-mucky-muck-from-ubuntu.html">Clear the Java mucky muck from Ubuntu.</a>
+  </li>
+
+  <li>
+    Jul 10, 2009 &mdash; <a href="/2009/07/10/semantic-web.html">Semantic Web — exciting times!</a>
+  </li>
+
+  <li>
+    Oct 19, 2005 &mdash; <a href="/2005/10/19/breadcrumbs.html">Breadcrumbs with Javascript</a>
+  </li>
+
+  <li>
+    Jun 01, 2005 &mdash; <a href="/2005/06/01/webhelper.html">WebHelper</a>
+  </li>
+
+  <li>
+    Jun 13, 2004 &mdash; <a href="/2004/06/13/web-tv.html">Web TV</a>
+  </li>
+
+  <li>
+    May 30, 2002 &mdash; <a href="/2002/05/30/db-bean-creator-for-java-and-mysql-postgresql.html">DB Bean Creator for Java and MySQL/PostgresQL</a>
+  </li>
+
 </ul>
 -->
 <ul>
-{% for post in site.posts %}
+
   <li>
-    {{ post.date | date: "%b %d, %Y"  }} &mdash; <a href="{{ post.url }}">{{ post.title }}</a>
+    Jun 17, 2015 &mdash; <a href="/2015/06/17/add-logging-to-postgresql-on-docker.html">Add logging to PostgresQL on Docker</a>
 	<em style="color: gray;">(tagged
-	{% for tag in post.tags %}
-	<a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a>
-	{% endfor %}
+	
+	<a class="tag_list_link" href="/tag/postgresql">postgresql</a>
+	
+	<a class="tag_list_link" href="/tag/docker">docker</a>
+	
 	)</em>
   </li>
-{% endfor %}
+
+  <li>
+    Jun 14, 2015 &mdash; <a href="/2015/06/14/a-tale-of-two-money-transfers.html">A tale of two money transfers</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/life">life</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Dec 31, 2014 &mdash; <a href="/2014/12/31/2014-in-review.html">2014 — the year in review</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/tech">tech</a>
+	
+	<a class="tag_list_link" href="/tag/life">life</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Apr 17, 2014 &mdash; <a href="/2014/04/17/i-made-my-daughter-a-book-for-her-first-birthday.html">I made my daughter a book for her first birthday.</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/book">book</a>
+	
+	<a class="tag_list_link" href="/tag/fatherhood">fatherhood</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Jan 29, 2014 &mdash; <a href="/2014/01/29/more-jq-fun.html">More jq fun</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/tech">tech</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Dec 31, 2013 &mdash; <a href="/2013/12/31/code-and-tools-the-year-in-review.html">2103 — the year's code and tooling in review</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/tech">tech</a>
+	
+	<a class="tag_list_link" href="/tag/life">life</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Dec 27, 2013 &mdash; <a href="/2013/12/27/using-single-and-double-pipes-in-scala-conditionals.html">Using single and double pipes in Scala conditionals</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/scala">scala</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Dec 13, 2013 &mdash; <a href="/2013/12/13/heuristics.html">Heuristics</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/tech">tech</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Nov 28, 2013 &mdash; <a href="/2013/11/28/project-euler-18-and-67-in-scala-using-foldright-zip-and-sliding.html">Project Euler 18 and 67 in Scala using foldRight, zip and sliding</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/scala">scala</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Nov 10, 2013 &mdash; <a href="/2013/11/10/the-quickest-way-to-get-started-with-dev-vms.html">A webwords Chef cookbook</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/tech">tech</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Nov 05, 2013 &mdash; <a href="/2013/11/05/my-new-favourite-way-to-pretty-print-json-in-vim.html">Pretty-print JSON in vim</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/tech">tech</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Nov 02, 2013 &mdash; <a href="/2013/11/02/dell-xps-13-linux-edition-makes-me-happy.html">Dell XPS 13 LE</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/tech">tech</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Nov 01, 2013 &mdash; <a href="/2013/11/01/angularjs-and-internet-explorer-woes.html">AngularJS and Internet Explorer woes</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/tech">tech</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Jul 19, 2013 &mdash; <a href="/2013/07/19/failed-startup-2.html">Failed startup #2</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/startup">startup</a>
+	
+	<a class="tag_list_link" href="/tag/failure">failure</a>
+	
+	<a class="tag_list_link" href="/tag/pollarize">pollarize</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Jul 16, 2013 &mdash; <a href="/2013/07/16/redefine-thyself.html">Redefine thyself.</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/life">life</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Nov 20, 2012 &mdash; <a href="/2012/11/20/pollarize-architecture-at-a-glance.html">Pollarize architecture at a glance</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/tech">tech</a>
+	
+	<a class="tag_list_link" href="/tag/scala">scala</a>
+	
+	<a class="tag_list_link" href="/tag/architecture">architecture</a>
+	
+	<a class="tag_list_link" href="/tag/pollarize">pollarize</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Oct 15, 2012 &mdash; <a href="/2012/10/15/adding-sms-functionality-with-twilio.html">Adding SMS functionality with Twilio</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/tech">tech</a>
+	
+	<a class="tag_list_link" href="/tag/scala">scala</a>
+	
+	<a class="tag_list_link" href="/tag/twilio">twilio</a>
+	
+	<a class="tag_list_link" href="/tag/pollarize">pollarize</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Jul 31, 2012 &mdash; <a href="/2012/07/31/semantic-web-deep-dive.html">Semantic Web Deep Dive</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/tech">tech</a>
+	
+	<a class="tag_list_link" href="/tag/semweb">semweb</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Feb 27, 2012 &mdash; <a href="/2012/02/27/consistent-hashing-using-scala-and-gnuplot.html">Consistent hashing with Scala</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/tech">tech</a>
+	
+	<a class="tag_list_link" href="/tag/scala">scala</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Feb 24, 2012 &mdash; <a href="/2012/02/24/programmers-bill-of-rights-2012.html">Programmer’s Bill Of Rights 2012</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/tech">tech</a>
+	
+	<a class="tag_list_link" href="/tag/life">life</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Feb 24, 2012 &mdash; <a href="/2012/02/24/be-careful-what-you-type.html">Be careful what you type when using a terminal emulator…</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/tech">tech</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Jan 25, 2012 &mdash; <a href="/2012/01/25/read-receipts-for-the-rest-of-us.html">Read Receipts for the rest of us</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/tech">tech</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Jan 17, 2012 &mdash; <a href="/2012/01/17/a-dream-and-a-lesson.html">A dream and a lesson</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/life">life</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Jan 16, 2012 &mdash; <a href="/2012/01/16/failed-startup-1.html">Failed startup #1</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/startup">startup</a>
+	
+	<a class="tag_list_link" href="/tag/failure">failure</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Sep 13, 2010 &mdash; <a href="/2010/09/13/startup-day-6-doubts-and-hamsters.html">Startup Day #6 — Doubts and hamsters</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/startup">startup</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Sep 09, 2010 &mdash; <a href="/2010/09/09/startup-day-2.html">Startup Day #2</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/startup">startup</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Sep 08, 2010 &mdash; <a href="/2010/09/08/startup-day-1.html">Startup Day #1</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/startup">startup</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Sep 07, 2010 &mdash; <a href="/2010/09/07/just-do-it.html">Just do it.</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/startup">startup</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Apr 05, 2010 &mdash; <a href="/2010/04/05/clear-the-java-mucky-muck-from-ubuntu.html">Clear the Java mucky muck from Ubuntu.</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/tech">tech</a>
+	
+	<a class="tag_list_link" href="/tag/java">java</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Jul 10, 2009 &mdash; <a href="/2009/07/10/semantic-web.html">Semantic Web — exciting times!</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/tech">tech</a>
+	
+	<a class="tag_list_link" href="/tag/semweb">semweb</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Oct 19, 2005 &mdash; <a href="/2005/10/19/breadcrumbs.html">Breadcrumbs with Javascript</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/tech">tech</a>
+	
+	<a class="tag_list_link" href="/tag/javascript">javascript</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Jun 01, 2005 &mdash; <a href="/2005/06/01/webhelper.html">WebHelper</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/tech">tech</a>
+	
+	<a class="tag_list_link" href="/tag/javascript">javascript</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    Jun 13, 2004 &mdash; <a href="/2004/06/13/web-tv.html">Web TV</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/tech">tech</a>
+	
+	<a class="tag_list_link" href="/tag/javascript">javascript</a>
+	
+	)</em>
+  </li>
+
+  <li>
+    May 30, 2002 &mdash; <a href="/2002/05/30/db-bean-creator-for-java-and-mysql-postgresql.html">DB Bean Creator for Java and MySQL/PostgresQL</a>
+	<em style="color: gray;">(tagged
+	
+	<a class="tag_list_link" href="/tag/tech">tech</a>
+	
+	<a class="tag_list_link" href="/tag/java">java</a>
+	
+	)</em>
+  </li>
+
 </ul>
+
+</div>
+
+    <!--/div-->
+    
+    
+    
+    
+    <footer>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/res/cc-cc.png" class="cc">
+        <img src="/res/cc-by.png" class="cc"></a>
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
+      </p>
+    </footer>
+    
+    
+    <script>
+  // curry pre < code to be able to get prettified
+  // If the first line is
+  //   #!-langname\n
+  // Then that line is removed from the code and "langname" is given to prettify.
+  // If "langname" is "none", that prettify is not applied at all.
+  var n,i,L,cn,lang,v = document.getElementsByTagName('pre');
+  var m,lang_re = /^#\!-([a-zA-Z0-9_-]+)\n/;
+  for (i=0,L=v.length;i<L;++i) {
+    n = v.item(i);
+    if ((cn = n.firstChild) && cn.nodeName == 'CODE') {
+      lang = null;
+      if (cn.firstChild.nodeType === Node.TEXT_NODE) {
+        m = lang_re.exec(cn.firstChild.nodeValue);
+        if (m) {
+          lang = m[1].toLowerCase();
+          cn.firstChild.nodeValue = cn.firstChild.nodeValue.substr(m[0].length);
+          if (lang === 'none') {
+            continue;
+          }
+        }
+      }
+      n.setAttribute('class', 'prettyprint'+(lang ? ' lang-' + lang : ''));
+    }
+  }
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28222168-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

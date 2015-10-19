@@ -1,6 +1,2 @@
-_site/
-.DS_Store
-_gist_cache/
 .ruby-gemset
 .ruby-version
-feed.xml

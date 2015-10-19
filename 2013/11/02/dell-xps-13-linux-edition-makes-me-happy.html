@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+	<meta name="robots" content="INDEX,FOLLOW" />
+    <title>Dell XPS 13 LE &mdash; Juan Uys</title>
+    <meta name="keywords" content="opyate, juan m uys, juan uys, south african programmer, south african hacker" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href='http://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="screen, projection" href="/res/screen.css" type="text/css">
+    <link rel="stylesheet" media="print" href="/res/print.css" type="text/css">
+    <link rel="alternate" type="application/atom+xml" title="Juan Uys" href="http://feeds.feedburner.com/opyate">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/res/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/res/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/res/apple-touch-icon-114x114-precomposed.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@opyate">
+    
+    
+    <meta property="og:title" content="Dell XPS 13 LE">
+      
+      <meta name="description" content="The final nail in the coffin for Apple products at Grumble Abode.">
+      <meta name="og:description" content="The final nail in the coffin for Apple products at Grumble Abode.">
+      
+    
+    
+    <meta property="og:image" content="http://25.media.tumblr.com/ee240ba31d3f2f3d04985380a78a7cb3/tumblr_mvmkbyrTe01ri2z5io1_1280.jpg">
+    
+    <meta property="og:url" content="http://opyate.com/2013/11/02/dell-xps-13-linux-edition-makes-me-happy.html">
+    <meta property="og:site_name" content="opyate.com">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_GB" />
+    
+    <meta property="article:published_time" content="2013-11-02">
+    
+    
+    <script>
+  //html { zoom:50%; }
+  if (window.addEventListener) {
+    var sidebarAdjustTimer;
+    function updateOrientation(orientationChangeEvent) {
+      if (sidebarAdjustTimer) clearInterval(sidebarAdjustTimer);
+      //console.log('window.orientation -> '+window.orientation);
+      if (window.orientation === -90 || window.orientation === 90) {
+        // landscape
+        var sidebar = document.getElementById('sidebar');
+        if (!sidebar.src || sidebar.src === '') {
+          sidebar.src = '/archive/sidebar.html';
+        }
+        sidebarAdjustTimer = setInterval(function() {
+          var height = Math.round(document.height * 1.6);
+          if (sidebar.height != height) {
+            sidebar.height = height;
+            sidebar.style.height = height + 'px';
+          }
+        },500);
+      } else {
+        // portrait
+      }
+    }
+    window.addEventListener('orientationchange', updateOrientation);
+    document.addEventListener('DOMSubtreeModified', function(ev) {
+      if (document.getElementById('sidebar')) {
+        document.removeEventListener('DOMSubtreeModified', arguments.callee);
+        updateOrientation();
+      }
+    });
+  }
+</script>
+    
+    
+  </head>
+  <body>
+    <script>
+      if (window.navigator.userAgent.indexOf('iPad') != -1) {
+        document.documentElement.className = 'ios ipad';
+        window.opyateHostIsIOS = 'ipad';
+      } else if (window.navigator.userAgent.indexOf('iPhone') != -1) {
+        document.documentElement.className = 'ios iphone';
+        window.opyateHostIsIOS = 'iphone';
+      }
+    </script>
+    <iframe id="sidebar"></iframe>
+    <header>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/res/signature-2-2.png" width="160" height="50" alt="Signature"></a></h1>
+      <ul class="navigation">
+        <li><a href="/projects/" title="Projects I am or was involved in">Projects</a></li>
+        <li><a href="/archive/" title="Archived articles">Archive</a></li>
+        <li><a href="/about/resume/">About me</a></li>
+      </ul>
+    </header>
+    <!--div class="wrapper content"-->
+      <div class="content">
+  <div class="post single">
+	<div class="meta">
+		<p class="item tags small">
+		<a href="/tag/tech" class="tag">tech</a>
+		</p>
+	</div>
+	<div class="breaker"></div>
+    <h1>Dell XPS 13 LE</h1>
+
+    <info datetime="2013-11-02">
+      Nov 02, 2013
+    </info>
+
+
+    <div class="body"><p><img src="http://25.media.tumblr.com/ee240ba31d3f2f3d04985380a78a7cb3/tumblr_mvmkbyrTe01ri2z5io1_1280.jpg" width="50%" align="right" alt="The portal to my livelihood."> <em>TL;DR</em> If you&rsquo;re a laptop-toting *nix user, then this is the laptop for you. Also, upgrade the kernel before you do anything else, for the best experience.</p>
+
+<p>This advice is highly unqualified, though. The last time I ran *nix on a laptop was when I ran some flavour of Gentoo on an old Centrino-loaded HP in 2005. I&rsquo;ve been a Mac user ever since those darned iPhones came out.</p>
+
+<p>It&rsquo;s just that I ran out of space on my 128GB SSD Air for the umpteenth time, and shuddered at the thought of breaking off glued-down components according to some <a href="http://www.ifixit.com/Guide/MacBook+Air+13-Inch+Mid+2013+Solid-State+Drive+Replacement/151810">iFixit guide</a>. (Damnit! I just looked again, and there&rsquo;s no glue involved in upgrading the SSD. Oh, well &mdash; the missus needed a new laptop anyway, and this was a welcome hand-me-down. Besides: new toys!)</p>
+
+<h1>First thing&rsquo;s first</h1>
+
+<p>When you do get one of these bad boys, the first thing I recommend you do is this:</p>
+
+<script src="https://gist.github.com/7276520.js"> </script>
+
+
+<p>That will get you the latest kernel without upgrading <em>everything</em>. As any Linux user would know, upgrading to fix one problem introduces a thousand other problems, and this felt like a nice trade-off.</p>
+
+<p>The reason for the above command is that I did have some wifi stability issues to start with, so I hope to save you that initial few dropped connections.</p>
+
+<p><em>Once again, kudos to <a href="http://popey.com/">popey</a> over on the #ubuntu-uk IRC channel for the <a href="https://wiki.ubuntu.com/Kernel/LTSEnablementStack">advice</a>.</em></p>
+
+<p><a href="https://wiki.ubuntu.com/Kernel/LTSEnablementStack"><img src="http://i.imgur.com/lj9GnWi.png"></a></p>
+
+<p>Wifi has been stable and pretty quick. I suppose it&rsquo;s not all down to the new kernel and drivers: I have Virgin 60Mb fibre optic, and my walls are refreshingly free of tin foil.</p>
+
+<h1>The gear</h1>
+
+<p>The XPS 13 comes packed with some great specs which <a href="http://www.dell.com/uk/business/p/xps-13-linux/pd">you can gloss over here</a>, but I&rsquo;ll re-iterate the key components: Intel® Core™ i7-3537U CPU @ 2.00GHz × 4, 8GB RAM, 256GB SSD of which 230-odd usable and a mega bright 13.3" screen all on a pretty little laptop that feels like an 11" one. I never put the brightness above a third of the available level, and at 1920 x 1080 it looks great.</p>
+
+<p>The keyboard still sports a Windows button, but it&rsquo;s the new Windows logo which I&rsquo;m not familiar with yet, and I pass it off in my mind as a generic &ldquo;dashboard&rdquo; type button, so it&rsquo;s all good. A <a href="http://en.wikipedia.org/wiki/Tux">Tux</a> button would probably be a bit weird. I mean, what would a penguin button do? Summon a troop of penguins? Nah. Besides, penguins &mdash; just like seals and dolphins &mdash; can be <a href="http://www.slate.com/blogs/wild_things/2013/10/28/sea_otter_dolphin_and_penguin_behavior_your_favorite_animals_are_jerks.html">dirty little scumbags</a>.</p>
+
+<h1>The ever-so-scientific bench test</h1>
+
+<p>I needed GIMP for something last night, and when I installed it and launched it for the first time, the realisation hit me that it all took about 30 seconds.</p>
+
+<p>So, I purged GIMP and re-did it for your viewing pleasure:</p>
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/Gt0H4_QUvzE" frameborder="0" allowfullscreen></iframe>
+
+
+<p>Apart from this, I&rsquo;m running about multiple Java server apps (for this thing I&rsquo;m working on), plus a couple of VMs, plus some Python scripts that are running some numbers. My software does make efficient use of all the available cores, and CPU hasn&rsquo;t been a problem for me in a while.</p>
+
+<p>All the Linux games available on Steam runs like a dream. Just the addition of Steam of a *nix system feels like we&rsquo;ve come full circle.</p>
+
+<h1>Qualms</h1>
+
+<p>It&rsquo;s early days &mdash; a lot might still happen. In fact, Murphy&rsquo;s Law states that I&rsquo;ll publish this favourable review and it will be shortly followed by the i7 going up in smoke.</p>
+
+<p>Anyway, here are some of my initial qualms:</p>
+
+<ul>
+<li>The mouse is triggered sometimes whilst typing. This is configurable, and I have switched it to disable the mouse whilst typing, but to no avail.</li>
+<li>The password box looses focus more times than not, and you end up typing your password in unfavourable places. This could be related to the previous issue discussed.</li>
+<li>Keyboard is ever so slightly flimsy, because sometimes letters will double up. Perhaps this is just a keyboard I need to get used to. Besides, I&rsquo;ve used the Mac chiclet-style keyboards exlusively since 2009.</li>
+<li>The palm rests &mdash; even though they feel great to the touch &mdash; seems to get a bit streaky after a while. My fingers are constantly greasy from chowing on ginger biscuits and stuff like that, and it doesn&rsquo;t wipe down well.</li>
+<li>The backspace button does make a slight squeaky sound sometimes, but this could be because my pinky finger &ldquo;pulls&rdquo; on the button due to the angle I attack it with. Still &mdash; I don&rsquo;t think this should happen.</li>
+</ul>
+
+
+<h1>Outro</h1>
+
+<p>If anything else pops up, or if the XPS 13 makes my life significantly better in any other way, I&rsquo;ll come back here to amend. (I won&rsquo;t do those silly <strong>UPDATE</strong> things at the bottom &mdash; you can look at the <a href="https://github.com/opyate/opyate.github.io/commits/master/_posts/2013-11-02-dell-xps-13-linux-edition-makes-me-happy.md">Git history of this page</a> for changes.)</p>
+
+<p>This is my first ever piece of Dell equipment, and it doesn&rsquo;t look nor feel like a grey, impersonal piece of office equipment. Also, Mr. <a href="http://en.wikipedia.org/wiki/Mark_Shuttleworth">Mark Hails-From-The-Same-Home-Town-As-I Shuttleworth</a> got things very right with Ubuntu. Linux has certainly come a long way since that day in 1995 when my mate dropped off 25-odd floppies of Slackware.</p>
+
+<p>I&rsquo;m more productive than ever and won&rsquo;t be going back to Apple. I certainly don&rsquo;t want to shoehorn OSX into a usable system with macports any time soon.</p>
+</div>
+    <div class="breaker"></div>
+
+    <info class="after">
+<div class="fb-like" data-href="http://opyate.com/2013/11/02/dell-xps-13-linux-edition-makes-me-happy.html" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
+    </info>
+
+  
+  </div>
+</div>
+
+<script type="text/javascript">
+(function() {
+var qs = document.location.search;
+var current_etag = qs.match(/etag=("?[a-zA-Z0-9_-]+)/);
+if (current_etag !== null) { current_etag = current_etag[1]; }
+var scrolly = qs.match(/scrolly=([0-9]+)/);
+if (scrolly) {
+  scrolly = parseInt(scrolly[1]);
+  window.scrollTo(window.scrollX, scrolly);
+  setTimeout(function () {
+    window.scrollTo(window.scrollX, scrolly);
+  }, 10);
+}
+
+function check() {
+  var r = new XMLHttpRequest();
+  var url = document.location.href + ((qs && qs !== '') ? '&' : '?') + 'r=' + Math.random();
+  r.open('GET', url, true);
+  r.onreadystatechange = function() {
+    if (r.readyState == 4){
+      var found_etag = r.getResponseHeader('Etag').replace(/^"|"$/g);
+      //console.log('current_etag:', current_etag, 'found_etag:', found_etag);
+      if (current_etag === null) {
+        current_etag = found_etag;
+      } else if (found_etag !== current_etag) {
+        document.location.search =
+          '?etag=' + encodeURIComponent(found_etag) +
+          '&scrolly=' + window.scrollY;
+        return;
+      }
+      setTimeout(check, 500);
+    }
+  };
+  r.send(null);
+}
+check();
+})();
+</script>
+
+
+    <!--/div-->
+    
+    
+    
+    
+    <footer>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/res/cc-cc.png" class="cc">
+        <img src="/res/cc-by.png" class="cc"></a>
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
+      </p>
+    </footer>
+    
+    
+    <script>
+  // curry pre < code to be able to get prettified
+  // If the first line is
+  //   #!-langname\n
+  // Then that line is removed from the code and "langname" is given to prettify.
+  // If "langname" is "none", that prettify is not applied at all.
+  var n,i,L,cn,lang,v = document.getElementsByTagName('pre');
+  var m,lang_re = /^#\!-([a-zA-Z0-9_-]+)\n/;
+  for (i=0,L=v.length;i<L;++i) {
+    n = v.item(i);
+    if ((cn = n.firstChild) && cn.nodeName == 'CODE') {
+      lang = null;
+      if (cn.firstChild.nodeType === Node.TEXT_NODE) {
+        m = lang_re.exec(cn.firstChild.nodeValue);
+        if (m) {
+          lang = m[1].toLowerCase();
+          cn.firstChild.nodeValue = cn.firstChild.nodeValue.substr(m[0].length);
+          if (lang === 'none') {
+            continue;
+          }
+        }
+      }
+      n.setAttribute('class', 'prettyprint'+(lang ? ' lang-' + lang : ''));
+    }
+  }
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28222168-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+	<meta name="robots" content="INDEX,FOLLOW" />
+    <title>2103 — the year's code and tooling in review &mdash; Juan Uys</title>
+    <meta name="keywords" content="opyate, juan m uys, juan uys, south african programmer, south african hacker" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href='http://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="screen, projection" href="/res/screen.css" type="text/css">
+    <link rel="stylesheet" media="print" href="/res/print.css" type="text/css">
+    <link rel="alternate" type="application/atom+xml" title="Juan Uys" href="http://feeds.feedburner.com/opyate">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/res/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/res/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/res/apple-touch-icon-114x114-precomposed.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@opyate">
+    
+    
+    <meta property="og:title" content="2103 — the year's code and tooling in review">
+      
+      <meta name="description" content="A few words about the new tools and skills I picked up in 2013, and my old favourites.">
+      <meta name="og:description" content="A few words about the new tools and skills I picked up in 2013, and my old favourites.">
+      
+    
+    
+    <meta property="og:image" content="http://25.media.tumblr.com/650a566e7ccb9b0f292ce9c016206c14/tumblr_mygpxoJUpY1ri2z5io1_1280.jpg">
+    
+    <meta property="og:url" content="http://opyate.com/2013/12/31/code-and-tools-the-year-in-review.html">
+    <meta property="og:site_name" content="opyate.com">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_GB" />
+    
+    <meta property="article:published_time" content="2013-12-31">
+    
+    
+    <script>
+  //html { zoom:50%; }
+  if (window.addEventListener) {
+    var sidebarAdjustTimer;
+    function updateOrientation(orientationChangeEvent) {
+      if (sidebarAdjustTimer) clearInterval(sidebarAdjustTimer);
+      //console.log('window.orientation -> '+window.orientation);
+      if (window.orientation === -90 || window.orientation === 90) {
+        // landscape
+        var sidebar = document.getElementById('sidebar');
+        if (!sidebar.src || sidebar.src === '') {
+          sidebar.src = '/archive/sidebar.html';
+        }
+        sidebarAdjustTimer = setInterval(function() {
+          var height = Math.round(document.height * 1.6);
+          if (sidebar.height != height) {
+            sidebar.height = height;
+            sidebar.style.height = height + 'px';
+          }
+        },500);
+      } else {
+        // portrait
+      }
+    }
+    window.addEventListener('orientationchange', updateOrientation);
+    document.addEventListener('DOMSubtreeModified', function(ev) {
+      if (document.getElementById('sidebar')) {
+        document.removeEventListener('DOMSubtreeModified', arguments.callee);
+        updateOrientation();
+      }
+    });
+  }
+</script>
+    
+    
+  </head>
+  <body>
+    <script>
+      if (window.navigator.userAgent.indexOf('iPad') != -1) {
+        document.documentElement.className = 'ios ipad';
+        window.opyateHostIsIOS = 'ipad';
+      } else if (window.navigator.userAgent.indexOf('iPhone') != -1) {
+        document.documentElement.className = 'ios iphone';
+        window.opyateHostIsIOS = 'iphone';
+      }
+    </script>
+    <iframe id="sidebar"></iframe>
+    <header>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/res/signature-2-2.png" width="160" height="50" alt="Signature"></a></h1>
+      <ul class="navigation">
+        <li><a href="/projects/" title="Projects I am or was involved in">Projects</a></li>
+        <li><a href="/archive/" title="Archived articles">Archive</a></li>
+        <li><a href="/about/resume/">About me</a></li>
+      </ul>
+    </header>
+    <!--div class="wrapper content"-->
+      <div class="content">
+  <div class="post single">
+	<div class="meta">
+		<p class="item tags small">
+		<a href="/tag/tech" class="tag">tech</a><a href="/tag/life" class="tag">life</a>
+		</p>
+	</div>
+	<div class="breaker"></div>
+    <h1>2103 — the year's code and tooling in review</h1>
+
+    <info datetime="2013-12-31">
+      Dec 31, 2013
+    </info>
+
+
+    <div class="body"><p><img src="http://25.media.tumblr.com/650a566e7ccb9b0f292ce9c016206c14/tumblr_mygpxoJUpY1ri2z5io1_1280.jpg" width="50%" align="right"> I saw the #code2013 hashtag on Twitter last night and <a href="https://twitter.com/opyate/status/417785250308444160">joined in</a>. It got me thinking about the stuff around the programming languages I use, and my professional skillset in general.</p>
+
+<p>I&rsquo;ll briefly touch on how a few major events in my life forced me to cut the fat and become more focused.</p>
+
+<p>A few notes, then.</p>
+
+<h1>The programming languages</h1>
+
+<h2>Scala</h2>
+
+<p>My new, old favourite. My go-to language since 2009. I can&rsquo;t add much for 2013 apart from that I&rsquo;m happy to see the community mature around it. We&rsquo;ve gone from &ldquo;How we adopted Scala at company X&rdquo; to &ldquo;How to go back in time using Akka, Play! and XYZ&rdquo;. Oh, and then the <a href="https://www.coursera.org/course/reactive">reactive course</a> was fun too, and highlighted a few holes in my Akka education.</p>
+
+<h2>Java</h2>
+
+<p>Java still mostly pays the bills, and I&rsquo;m writing even better Java thanks to Scala. My editor is told to highlight everything in a shade of gray, apart from re-assignables which are red. It all just flows.</p>
+
+<h2>Python</h2>
+
+<p>I&rsquo;m a big fan of <a href="http://www.pylonsproject.org/">Pylons</a> and have used Python since 2006-ish for tiny webapps, but this year sees me going down the finance route with <a href="http://www.scipy.org/">SciPy</a> and <a href="http://pandas.pydata.org/">Pandas</a> thanks to a <a href="https://www.coursera.org/course/dataanalysis">handful</a> <a href="https://www.coursera.org/course/bigdata">of</a> <a href="https://www.coursera.org/course/compinvesting1">courses</a> I did recently.</p>
+
+<h2>R</h2>
+
+<p>Strangely addictive. I did a <a href="https://www.coursera.org/course/dataanalysis">data analysis course</a> with the famed Johns Hopkins university earlier this year, and thought I would be &ldquo;learning&rdquo; R along the way. If anything, it felt like I already knew R, and the thing that I learned was making a good analysis, writing it perfectly and succintly, and performing an honest peer review. R is perfect for slicing and dicing your data, and it doesn&rsquo;t get in the way.</p>
+
+<h2>Dart</h2>
+
+<p>The main attraction to Dart for me was the promise of compiling to a better Javascript which you can ever hope to write by hand. The Dart syntax itself is familiar, and then you have the odd goodies like the <a href="http://news.dartlang.org/2012/02/method-cascades-in-dart-posted-by-gilad.html">cascade operator</a> (borrowed from Smalltalk) which lets you chain methods without having to return the instance in your API, and being a Scala guy, I love having rockets (=>) scattered all over my code (Dart&rsquo;s syntactic sugar for concise getters).</p>
+
+<h2>Javascript</h2>
+
+<p>Being a backend programmer by trade, I usually don&rsquo;t go for frontend gigs, but a client this year said they don&rsquo;t mind me learning on the job, and I&rsquo;ve heard good things about AngularJS, so I dove right in. I&rsquo;ve touched on Javascript a lot in the past, but this year I spent a significant tenth of my professional time fiddling with it.</p>
+
+<h2>Haskell</h2>
+
+<p>Yes, I really did spend the tiniest amount of time with Haskell, but enough to mention it here. I downloaded, chopped and changed the XMonad code and the take-away for me was that 2014 will see more Haskell.</p>
+
+<h2>Other languages, not-so-much-languages, and tools</h2>
+
+<p>My starter Dart project is a game (where do I find the time?), hence WebGL and subsequently <a href="http://en.wikipedia.org/wiki/OpenGL_Shading_Language">GLSL</a>. I&rsquo;m particularly excited about getting my hands even dirtier with shaders with Mozilla <a href="https://hacks.mozilla.org/2013/11/live-editing-webgl-shaders-with-firefox-developer-tools/">recently announcing</a> live-editing of shaders using Firefox.</p>
+
+<p>I&rsquo;ve always used Capistrano and Chef for my provisioning and configuration needs, but this year I gave Ansible a shot. I hope Ansible stays the way it is: small, simple, elegant. No agents; just SSH.</p>
+
+<h1>Conclusion</h1>
+
+<p>2013 was a bumpy ride. We had a beautiful daughter in June, and I quit my job soon after to freelance from home and be 2 flights of stairs away from her. To be able to learn a few new skills and do 4 courses, I had to make some changes. There are the 5AM starts, the <a href="http://well.blogs.nytimes.com/2013/05/09/the-scientific-7-minute-workout">highly-condensed exercise routine in the morning</a>, diligently deleting anything which doesn&rsquo;t contribute to the plan I have for our life (this includes articles, emails, etc), and just generally getting things done.</p>
+
+<p><img src="http://24.media.tumblr.com/abbc16af261cffe6a867bfbcb4f380e2/tumblr_myfbtyAEiW1ri2z5io1_1280.jpg" width="50%" align="left" alt="The Polar Bear who might have eaten Xmas"> The game I mentioned seems like a distraction, but I feel it&rsquo;s important that I do it. I&rsquo;ve been in love with doodling since I was a kid, and really took it up this year. I&rsquo;m an able musician, and since I can code I thought I&rsquo;d bring these ingredients together and make something nice. (Those umpteen characters and storylines in my head will finally be unleashed!).</p>
+
+<p>Thanks for reading this far. May you have a great 2014.</p>
+
+<p><em>I leave you with a doodle I made a few days ago entitled &ldquo;The Polar Bear who might have eaten Xmas&rdquo;. (Don&rsquo;t worry &mdash; this isn&rsquo;t one of my games ideas ;-)</em></p>
+</div>
+    <div class="breaker"></div>
+
+    <info class="after">
+<div class="fb-like" data-href="http://opyate.com/2013/12/31/code-and-tools-the-year-in-review.html" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
+    </info>
+
+  
+  </div>
+</div>
+
+<script type="text/javascript">
+(function() {
+var qs = document.location.search;
+var current_etag = qs.match(/etag=("?[a-zA-Z0-9_-]+)/);
+if (current_etag !== null) { current_etag = current_etag[1]; }
+var scrolly = qs.match(/scrolly=([0-9]+)/);
+if (scrolly) {
+  scrolly = parseInt(scrolly[1]);
+  window.scrollTo(window.scrollX, scrolly);
+  setTimeout(function () {
+    window.scrollTo(window.scrollX, scrolly);
+  }, 10);
+}
+
+function check() {
+  var r = new XMLHttpRequest();
+  var url = document.location.href + ((qs && qs !== '') ? '&' : '?') + 'r=' + Math.random();
+  r.open('GET', url, true);
+  r.onreadystatechange = function() {
+    if (r.readyState == 4){
+      var found_etag = r.getResponseHeader('Etag').replace(/^"|"$/g);
+      //console.log('current_etag:', current_etag, 'found_etag:', found_etag);
+      if (current_etag === null) {
+        current_etag = found_etag;
+      } else if (found_etag !== current_etag) {
+        document.location.search =
+          '?etag=' + encodeURIComponent(found_etag) +
+          '&scrolly=' + window.scrollY;
+        return;
+      }
+      setTimeout(check, 500);
+    }
+  };
+  r.send(null);
+}
+check();
+})();
+</script>
+
+
+    <!--/div-->
+    
+    
+    
+    
+    <footer>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/res/cc-cc.png" class="cc">
+        <img src="/res/cc-by.png" class="cc"></a>
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
+      </p>
+    </footer>
+    
+    
+    <script>
+  // curry pre < code to be able to get prettified
+  // If the first line is
+  //   #!-langname\n
+  // Then that line is removed from the code and "langname" is given to prettify.
+  // If "langname" is "none", that prettify is not applied at all.
+  var n,i,L,cn,lang,v = document.getElementsByTagName('pre');
+  var m,lang_re = /^#\!-([a-zA-Z0-9_-]+)\n/;
+  for (i=0,L=v.length;i<L;++i) {
+    n = v.item(i);
+    if ((cn = n.firstChild) && cn.nodeName == 'CODE') {
+      lang = null;
+      if (cn.firstChild.nodeType === Node.TEXT_NODE) {
+        m = lang_re.exec(cn.firstChild.nodeValue);
+        if (m) {
+          lang = m[1].toLowerCase();
+          cn.firstChild.nodeValue = cn.firstChild.nodeValue.substr(m[0].length);
+          if (lang === 'none') {
+            continue;
+          }
+        }
+      }
+      n.setAttribute('class', 'prettyprint'+(lang ? ' lang-' + lang : ''));
+    }
+  }
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28222168-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

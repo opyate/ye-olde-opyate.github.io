@@ -1,29 +1,624 @@
----
-layout: nil
----
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Juan Uys</title>
   <link href="http://opyate.com/atom.xml" rel="self"/>
   <link href="http://opyate.com/"/>
-  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <updated>2015-10-19T15:19:58+01:00</updated>
   <id>http://opyate.com/</id>
   <author>
     <name>Juan Uys</name>
     <email>opyate@gmail.com</email>
   </author>
-  {% for post in site.posts limit:10 %}
+  
   <entry>
-    <title>{{ post.title }}</title>
-    <link href="http://opyate.com{{ post.url }}"/>
-    <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <id>http://opyate.com{{ post.id }}</id>
-    <content type="html">{{ post.content | xml_escape }}</content>
-	<content type="{{post.image_content_type}}" src="{{post.image}}" />
+    <title>Add logging to PostgresQL on Docker</title>
+    <link href="http://opyate.com/2015/06/17/add-logging-to-postgresql-on-docker.html"/>
+    <updated>2015-06-17T00:00:00+01:00</updated>
+    <id>http://opyate.com/2015/06/17/add-logging-to-postgresql-on-docker</id>
+    <content type="html">&lt;p&gt;Normally, in &lt;code&gt;docker-compose.yml&lt;/code&gt;  I would just configure a database like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;db:
+  image: postgres:9.4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;However, to customise the image, we use our own Dockerfile:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;FROM postgres:9.4
+ADD config.sh /docker-entrypoint-initdb.d/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The contents of &lt;code&gt;config.sh&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;perl -pi -e &quot;s/#log_statement = &#39;none&#39;/log_statement = &#39;all&#39;/g&quot; \
+/var/lib/postgresql/data/postgresql.conf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And &lt;code&gt;docker-compose.yml&lt;/code&gt; now becomes:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;db:
+  build: location/of/new/docker/file
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Link your app, launch the stack, and start seeing log statements on STDIN:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;db_1         | LOG:  statement: BEGIN
+db_1         | LOG:  statement: SELECT etc etc
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+	<content type="" src="" />
     <author>
       <name>Juan Uys</name>
       <uri>http://opyate.com/about/</uri>
     </author>
   </entry>
-  {% endfor %}
+  
+  <entry>
+    <title>A tale of two money transfers</title>
+    <link href="http://opyate.com/2015/06/14/a-tale-of-two-money-transfers.html"/>
+    <updated>2015-06-14T00:00:00+01:00</updated>
+    <id>http://opyate.com/2015/06/14/a-tale-of-two-money-transfers</id>
+    <content type="html">&lt;p&gt;I use GBP, and my contractor in Italy uses EUR, but we &amp;ldquo;talk&amp;rdquo; USD. The first payment came up, and I was recommended &lt;a href=&quot;https://transferwise.com&quot;&gt;TransferWise&lt;/a&gt; by my friends in the trenches. I go online to TransferWise and select USD from the dropdown, and go through all the steps. Finally, TransferWise tells me to send them money in Estonia from my Internet banking account, which I do.&lt;/p&gt;
+
+&lt;p&gt;But &amp;mdash; weird &amp;mdash; I thought. Weren&amp;rsquo;t they supposed to make all this easier for me?&lt;/p&gt;
+
+&lt;p&gt;I open up a TransferWise chat with Jorgen in support and ask them if I had done something wrong. Yes, of course &amp;mdash; I had to select GBP from the dropdown.&lt;/p&gt;
+
+&lt;p&gt;A bit of confusion ensues and my transaction on TransferWise gets cancelled, when instead I meant for them to decline anything coming into their Estonian account from my Barclays UK bank account. I then loose my connection, and end up with another agent called Monica whom I end up repeating the entire story to, and she says she&amp;rsquo;ll make a note with the payments team to decline my money.&lt;/p&gt;
+
+&lt;p&gt;Hang on, I think &amp;mdash; why don&amp;rsquo;t I just phone Barclays and ask them to cancel the international transfer. It&amp;rsquo;s Sunday, after all. Nothing would&amp;rsquo;ve gone through yet.&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;I don&amp;rsquo;t see anything, sir.&amp;rdquo; says Paul, the telephone support guy. Me neither. I little light goes off in my head: I must&amp;rsquo;ve forgotten the &amp;ldquo;Confirm&amp;rdquo; button on the last screen of the transfer. I always do this &amp;mdash; pay myself my salary then wonder why it didn&amp;rsquo;t reach my personal account. (Thank goodness I&amp;rsquo;m the only employee!)&lt;/p&gt;
+
+&lt;p&gt;The problem is resolved. Bless the Barclays phone operator Paul, and bless TransferWise&amp;rsquo;s Jorgen and Monica.&lt;/p&gt;
+
+&lt;p&gt;It was all completely my fault, but still feel that in this day and age of modern online services like Barclays Internet banking and TransferWise, user experience issues should be fully addressed.&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;We see you&amp;rsquo;re using USD. Is the source funds also USD?&amp;rdquo;. Or have a separate 3-way calculator.&lt;/p&gt;
+
+&lt;p&gt;Also, Barclays: that last confirm button is a major call-to-action, and should be high viz.&lt;/p&gt;
+
+&lt;p&gt;Now, I just have to remember to pay my contractor :-)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;UPDATE 2015-06-16&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Oh, bloody hell. An email from TransferWise. Thanks for nothing, Paul@Barclays!&lt;/p&gt;
+
+&lt;pre&gt;
+Hi Juan,
+
+Hope this email finds you well.
+
+We have still received a deposit for 500 USD from you.
+Please confirm if you wish us to proceed with the payment
+#0123456 or we’ll refund it back to you to the originating
+bank account.
+
+But please be advised, that if we will issue a refund it will be
+through a SWIFT payment, this involve extra cost so you will not
+get exactly 500 USD back to the originating account.
+
+- our bank will charge a fee (7 EUR) for the transfer
+- intermediate banks will take a fee (anywhere between
+10-20 USD each, up to 3 banks)
+- your USD dominated bank may charge a fee for accepting an
+international bank transfer (fee depends on your bank)
+
+You can read more about SWIFT payments here.
+
+Waiting for your reply!
+&lt;/pre&gt;
+
+</content>
+	<content type="" src="" />
+    <author>
+      <name>Juan Uys</name>
+      <uri>http://opyate.com/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>2014 — the year in review</title>
+    <link href="http://opyate.com/2014/12/31/2014-in-review.html"/>
+    <updated>2014-12-31T00:00:00+00:00</updated>
+    <id>http://opyate.com/2014/12/31/2014-in-review</id>
+    <content type="html">&lt;h1&gt;Firstly&amp;hellip;&lt;/h1&gt;
+
+&lt;p&gt;&amp;hellip;let&amp;rsquo;s get the big news out of the way.&lt;/p&gt;
+
+&lt;p&gt;This year I got married. We have a lovely daughter, made a beautiful home together, and a few years of togetherness, and really just wanted to celebrate these blessings with friends and family. Besides, my partner is gorgeous, and I just had to go ball &amp;amp; chain on her :-P&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/opyate/opyate.github.io/master/res/bnj.jpg&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
+
+&lt;h1&gt;The tech&lt;/h1&gt;
+
+&lt;h2&gt;Docker&lt;/h2&gt;
+
+&lt;p&gt;This year saw me Dockerize all the things. Linux containers is the best thing since diced bacon, and really &lt;a href=&quot;http://uys.io&quot;&gt;unleashes servers&lt;/a&gt; everywhere.&lt;/p&gt;
+
+&lt;h2&gt;Python&lt;/h2&gt;
+
+&lt;p&gt;Loads and loads more Python, especially for APIs. Python is awesome. Especially paired with other awesome tools like PostgresQL, for example: no more &amp;ldquo;WHERE user = %s&amp;rdquo; to filter on user data. Let&amp;rsquo;s just say I devised a clever trick using flask-sqlalchemy, PostgresQL schemas, before_request and search_path to give every user their own database.&lt;/p&gt;
+
+&lt;h2&gt;Scala&lt;/h2&gt;
+
+&lt;p&gt;Still my tool of choice for interfacing with tried-and-trusted Java libs to build those blazing fast, functional and correct back-end processes.&lt;/p&gt;
+
+&lt;h2&gt;JavaScript&lt;/h2&gt;
+
+&lt;p&gt;Can&amp;rsquo;t get away from this one. But starting to wonder if ClojureScript is the way to go. Besides, I always ALWAYS use &lt;a href=&quot;https://lodash.com/&quot;&gt;lodash&lt;/a&gt; (replacing &lt;a href=&quot;http://underscorejs.org/&quot;&gt;underscore&lt;/a&gt; recently).&lt;/p&gt;
+
+&lt;h2&gt;Clojure&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been really doubling down on Clojure this year for fun, throw-away side projects. I really want it to replace Scala. And OMG how awesome is it to code a Lisp using Emacs. It reminded me of those early 2000s Scheme days&amp;hellip;&lt;/p&gt;
+
+&lt;h2&gt;Elixir&lt;/h2&gt;
+
+&lt;p&gt;So, I&amp;rsquo;ve always been a Ruby fan, and always wanted to be able to mention Erlang as one of my top few skills, but yuck&amp;hellip; Erlang! It&amp;rsquo;s like trying to do a Shakespeare recital with a mouth full of mud. That didn&amp;rsquo;t make any sense, but Elixir does. Still a bit fast moving, so I&amp;rsquo;m not doing anything big in it, but watch this space.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;UPDATE 2015-03-13&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;After working with Erlang a bit more (and reading &lt;a href=&quot;http://ferd.ca/on-erlang-s-syntax.html&quot;&gt;this&lt;/a&gt;), I stand thoroughly corrected, and don&amp;rsquo;t mind it at all.&lt;/p&gt;
+
+&lt;h1&gt;Optimisation&lt;/h1&gt;
+
+&lt;p&gt;My life, that is.&lt;/p&gt;
+
+&lt;h2&gt;News&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s see&amp;hellip; I don&amp;rsquo;t watch or read any news (be it news news, or tech news). There was one event in the last quarter which my family says changed their perspective on things, which turns out to not affect me. I&amp;rsquo;m really happy with this arrangement.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ll change HNWatcher on occasion to send me alerts for tech I&amp;rsquo;m following, but I mostly archive those.&lt;/p&gt;
+
+&lt;h2&gt;Health&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mobile.nytimes.com/blogs/well/2013/05/09/the-scientific-7-minute-workout/&quot;&gt;7 minute scientific workouts&lt;/a&gt;, 3-weekly runs to the local &lt;a href=&quot;http://www.tgogc.com/&quot;&gt;free gym&lt;/a&gt; where I break some more sweat, and loads of activities with my daughter.&lt;/p&gt;
+
+&lt;p&gt;I had a health check, and all is perfect, and will make it a yearly thing now.&lt;/p&gt;
+
+&lt;p&gt;8 hours sleep a day, at least.&lt;/p&gt;
+
+&lt;p&gt;Painting and drawing in the evening to clear the mind and splatter watercolours everywhere.&lt;/p&gt;
+
+&lt;h2&gt;Time&lt;/h2&gt;
+
+&lt;p&gt;Time is precious and not to be wasted. I&amp;rsquo;ve little tweaks with which to save a bit of time. E.g. when reading an article, and mind wanders / eyes start blurring, I close the tab or delete the eBook and move on with my life.&lt;/p&gt;
+
+&lt;p&gt;My phone now has 2 main apps: Kindle, and Pocket Casts. No more games. In fact, the only games I play are board games with my family.&lt;/p&gt;
+
+&lt;p&gt;If I can pay for it to be done, I do just that.&lt;/p&gt;
+
+&lt;p&gt;I unsubscribed from everything. E.g., I closed my LinkedIn account, and delete all new messages from them.&lt;/p&gt;
+
+&lt;h1&gt;Setbacks&lt;/h1&gt;
+
+&lt;p&gt;It wasn&amp;rsquo;t a perfect year, after all.&lt;/p&gt;
+
+&lt;p&gt;My wife got made redundant.&lt;/p&gt;
+
+&lt;p&gt;A client of mine confused the words &amp;ldquo;contractor&amp;rdquo; with &amp;ldquo;employee&amp;rdquo; and I wrote off a significant amount of money as bad debt in a time when the money would have helped with a problem. I get all my work from my personal network, and agree to things with the shake of the hand, and this particular fella is making me reconsider.&lt;/p&gt;
+
+&lt;p&gt;My dad took his own life this year, and I&amp;rsquo;m especially remembering him tonight.&lt;/p&gt;
+
+&lt;p&gt;15 years ago today was the most significant NYE of our generation. I spent it with my dad as my mom had just left us a few days prior. We were sitting on the balcony in total darkness, staring out, with the odd firework illuminating his face. Had my sister been a grownup then, who knows what he would have done, but he chose to be there for us.&lt;/p&gt;
+
+&lt;h1&gt;Next?&lt;/h1&gt;
+
+&lt;p&gt;Since catching up over eggs and coffee is the new catching up over a beer, let&amp;rsquo;s have breakfast some time and I&amp;rsquo;ll tell you my plans.&lt;/p&gt;
+
+&lt;p&gt;Meanwhile, live life and don&amp;rsquo;t take shizzle from see you next Tuesdays.&lt;/p&gt;
+</content>
+	<content type="image/jpeg" src="https://raw.githubusercontent.com/opyate/opyate.github.io/master/res/wedding.jpg" />
+    <author>
+      <name>Juan Uys</name>
+      <uri>http://opyate.com/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>I made my daughter a book for her first birthday.</title>
+    <link href="http://opyate.com/2014/04/17/i-made-my-daughter-a-book-for-her-first-birthday.html"/>
+    <updated>2014-04-17T00:00:00+01:00</updated>
+    <id>http://opyate.com/2014/04/17/i-made-my-daughter-a-book-for-her-first-birthday</id>
+    <content type="html">&lt;p&gt;&lt;em&gt;Made? Yes, made &amp;ndash; not wrote. See below.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;My day is a grab-bag of abstract concepts, data as shapes moving from system to system on pathways built with tools I love dearly. However, every now and then I want to inject some characters and narrative into my life.&lt;/p&gt;
+
+&lt;p&gt;A previous, on-ice-yet-ongoing foray into Story Land is when we learnt we were pregnant. My world was shaken, and in a nervous panic I wanted to surround myself with things that will cleanse my mind, prepare my heart, and re-awaken the child in me. All in preparation for the Little Being that was to join us in June 2013.&lt;/p&gt;
+
+&lt;p&gt;I was going to write a picture book. The poem it&amp;rsquo;s based on came to me on a train journey to the Cotswolds. It was going to be perfect. But, I had to practice. Doodle, draw, illustrate. Devour colours. Try and not be precious about my Moleskine notebooks. Scribble, then scribble some more. Rip out pages, and throw stuff away.&lt;/p&gt;
+
+&lt;p&gt;I &lt;a href=&quot;http://instagram.com/p/ZuRH9zAqm6/&quot;&gt;started in earnest&lt;/a&gt;, but truth be told that a Picture Book is not an overnight endeavour.&lt;/p&gt;
+
+&lt;p&gt;&lt;img width=&quot;50%&quot; src=&quot;http://distilleryimage10.ak.instagram.com/da482076c5eb11e3aaef0002c9db4c12_8.jpg&quot; align=&quot;right&quot;&gt; Meanwhile, Little One was born. Slow and considered sketches were soon replaced by frantic nightly dashes finding nappies and milk. My fountain pen dried up and clogged sooner than one can say &amp;ldquo;priority shift&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;A few months ago it dawned on me that she&amp;rsquo;ll turn one soon. I started to think of her first ever gift. The picture book was still months away from being completed. All along our Little Beloved pointed at &amp;ldquo;C for Cat&amp;rdquo; on her alphabet toy, and a light bulb appeared above my head: a cat book!&lt;/p&gt;
+
+&lt;p&gt;The birthday is now imminent, and something needed to be sent to the print shop pronto. Inspired by &amp;ldquo;famous cats&amp;rdquo; from a &lt;a href=&quot;http://www.quizmasters.biz/DB/Pic/Famous_Cats/Famous_Cats.html&quot;&gt;pub quiz&lt;/a&gt;, I went on to &lt;a href=&quot;http://cdn.opyate.com/books/AnnabellesEnCATlopediaVolume1CatsonTV.pdf&quot;&gt;create this&lt;/a&gt;. Heavily cribbed and everything stolen from far flung corners of the Interwebs, but hey &amp;ndash; it&amp;rsquo;s not like I&amp;rsquo;ll be making money off it!&lt;/p&gt;
+
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;http://www.youtube.com/embed/ZATqOT5IzEw?feature=player_embedded&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+
+&lt;p&gt;Fun was had, and Father Time once again looks down favourably on my poem-inspired work of art which will soon sit alongside our Little One&amp;rsquo;s other precious things.&lt;/p&gt;
+</content>
+	<content type="image/jpeg" src="http://distilleryimage10.ak.instagram.com/da482076c5eb11e3aaef0002c9db4c12_8.jpg" />
+    <author>
+      <name>Juan Uys</name>
+      <uri>http://opyate.com/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>More jq fun</title>
+    <link href="http://opyate.com/2014/01/29/more-jq-fun.html"/>
+    <updated>2014-01-29T00:00:00+00:00</updated>
+    <id>http://opyate.com/2014/01/29/more-jq-fun</id>
+    <content type="html">&lt;p&gt;I&amp;rsquo;ve &lt;a href=&quot;2013/11/05/my-new-favourite-way-to-pretty-print-json-in-vim.html&quot;&gt;written about&lt;/a&gt; &lt;a href=&quot;http://stedolan.github.io/jq/&quot;&gt;jq&lt;/a&gt; before, but I mention it again here as a very useful tool for parsing JSON on the command line.&lt;/p&gt;
+
+&lt;p&gt;I needed to grab some England Bank holidays for a &lt;a href=&quot;https://github.com/opyate/taximeter&quot;&gt;quick hack&lt;/a&gt; the other day, and found that the GOV.UK team made web better by allowing you to append &lt;em&gt;.json&lt;/em&gt; to any of their links to get to the data.&lt;/p&gt;
+
+&lt;p&gt;Hold onto yer hats:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/8773005.js&quot;&gt; &lt;/script&gt;
+
+</content>
+	<content type="image/png" src="" />
+    <author>
+      <name>Juan Uys</name>
+      <uri>http://opyate.com/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>2103 — the year's code and tooling in review</title>
+    <link href="http://opyate.com/2013/12/31/code-and-tools-the-year-in-review.html"/>
+    <updated>2013-12-31T00:00:00+00:00</updated>
+    <id>http://opyate.com/2013/12/31/code-and-tools-the-year-in-review</id>
+    <content type="html">&lt;p&gt;&lt;img src=&quot;http://25.media.tumblr.com/650a566e7ccb9b0f292ce9c016206c14/tumblr_mygpxoJUpY1ri2z5io1_1280.jpg&quot; width=&quot;50%&quot; align=&quot;right&quot;&gt; I saw the #code2013 hashtag on Twitter last night and &lt;a href=&quot;https://twitter.com/opyate/status/417785250308444160&quot;&gt;joined in&lt;/a&gt;. It got me thinking about the stuff around the programming languages I use, and my professional skillset in general.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ll briefly touch on how a few major events in my life forced me to cut the fat and become more focused.&lt;/p&gt;
+
+&lt;p&gt;A few notes, then.&lt;/p&gt;
+
+&lt;h1&gt;The programming languages&lt;/h1&gt;
+
+&lt;h2&gt;Scala&lt;/h2&gt;
+
+&lt;p&gt;My new, old favourite. My go-to language since 2009. I can&amp;rsquo;t add much for 2013 apart from that I&amp;rsquo;m happy to see the community mature around it. We&amp;rsquo;ve gone from &amp;ldquo;How we adopted Scala at company X&amp;rdquo; to &amp;ldquo;How to go back in time using Akka, Play! and XYZ&amp;rdquo;. Oh, and then the &lt;a href=&quot;https://www.coursera.org/course/reactive&quot;&gt;reactive course&lt;/a&gt; was fun too, and highlighted a few holes in my Akka education.&lt;/p&gt;
+
+&lt;h2&gt;Java&lt;/h2&gt;
+
+&lt;p&gt;Java still mostly pays the bills, and I&amp;rsquo;m writing even better Java thanks to Scala. My editor is told to highlight everything in a shade of gray, apart from re-assignables which are red. It all just flows.&lt;/p&gt;
+
+&lt;h2&gt;Python&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;m a big fan of &lt;a href=&quot;http://www.pylonsproject.org/&quot;&gt;Pylons&lt;/a&gt; and have used Python since 2006-ish for tiny webapps, but this year sees me going down the finance route with &lt;a href=&quot;http://www.scipy.org/&quot;&gt;SciPy&lt;/a&gt; and &lt;a href=&quot;http://pandas.pydata.org/&quot;&gt;Pandas&lt;/a&gt; thanks to a &lt;a href=&quot;https://www.coursera.org/course/dataanalysis&quot;&gt;handful&lt;/a&gt; &lt;a href=&quot;https://www.coursera.org/course/bigdata&quot;&gt;of&lt;/a&gt; &lt;a href=&quot;https://www.coursera.org/course/compinvesting1&quot;&gt;courses&lt;/a&gt; I did recently.&lt;/p&gt;
+
+&lt;h2&gt;R&lt;/h2&gt;
+
+&lt;p&gt;Strangely addictive. I did a &lt;a href=&quot;https://www.coursera.org/course/dataanalysis&quot;&gt;data analysis course&lt;/a&gt; with the famed Johns Hopkins university earlier this year, and thought I would be &amp;ldquo;learning&amp;rdquo; R along the way. If anything, it felt like I already knew R, and the thing that I learned was making a good analysis, writing it perfectly and succintly, and performing an honest peer review. R is perfect for slicing and dicing your data, and it doesn&amp;rsquo;t get in the way.&lt;/p&gt;
+
+&lt;h2&gt;Dart&lt;/h2&gt;
+
+&lt;p&gt;The main attraction to Dart for me was the promise of compiling to a better Javascript which you can ever hope to write by hand. The Dart syntax itself is familiar, and then you have the odd goodies like the &lt;a href=&quot;http://news.dartlang.org/2012/02/method-cascades-in-dart-posted-by-gilad.html&quot;&gt;cascade operator&lt;/a&gt; (borrowed from Smalltalk) which lets you chain methods without having to return the instance in your API, and being a Scala guy, I love having rockets (=&gt;) scattered all over my code (Dart&amp;rsquo;s syntactic sugar for concise getters).&lt;/p&gt;
+
+&lt;h2&gt;Javascript&lt;/h2&gt;
+
+&lt;p&gt;Being a backend programmer by trade, I usually don&amp;rsquo;t go for frontend gigs, but a client this year said they don&amp;rsquo;t mind me learning on the job, and I&amp;rsquo;ve heard good things about AngularJS, so I dove right in. I&amp;rsquo;ve touched on Javascript a lot in the past, but this year I spent a significant tenth of my professional time fiddling with it.&lt;/p&gt;
+
+&lt;h2&gt;Haskell&lt;/h2&gt;
+
+&lt;p&gt;Yes, I really did spend the tiniest amount of time with Haskell, but enough to mention it here. I downloaded, chopped and changed the XMonad code and the take-away for me was that 2014 will see more Haskell.&lt;/p&gt;
+
+&lt;h2&gt;Other languages, not-so-much-languages, and tools&lt;/h2&gt;
+
+&lt;p&gt;My starter Dart project is a game (where do I find the time?), hence WebGL and subsequently &lt;a href=&quot;http://en.wikipedia.org/wiki/OpenGL_Shading_Language&quot;&gt;GLSL&lt;/a&gt;. I&amp;rsquo;m particularly excited about getting my hands even dirtier with shaders with Mozilla &lt;a href=&quot;https://hacks.mozilla.org/2013/11/live-editing-webgl-shaders-with-firefox-developer-tools/&quot;&gt;recently announcing&lt;/a&gt; live-editing of shaders using Firefox.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve always used Capistrano and Chef for my provisioning and configuration needs, but this year I gave Ansible a shot. I hope Ansible stays the way it is: small, simple, elegant. No agents; just SSH.&lt;/p&gt;
+
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;2013 was a bumpy ride. We had a beautiful daughter in June, and I quit my job soon after to freelance from home and be 2 flights of stairs away from her. To be able to learn a few new skills and do 4 courses, I had to make some changes. There are the 5AM starts, the &lt;a href=&quot;http://well.blogs.nytimes.com/2013/05/09/the-scientific-7-minute-workout&quot;&gt;highly-condensed exercise routine in the morning&lt;/a&gt;, diligently deleting anything which doesn&amp;rsquo;t contribute to the plan I have for our life (this includes articles, emails, etc), and just generally getting things done.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://24.media.tumblr.com/abbc16af261cffe6a867bfbcb4f380e2/tumblr_myfbtyAEiW1ri2z5io1_1280.jpg&quot; width=&quot;50%&quot; align=&quot;left&quot; alt=&quot;The Polar Bear who might have eaten Xmas&quot;&gt; The game I mentioned seems like a distraction, but I feel it&amp;rsquo;s important that I do it. I&amp;rsquo;ve been in love with doodling since I was a kid, and really took it up this year. I&amp;rsquo;m an able musician, and since I can code I thought I&amp;rsquo;d bring these ingredients together and make something nice. (Those umpteen characters and storylines in my head will finally be unleashed!).&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading this far. May you have a great 2014.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I leave you with a doodle I made a few days ago entitled &amp;ldquo;The Polar Bear who might have eaten Xmas&amp;rdquo;. (Don&amp;rsquo;t worry &amp;mdash; this isn&amp;rsquo;t one of my games ideas ;-)&lt;/em&gt;&lt;/p&gt;
+</content>
+	<content type="image/jpeg" src="http://25.media.tumblr.com/650a566e7ccb9b0f292ce9c016206c14/tumblr_mygpxoJUpY1ri2z5io1_1280.jpg" />
+    <author>
+      <name>Juan Uys</name>
+      <uri>http://opyate.com/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>Using single and double pipes in Scala conditionals</title>
+    <link href="http://opyate.com/2013/12/27/using-single-and-double-pipes-in-scala-conditionals.html"/>
+    <updated>2013-12-27T00:00:00+00:00</updated>
+    <id>http://opyate.com/2013/12/27/using-single-and-double-pipes-in-scala-conditionals</id>
+    <content type="html">&lt;p&gt;In a nutshell, use a single pipe if you want all the expressions in your conditionals to be evaluated, and a double pipe to conk out as soon as you have &lt;code&gt;true&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;
+scala&gt; def a = { println(&quot;a&quot;) ; true }
+a: Boolean
+
+scala&gt; def b = { println(&quot;b&quot;) ; true }
+b: Boolean
+
+scala&gt; def c = { println(&quot;c&quot;) ; true }
+c: Boolean
+
+scala&gt; if (a || b || c) println(&quot;true&quot;) else println(&quot;false&quot;)
+a
+true
+
+scala&gt; if (a | b | c) println(&quot;true&quot;) else println(&quot;false&quot;)
+a
+b
+c
+true
+&lt;/pre&gt;
+
+</content>
+	<content type="" src="" />
+    <author>
+      <name>Juan Uys</name>
+      <uri>http://opyate.com/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>Heuristics</title>
+    <link href="http://opyate.com/2013/12/13/heuristics.html"/>
+    <updated>2013-12-13T00:00:00+00:00</updated>
+    <id>http://opyate.com/2013/12/13/heuristics</id>
+    <content type="html">&lt;p&gt;I recently saw a talk by Jack Dorsey where he iterates a list of commandments for this life, and number three is &amp;ldquo;drink only lemon water and red wine&amp;rdquo;.&lt;/p&gt;
+
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;//www.youtube.com/embed/wEQawgkCMOU?feature=player_detailpage&amp;start=1220&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+
+&lt;p&gt;I love red wine, and was intrigued by this lemon water idea. I investigated and it led me to &lt;a href=&quot;http://www.lifehack.org/articles/lifestyle/11-benefits-lemon-water-you-didnt-know-about.html&quot;&gt;an article&lt;/a&gt; which asks how much lemon water is needed. They quote a heuristic:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;For those who weigh less than 150 pounds, squeeze half a lemon’s worth of juice into a glass of water. If over 150 pounds, use an entire lemon’s juice.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a heuristic, and it is beautiful. It saved the author from quoting an entire &amp;ldquo;weight in pounds to amount of lemon&amp;rdquo; table.&lt;/p&gt;
+
+&lt;p&gt;The heuristic is one of my favourite concepts of all time. During engineering school in the late nineties it became ever more apparent what a powerful concept it is, e.g. using lookup tables when designing flow systems with complex flow dynamics. It makes applied rocket science a bit easier. Or when solving path finding problems where the brute force method is just not a viable option in terms of time complexity.&lt;/p&gt;
+
+&lt;p&gt;Anyhoo, I&amp;rsquo;ve reached my 10 minute limit for writing ★, and since I can&amp;rsquo;t do this powerful concept any justice with just a few words, I&amp;rsquo;ll let the &lt;a href=&quot;http://en.wikipedia.org/wiki/Heuristic&quot;&gt;editors of Wikipedia englighten you&lt;/a&gt; further.&lt;/p&gt;
+
+&lt;p&gt;★ this is my own heuristic (aka &amp;ldquo;rule of thumb&amp;rdquo;) for not spending too much time on writing.&lt;/p&gt;
+</content>
+	<content type="" src="" />
+    <author>
+      <name>Juan Uys</name>
+      <uri>http://opyate.com/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>Project Euler 18 and 67 in Scala using foldRight, zip and sliding</title>
+    <link href="http://opyate.com/2013/11/28/project-euler-18-and-67-in-scala-using-foldright-zip-and-sliding.html"/>
+    <updated>2013-11-28T00:00:00+00:00</updated>
+    <id>http://opyate.com/2013/11/28/project-euler-18-and-67-in-scala-using-foldright-zip-and-sliding</id>
+    <content type="html">&lt;p&gt;&lt;img src=&quot;http://distilleryimage6.ak.instagram.com/267f6626581311e3986c12b308e0cf9c_8.jpg&quot; width=&quot;50%&quot; align=&quot;right&quot;&gt; I&amp;rsquo;ve recently applied to &lt;a href=&quot;http://www.toptal.com/?ref=14568&quot;&gt;Toptal&lt;/a&gt; and sucked miserably at the entry exam. My algo chops were blunt and I thought I&amp;rsquo;d rectify it by revisiting &lt;a href=&quot;http://projecteuler.net/&quot;&gt;Project Euler&lt;/a&gt;. With the startup last year and the baby this year I just haven&amp;rsquo;t been able to find the time for programming challenges, but that has to change.&lt;/p&gt;
+
+&lt;p&gt;Looking at my Project Euler source directory, I saw that I left it at &lt;a href=&quot;http://projecteuler.net/problem=17&quot;&gt;problem 17&lt;/a&gt;, so next up will be &lt;a href=&quot;http://projecteuler.net/problem=18&quot;&gt;18&lt;/a&gt;. The problem description, however, mentions that the &lt;a href=&quot;http://projecteuler.net/problem=67&quot;&gt;problem repeats itselt as 67&lt;/a&gt;, but with a bigger input that will run 20 billion years if you go the brute force route.&lt;/p&gt;
+
+&lt;p&gt;I worked a little on this problem last night, and decided to by-pass the brute force solution completely. It was a bit late, though, and I pulled my eyelids open far enough to make it to bed. I then went on to dream about the damn problem all night. I knew there had to be a simple bottom-up fold-based solution, and the &lt;em&gt;voila&lt;/em&gt; moment came for me when I realised I had to seed the fold computation with the base layer in the triangle.&lt;/p&gt;
+
+&lt;p&gt;Here you go:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/7689573.js&quot;&gt; &lt;/script&gt;
+
+
+&lt;h1&gt;A little explanation&lt;/h1&gt;
+
+&lt;p&gt;The triangle is represented as a nested list, like so: &lt;strong&gt;List(List(1), List(2, 3), List(4, 5, 6))&lt;/strong&gt; and so forth.&lt;/p&gt;
+
+&lt;pre&gt;
+
+     1
+    / \
+   2   3
+  / \ / \
+ 4   5   6    &lt;- this is the &quot;base layer&quot; in my explanation.
+&lt;/pre&gt;
+
+
+&lt;p&gt;Since you need to add the maximum of the two immediate children to the layer above, a foldRight wouldn&amp;rsquo;t give me all the info I need in the curent iteration. Foldright for me means &amp;ldquo;the data is coming FROM the right&amp;rdquo;, i.e. &lt;strong&gt;List(4, 5, 6)&lt;/strong&gt; will be processed first, then &lt;strong&gt;List(2, 3)&lt;/strong&gt; but at no point in the iteration will they be available together so I can do the sum. &lt;strong&gt;List(4, 5, 6)&lt;/strong&gt; would need to come into the iteration with &lt;strong&gt;List(2, 3)&lt;/strong&gt; in another way, and I realised I can use the foldRight&amp;rsquo;s accumulator for that by seeding the foldRight with the base layer in the triangle (aka the last list &lt;strong&gt;List(4, 5, 6)&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p&gt;The easiest way was to just seed the foldRight with a list of zeros one element larger than the base layer. You then break it up into pairs using &lt;strong&gt;sliding(2,1)&lt;/strong&gt;, take the max of the pairs, and sum the max with the corresponding (thanks to &lt;strong&gt;zip&lt;/strong&gt;) element in the layer above.&lt;/p&gt;
+
+&lt;pre&gt;
+
+      1
+     / \
+    2   3
+   / \ / \
+  4   5   6
+ / \ / \ / \
+0   0   0   0    &lt;- this becomes the new &quot;base layer&quot;, or &quot;seed&quot;
+&lt;/pre&gt;
+
+
+&lt;p&gt;No mutable state; no recursion; simple to understand. As &lt;a href=&quot;http://www.applied-duality.com&quot;&gt;Erik Meijer&lt;/a&gt; would say: &amp;ldquo;baby code&amp;rdquo;.&lt;/p&gt;
+</content>
+	<content type="image/jpeg" src="http://distilleryimage6.ak.instagram.com/267f6626581311e3986c12b308e0cf9c_8.jpg" />
+    <author>
+      <name>Juan Uys</name>
+      <uri>http://opyate.com/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>A webwords Chef cookbook</title>
+    <link href="http://opyate.com/2013/11/10/the-quickest-way-to-get-started-with-dev-vms.html"/>
+    <updated>2013-11-10T00:00:00+00:00</updated>
+    <id>http://opyate.com/2013/11/10/the-quickest-way-to-get-started-with-dev-vms</id>
+    <content type="html">&lt;p&gt;There are a lot of &lt;a href=&quot;http://typesafe.com/activator/templates&quot;&gt;new examples&lt;/a&gt; up on the Typesafe website, a few with the word &amp;ldquo;Reactive&amp;rdquo; in them to drive home the &lt;a href=&quot;http://www.reactivemanifesto.org/&quot;&gt;credo&lt;/a&gt; behind the framework. One of my favourite examples, however, seem to have been demoted but still remains one of my favourites: &lt;a href=&quot;https://github.com/typesafehub/webwords&quot;&gt;webwords&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://webwords.herokuapp.com/&quot;&gt;The old Heroku link&lt;/a&gt; to the live running instance of webwords does not seem to be up anymore, so I whipped up a quick Chef cookbook with which to spin up your own local instance.&lt;/p&gt;
+
+&lt;p&gt;You can find the Github repo &lt;a href=&quot;https://github.com/opyate/webwords-vm.git&quot;&gt;here&lt;/a&gt;. Spin it up and have fun.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;BTW, join us in doing the &lt;a href=&quot;https://www.coursera.org/course/reactive&quot;&gt;Principles of Reactive Programming course&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;!--
+
+The original blog post was going to be a guide to getting webwords cookbook working the old fashioned way, but then I discovered Berkshelf and thought it all a bit pointless.
+
+~/C/s/webwords-vm ❯❯❯ du -chs /home/opyate/.rvm/gems/ruby-2.0.0-p247@vagrant
+147M    /home/opyate/.rvm/gems/ruby-2.0.0-p247@vagrant
+147M    total
+
+Remove these two lines from the newly-generated Vagrantfile:
+
+  config.ssh.max_tries = 40
+  config.ssh.timeout   = 120 
+
+These switches have been deprecated.
+
+# Chef server
+
+git clone https://github.com/opscode-cookbooks/chef-server.git
+cd chef-server
+vagrant plugin install vagrant-berkshelf
+vagrant plugin install vagrant-omnibus
+vagrant up
+
+Et voila! Now you have a Chef server.
+
+After logging into the Chef server, it shows the following message, which in turn shows a few things I&#39;ll definitely check out and bog about at another time, e.g. Juju and Landscape.
+
+&lt;code&gt;
+~/V/chef-server git:master ❯❯❯ vagrant ssh                                                                                                                                                                         ✱
+Welcome to Ubuntu 12.04.3 LTS (GNU/Linux 3.2.0-55-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Sat Nov  2 20:24:46 UTC 2013
+
+  System load:  1.04              Processes:           137
+  Usage of /:   5.0% of 39.37GB   Users logged in:     0
+  Memory usage: 65%               IP address for eth0: 10.0.2.15
+  Swap usage:   0%                IP address for eth1: 33.33.33.50
+
+  Graph this data and manage this system at https://landscape.canonical.com/
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+  Use Juju to deploy your cloud instances and workloads:
+    https://juju.ubuntu.com/#cloud-precise
+
+0 packages can be updated.
+0 updates are security updates.
+
+vagrant@chef-server:~$ 
+
+&lt;/code&gt;
+
+You can see your server at https://33.33.33.50 in your web browser to get started. (the sidebar says to log in with &#39;admin&#39; and &#39;p@ssw0rd1&#39;, in case you missed it).
+
+# Client
+
+Now, turn your workstation into a chef client.
+
+Firstly, we need knife. Since I rarely muddy my *entire* system with Ruby packages, I localise stuff to gemsets:
+
+rvm use 2.0.0-p247@chef-client --create --default
+sudo apt-get install ruby-bundler
+
+I then use the following Gemfile, and run &#39;bundle install&#39; on it:
+
+&lt;todo the gemfile&gt;
+
+See ~/VMs/chef-client
+&lt;/todo&gt;
+
+
+I re-iterate the important steps from the [official documentation](http://www.opscode.com/blog/2013/03/11/chef-11-server-up-and-running/):
+(please match my steps with the steps on the above blog since I don&#39;t provide as much detail)
+
+* copy chef-validator.pem from the chef server to ~/.chef (create the latter if it doesn&#39;t exist)
+
+On the chef server, do:
+
+&lt;code&gt;
+vagrant@chef-server:~$ sudo cp /etc/chef-server/chef-validator.pem /vagrant/
+vagrant@chef-server:~$ sudo cp /etc/chef-server/admin.pem /vagrant/
+&lt;/code&gt;
+
+Then back in the cloned directory (the directory containing Vagrantfile):
+
+&lt;code&gt;
+mv admin.pem chef-validator.pem ~/.chef  
+&lt;/code&gt;
+
+Add the following to the /etc/hosts:
+
+33.33.33.50 chef-server
+
+In the same folder where we installed the Chef gem, run:
+
+knife configure -i
+
+Output should look like the following:
+
+&lt;pre&gt;
+~/V/chef-client ❯❯❯ knife configure -i
+WARNING: No knife configuration file found
+Where should I put the config file? [/home/opyate/.chef/knife.rb] 
+Please enter the chef server URL: [https://annabelle:443] https://chef-server:443
+Please enter a name for the new user: [opyate] 
+Please enter the existing admin name: [admin] 
+Please enter the location of the existing admin&#39;s private key: [/etc/chef-server/admin.pem] ~/.chef/admin.pem
+Please enter the validation clientname: [chef-validator] 
+Please enter the location of the validation key: [/etc/chef-server/chef-validator.pem] ~/.chef/chef-validator.pem
+Please enter the path to a chef repository (or leave blank): 
+Creating initial API user...
+Please enter a password for the new user: 
+Created user[opyate]
+Configuration file written to /home/opyate/.chef/knife.rb
+~/V/chef-client ❯❯❯ 
+
+&lt;/pre&gt;
+
+For simplicity, I keep my roles and cookbooks in ~/.chef, so I add the following lines to ~/.chef/knife.rb
+
+&lt;code&gt;
+
+current_dir = File.dirname(__FILE__)
+cookbook_path            [&quot;#{current_dir}/cookbooks&quot;]
+role_path                [&quot;#{current_dir}/roles&quot;]
+&lt;/code&gt;
+
+I create my first cookbook with:
+
+knife  cookbook create gulp -C &quot;Juan Uys&quot; -m &quot;opyate@gmail.com&quot; -I mit -r md
+
+(gulp = Gullible Unnatural Language Processor)
+
+knife cookbook role create gulp
+
+...and then add to run_list: &quot;recipe[gulp]&quot;
+
+We&#39;ll add our own custom Java recipe which will use different defaults, e.g. version 7 instead of 6.
+
+&lt;todo include Java7 recipe here&gt;
+
+Also, instead of downloading Java7&#39;s dependencies (i.e. java and apt), Berkshelf now kicks in and manages the cookbook dependencies for us.
+
+--&gt;
+
+</content>
+	<content type="image/jpeg" src="http://www.gravatar.com/avatar/c22bbf2aac2a3841d80f5363d73e3ebe.png?s=512" />
+    <author>
+      <name>Juan Uys</name>
+      <uri>http://opyate.com/about/</uri>
+    </author>
+  </entry>
+  
 </feed>

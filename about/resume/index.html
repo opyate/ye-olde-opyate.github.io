@@ -1,0 +1,316 @@
+<!DOCTYPE HTML>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+	<meta name="robots" content="INDEX,FOLLOW" />
+    <title>Résumé &mdash; Juan Uys</title>
+    <meta name="keywords" content="opyate, juan m uys, juan uys, south african programmer, south african hacker" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href='http://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="screen, projection" href="/res/screen.css" type="text/css">
+    <link rel="stylesheet" media="print" href="/res/print.css" type="text/css">
+    <link rel="alternate" type="application/atom+xml" title="Juan Uys" href="http://feeds.feedburner.com/opyate">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/res/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/res/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/res/apple-touch-icon-114x114-precomposed.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@opyate">
+    
+    
+    <meta property="og:title" content="Résumé">
+      
+      <meta name="description" content="Juan Uys Introduction I&rsquo;m a London-based South African who has been doing tech work since 2002. I&rsquo;ve designed, architected and implemented entire social networks and...">
+      <meta name="og:description" content="Juan Uys Introduction I&rsquo;m a London-based South African who has been doing tech work since 2002. I&rsquo;ve designed, architected and implemented entire social networks and...">
+      
+    
+    
+    <meta property="og:url" content="http://opyate.com/about/resume/">
+    <meta property="og:site_name" content="opyate.com">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_GB" />
+    
+    
+    <script>
+  //html { zoom:50%; }
+  if (window.addEventListener) {
+    var sidebarAdjustTimer;
+    function updateOrientation(orientationChangeEvent) {
+      if (sidebarAdjustTimer) clearInterval(sidebarAdjustTimer);
+      //console.log('window.orientation -> '+window.orientation);
+      if (window.orientation === -90 || window.orientation === 90) {
+        // landscape
+        var sidebar = document.getElementById('sidebar');
+        if (!sidebar.src || sidebar.src === '') {
+          sidebar.src = '/archive/sidebar.html';
+        }
+        sidebarAdjustTimer = setInterval(function() {
+          var height = Math.round(document.height * 1.6);
+          if (sidebar.height != height) {
+            sidebar.height = height;
+            sidebar.style.height = height + 'px';
+          }
+        },500);
+      } else {
+        // portrait
+      }
+    }
+    window.addEventListener('orientationchange', updateOrientation);
+    document.addEventListener('DOMSubtreeModified', function(ev) {
+      if (document.getElementById('sidebar')) {
+        document.removeEventListener('DOMSubtreeModified', arguments.callee);
+        updateOrientation();
+      }
+    });
+  }
+</script>
+    
+    
+  </head>
+  <body>
+    <script>
+      if (window.navigator.userAgent.indexOf('iPad') != -1) {
+        document.documentElement.className = 'ios ipad';
+        window.opyateHostIsIOS = 'ipad';
+      } else if (window.navigator.userAgent.indexOf('iPhone') != -1) {
+        document.documentElement.className = 'ios iphone';
+        window.opyateHostIsIOS = 'iphone';
+      }
+    </script>
+    <iframe id="sidebar"></iframe>
+    <header>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/res/signature-2-2.png" width="160" height="50" alt="Signature"></a></h1>
+      <ul class="navigation">
+        <li><a href="/projects/" title="Projects I am or was involved in">Projects</a></li>
+        <li><a href="/archive/" title="Archived articles">Archive</a></li>
+        <li><a href="/about/resume/"class="active">About me</a></li>
+      </ul>
+    </header>
+    <!--div class="wrapper content"-->
+      <div class="content">
+  <h1>Juan Uys</h1>
+
+<p><img src="http://www.gravatar.com/avatar/c22bbf2aac2a3841d80f5363d73e3ebe.png?s=512" width="160" height="160" align="right" class="pull-right"></p>
+
+<p><a href="mailto:%6F%70%79%61%74%65%40%67%6D%61%69%6C%2E%63%6F%6D" title="Contact me.">
+  <img src="/res/icons/email.png">
+</a>
+<a href="https://www.facebook.com/opyate" title="My Facebook profile">
+  <img src="/res/icons/facebook.png">
+</a>
+<a href="http://twitter.com/opyate" title="My Twitter profile">
+  <img src="/res/icons/twitter-2.png">
+</a></p>
+
+<h2>Introduction</h2>
+
+<p>I&rsquo;m a <a href="http://pits-to-palace.tumblr.com/">London-based</a> South African who has been doing tech work since 2002. I&rsquo;ve designed, architected and implemented entire social networks and ecommerce systems, while also assuming the role of developer, ops, analyst and tester throughout (a given for single technical co-founders).</p>
+
+<p>Most information about said activity can be found on my <a href="http://opyate.com">personal</a> and <a href="http://uys.io">professional</a> websites, or my <a href="http://careers.stackoverflow.com/opyate">StackOverflow careers profile</a>.</p>
+
+<h2>Conde Nast Commerce (as <a href="http://www.uys.io">Unleash Your Server</a>)</h2>
+
+<p>Helping <a href="http://style.com">style.com</a> build their new ecommerce website.</p>
+
+<h2>pdfcrun.ch (as <a href="http://www.uys.io">Unleash Your Server</a>)</h2>
+
+<p>Latterly, I started a new business called <a href="https://pdfcrun.ch">pdfcrunch</a>. It turns PDFs into data. It&rsquo;s been quite computer vision -heavy, and I&rsquo;ve been spending a lot of time in iPython notebooks tweaking algorithms.</p>
+
+<p>The tech stack comprises Python (with scikit/numpy/etc for the CV stuff, and Tornado/Flask/Pika for the API glue), Scala and Clojure (to interface with some existing Java-based PDF tools), Docker (running a cluster on EC2 using tutum.co), PostgresQL, RabbitMQ (to de-couple the many different types of background workers), with AngularJS on the frontend (for editing stencils).</p>
+
+<h2>Unleash Your Server</h2>
+
+<p><a href="http://www.uys.io">Unleash Your Server</a> is my company.</p>
+
+<p>From server to app in 60 (to the power of 3.7 &#8432;) seconds.</p>
+
+<p><em>*</em> custom development, estimate for typical consumer app. One day we will auto-generate these things.</p>
+
+<p>Over the years I&rsquo;ve amassed and honed a bunch of skills that empowers me to take one or many bare-bones servers (e.g. EC2/app-cell/dyno) and turn it into an application comprised many moving parts and components, including messages queues, databases, web servers, caches, web APIs, responsive and easy-to-use frontends, and mobile clients &mdash; all backed by an agile development process and other pragmatic best practices, including full configuration management, continuous integration, source control, and a whole host of other things I consider obvious and take for granted. Full-stack developer? Maybe!</p>
+
+<p>I&rsquo;ve always wanted to form a collective of capable and varied individuals to build beautiful things with me, because I believe teams are better than individuals. I have, however, failed to do so twice now, mostly due to shifting interests, or loosing team members to itches they just have to scratch.</p>
+
+<p>Unleash Your Server is a new endeavour, but I&rsquo;ve started this one on my own. The name is a play on my surname, UYS, chosen by my mate and old business partner <a href="http://twitter.com/wehtam">@wehtam</a> (yes, I suck at naming things, and besides &mdash; it&rsquo;s one of the two biggest problems in computer science, alongside cache invalidation, and off-by-one errors).</p>
+
+<p>Apart from finding new problems to solve and organically building businesses around them, I&rsquo;ve had the immense privilege of starting my new journey with GOV.UK on the <a href="https://gds.blog.gov.uk/2014/01/29/200-days-of-transformation-200-days-to-go/">transformation</a> project.</p>
+
+<h2>Freelance</h2>
+
+<p>2 weeks is not enough paternity leave for any new father, so I embarked on a 10 month adventure as a WFH dad / freelancer.</p>
+
+<p>I mostly worked with start-ups from my network, and work included credit scoring, news generation by way of AI, a service marketplace, and solving the age-old British problem of the queue.</p>
+
+<h2><a href="http://app.pollarize.me">pollarize.me</a></h2>
+
+<p><em>Pollarize</em> is a decision-making platform that makes it quicker and easier for you to query your friends across multiple social networks and gather their responses into one concise answer. I co-founded <em>pollarize</em> at Startup Weekend London, March 2012, which we won. Shortly after, we were accepted into Wayra UK, who gave us enough money to work on releasing <em>pollarize</em> on iOS and web in December 2012. Sadly, we have since run out of cash and have failed to secure more funding.</p>
+
+<p><a href="/tag/pollarize">Read more about my work with pollarize.me &rarr;</a></p>
+
+<h2><a href="http://www.net-a-porter.com/">Net-A-Porter.com</a></h2>
+
+<p>I worked at Net-A-Porter.com for almost 7 years, and some of my achievements include implementing our first shared payment service, our first API and our first translations system. I have led teams, and I&rsquo;ve also won a hack day with an iOS app.</p>
+
+<p><a href="/about/resume/netaporter/">Read more about my work with Net-A-Porter.com &rarr;</a></p>
+
+<h2><a href="http://www.beatthatquote.com">BeatThatQuote.com</a></h2>
+
+<p><a href="http://www.beatthatquote.com/">BeatThatQuote.com</a> (also trading as <a href="http://financeleadsonline.co.uk">Finance Leads Online</a>) was the UK&rsquo;s fastest growing start-up in 2005 and won the HSBC regional award for best start-up in the London region. The company’s core business is generating and selling financial leads. As employee #5 (and the second techie!) I was resposible for implementing backends in Java, and customer self-service front-ends in RoR. BeatThatQuote has since been acquired by Google.</p>
+
+<p><a href="/about/resume/beatthatquote/">Read more about my work with BeatThatQuote.com &rarr;</a></p>
+
+<h2>Ye olden days</h2>
+
+<p>A large part of my career is too long ago to be technically relevant, so the takeaway for me is the experience, soft skills, and architectural knowledge.</p>
+
+<p>Read more about the dinosaur days of my career <a href="/about/resume/dinosaur/">here</a>.</p>
+
+<h2>Extracurricular</h2>
+
+<ul>
+<li>I do some speaking on APIs at <a href="http://themobileacademy.org.uk/whos-who/juan-uys/">The Mobile Academy</a></li>
+<li>You&rsquo;ll sometimes see me at the Scala, Ruby and various other meetup groups.</li>
+</ul>
+
+
+<h2>Learning</h2>
+
+<p>I&rsquo;m not a big fan of dust, rust and cobwebs of the mind. Here goes:</p>
+
+<p><a href="http://issc.uj.ac.za/issc/scschool.html">Diploma in Scientific Computing</a>, <a href="http://www.uj.ac.za/EN/Faculties/engineering/departments/eeesci/Pages/default.aspx">electronic engineering drop-out</a> (long story!), Sun Certified Java Programmer, <a href="https://www.coursera.org/course/progfun">Functional Programming Principles in Scala</a>, <a href="https://www.coursera.org/course/dataanalysis">Data Analysis</a>, <a href="https://www.coursera.org/course/bigdata">Web Intelligence and Big Data</a>, <a href="https://www.udacity.com/course/cs271">Introduction to Artificial Intelligence</a> and I&rsquo;m also a qualified advanced scuba diver.</p>
+
+<h2>Doodling</h2>
+
+<p>I&rsquo;ve recently taken up doodling, and like most people who dive into a new hobby, you initially think you&rsquo;re quite good (Dunning–Kruger!) and that&rsquo;s when you get picture book ideas and comic book ideas and think you can publish something one day. I&rsquo;m now past that stage and think I suck quite a bit, but it&rsquo;s fun nonetheless and it might cheer someone up to see them.</p>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.1/jquery.flexslider-min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+    SyntaxHighlighter.all();
+});
+$(window).load(function(){
+    $('.flexslider').flexslider({
+    animation: "slide",
+    animationLoop: false,
+    itemWidth: 210,
+    itemMargin: 5,
+    pausePlay: true,
+    start: function(slider){
+        $('body').removeClass('loading');
+    }
+    });
+});
+</script>
+
+
+<p><section class="slider"></p>
+
+<div class="flexslider carousel">
+    <ul class="slides">
+    <li>
+        <img src="http://25.media.tumblr.com/5699d1d443340a7fe86e34e1ca1035b9/tumblr_mou3q21qwF1ri2z5io1_500.jpg" />
+    </li>
+    <li>
+        <img src="http://24.media.tumblr.com/3d69032be81c3b56533a5bb48ab2903a/tumblr_moqhspSNeW1ri2z5io1_500.jpg" />
+    </li>
+
+    <li>
+        <img src="http://24.media.tumblr.com/24a0835cf88d891643c866bc318b79ab/tumblr_moatx64UWx1ri2z5io1_500.jpg" />
+    </li>
+    <li>
+        <img src="http://25.media.tumblr.com/0e3daaaf5e64585f0dea531728d037c2/tumblr_mo8rc4h5de1ri2z5io1_500.jpg" />
+    </li>
+    <li>
+        <img src="http://24.media.tumblr.com/2114a52727a37e62be169201bb90e2fb/tumblr_mo71t5aYMt1ri2z5io1_500.jpg" />
+    </li>
+    <li>
+        <img src="http://25.media.tumblr.com/e910085755d6937118ed05b2e2b33c35/tumblr_mo0ewe5zEo1ri2z5io1_500.jpg" />
+    </li>
+    <li>
+        <img src="http://24.media.tumblr.com/154c46758720d84d06d70f79e3d185bf/tumblr_mnpj8cIkth1ri2z5io1_500.jpg" />
+    </li>
+    <li>
+        <img src="http://24.media.tumblr.com/454c6e77c1caa3341d6ccdfd88740afb/tumblr_mmvo8o9wRz1ri2z5io1_500.jpg" />
+    </li>
+    <li>
+        <img src="http://24.media.tumblr.com/533ad317ca76f18e5330fb4fda4d0be9/tumblr_mmuwh81dSF1ri2z5io1_500.jpg" />
+    </li>
+    <li>
+        <img src="http://25.media.tumblr.com/f6300b475fc88edde2054f9970f6e492/tumblr_mmtz4rWmXa1ri2z5io1_500.jpg" />
+    </li>
+    <li>
+        <img src="http://24.media.tumblr.com/45706523a030a91932e3b71dd3c052e7/tumblr_mmql56HJUH1ri2z5io1_500.jpg" />
+    </li>
+    <li>
+        <img src="http://25.media.tumblr.com/9cdab387059d264ee2ef5147e0358b4d/tumblr_mlju91r2J01ri2z5io1_500.jpg" />
+    </li>
+    </ul>
+</div>
+
+
+<p></section></p>
+
+</div>
+
+    <!--/div-->
+    
+    
+    
+    
+    <footer>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/res/cc-cc.png" class="cc">
+        <img src="/res/cc-by.png" class="cc"></a>
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
+      </p>
+    </footer>
+    
+    
+    <script>
+  // curry pre < code to be able to get prettified
+  // If the first line is
+  //   #!-langname\n
+  // Then that line is removed from the code and "langname" is given to prettify.
+  // If "langname" is "none", that prettify is not applied at all.
+  var n,i,L,cn,lang,v = document.getElementsByTagName('pre');
+  var m,lang_re = /^#\!-([a-zA-Z0-9_-]+)\n/;
+  for (i=0,L=v.length;i<L;++i) {
+    n = v.item(i);
+    if ((cn = n.firstChild) && cn.nodeName == 'CODE') {
+      lang = null;
+      if (cn.firstChild.nodeType === Node.TEXT_NODE) {
+        m = lang_re.exec(cn.firstChild.nodeValue);
+        if (m) {
+          lang = m[1].toLowerCase();
+          cn.firstChild.nodeValue = cn.firstChild.nodeValue.substr(m[0].length);
+          if (lang === 'none') {
+            continue;
+          }
+        }
+      }
+      n.setAttribute('class', 'prettyprint'+(lang ? ' lang-' + lang : ''));
+    }
+  }
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28222168-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>
