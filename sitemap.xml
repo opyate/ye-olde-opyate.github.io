@@ -2,33 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://opyate.com/</loc>
-    <lastmod>2015-10-19T15:19:58+01:00</lastmod>
+    <lastmod>2016-01-03T08:55:01+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://opyate.com/about/</loc>
-    <lastmod>2015-10-19T15:19:58+01:00</lastmod>
+    <lastmod>2016-01-03T08:55:01+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://opyate.com/archive/</loc>
-    <lastmod>2015-10-19T15:19:58+01:00</lastmod>
+    <lastmod>2016-01-03T08:55:01+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
+    <loc>http://opyate.com/2015/12/30/my-uninformed-thoughts-on-the-year-again.html</loc>
+    <lastmod>2015-12-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+   </url>
+   
+  <url>
     <loc>http://opyate.com/2015/06/17/add-logging-to-postgresql-on-docker.html</loc>
-    <lastmod>2015-06-17T00:00:00+01:00</lastmod>
+    <lastmod>2015-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
    </url>
    
   <url>
     <loc>http://opyate.com/2015/06/14/a-tale-of-two-money-transfers.html</loc>
-    <lastmod>2015-06-14T00:00:00+01:00</lastmod>
+    <lastmod>2015-06-14T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
    </url>
@@ -42,7 +49,7 @@
    
   <url>
     <loc>http://opyate.com/2014/04/17/i-made-my-daughter-a-book-for-her-first-birthday.html</loc>
-    <lastmod>2014-04-17T00:00:00+01:00</lastmod>
+    <lastmod>2014-04-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
    </url>
@@ -112,14 +119,14 @@
    
   <url>
     <loc>http://opyate.com/2013/07/19/failed-startup-2.html</loc>
-    <lastmod>2013-07-19T00:00:00+01:00</lastmod>
+    <lastmod>2013-07-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
    </url>
    
   <url>
     <loc>http://opyate.com/2013/07/16/redefine-thyself.html</loc>
-    <lastmod>2013-07-16T00:00:00+01:00</lastmod>
+    <lastmod>2013-07-16T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
    </url>
@@ -133,14 +140,14 @@
    
   <url>
     <loc>http://opyate.com/2012/10/15/adding-sms-functionality-with-twilio.html</loc>
-    <lastmod>2012-10-15T00:00:00+01:00</lastmod>
+    <lastmod>2012-10-15T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
    </url>
    
   <url>
     <loc>http://opyate.com/2012/07/31/semantic-web-deep-dive.html</loc>
-    <lastmod>2012-07-31T00:00:00+01:00</lastmod>
+    <lastmod>2012-07-31T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
    </url>
@@ -189,70 +196,70 @@
    
   <url>
     <loc>http://opyate.com/2010/09/13/startup-day-6-doubts-and-hamsters.html</loc>
-    <lastmod>2010-09-13T00:00:00+01:00</lastmod>
+    <lastmod>2010-09-13T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
    </url>
    
   <url>
     <loc>http://opyate.com/2010/09/09/startup-day-2.html</loc>
-    <lastmod>2010-09-09T00:00:00+01:00</lastmod>
+    <lastmod>2010-09-09T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
    </url>
    
   <url>
     <loc>http://opyate.com/2010/09/08/startup-day-1.html</loc>
-    <lastmod>2010-09-08T00:00:00+01:00</lastmod>
+    <lastmod>2010-09-08T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
    </url>
    
   <url>
     <loc>http://opyate.com/2010/09/07/just-do-it.html</loc>
-    <lastmod>2010-09-07T00:00:00+01:00</lastmod>
+    <lastmod>2010-09-07T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
    </url>
    
   <url>
     <loc>http://opyate.com/2010/04/05/clear-the-java-mucky-muck-from-ubuntu.html</loc>
-    <lastmod>2010-04-05T00:00:00+01:00</lastmod>
+    <lastmod>2010-04-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
    </url>
    
   <url>
     <loc>http://opyate.com/2009/07/10/semantic-web.html</loc>
-    <lastmod>2009-07-10T00:00:00+01:00</lastmod>
+    <lastmod>2009-07-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
    </url>
    
   <url>
     <loc>http://opyate.com/2005/10/19/breadcrumbs.html</loc>
-    <lastmod>2005-10-19T00:00:00+01:00</lastmod>
+    <lastmod>2005-10-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
    </url>
    
   <url>
     <loc>http://opyate.com/2005/06/01/webhelper.html</loc>
-    <lastmod>2005-06-01T00:00:00+01:00</lastmod>
+    <lastmod>2005-06-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
    </url>
    
   <url>
     <loc>http://opyate.com/2004/06/13/web-tv.html</loc>
-    <lastmod>2004-06-13T00:00:00+01:00</lastmod>
+    <lastmod>2004-06-13T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
    </url>
    
   <url>
     <loc>http://opyate.com/2002/05/30/db-bean-creator-for-java-and-mysql-postgresql.html</loc>
-    <lastmod>2002-05-30T00:00:00+01:00</lastmod>
+    <lastmod>2002-05-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
    </url>
