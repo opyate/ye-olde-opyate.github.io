@@ -138,13 +138,9 @@
 
 <p>To illustrate this, here are the <code>application/form-url-encoded</code> payloads represented as Scala maps:</p>
 
-<script src="https://gist.github.com/3854971.js?file=TwilioSMSFirst.scala"> </script>
+<p><a href="https://gist.github.com/opyate/3854971#TwilioSMSFirst.scala">https://gist.github.com/opyate/3854971#TwilioSMSFirst.scala</a></p>
 
-
-
-
-<script src="https://gist.github.com/3854971.js?file=TwilioSMSSecond.scala"> </script>
-
+<p><a href="https://gist.github.com/opyate/3854971#TwilioSMSSecond.scala">https://gist.github.com/opyate/3854971#TwilioSMSSecond.scala</a></p>
 
 <h1>Implementation in a nutshell</h1>
 
@@ -184,15 +180,13 @@ Option B: No
 
 <p>The second version of the SMSWorker can be seen below.</p>
 
-<script src="https://gist.github.com/3854971.js?file=ScheduledPollFromSMSActor.scala"> </script>
-
+<p><a href="https://gist.github.com/opyate/3854971#ScheduledPollFromSMSActor.scala">https://gist.github.com/opyate/3854971#ScheduledPollFromSMSActor.scala</a></p>
 
 <p>The value inProximity are the SMS fragments within a 10 second period. The SMS fragments belong to the same user, as obtained via the groupBycall on line 8.</p>
 
 <p>The SMSParser on line 19 is really nothing special, but from the test cases you’ll see that we’re catering for every eventuality:</p>
 
-<script src="https://gist.github.com/3854971.js?file=SMSParserSpec.scala"> </script>
-
+<p><a href="https://gist.github.com/opyate/3854971#SMSParserSpec.scala">https://gist.github.com/opyate/3854971#SMSParserSpec.scala</a></p>
 
 <h1>Conclusion</h1>
 
