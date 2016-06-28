@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>No 猫 GIFs here.</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+<!-- modules/handlers/by-mime-type/image/_landingpage.rkt --><p><a href="http://pollarize.me">Pollarize</a> helps the world make up its mind via its beautiful, delightful suite of apps. However, not everyone owns a smartphone. Luckily, <a href="http://www.twilio.com/">Twilio</a> brings voice and messaging to web and mobile applications. Which means that Pollarize now allows our brick-lugging friends to compose polls via SMS.</p>
+
+<h1>How we built it</h1>
+
+<p>The usual Pollarize system constraints are the following:</p>
+
+<ul>
+<li>poll question can not exceed 100 characters</li>
+<li>options A and B can not exceed 100 characters each</li>
+</ul>
+
+<p>The requirements are the following:</p>
+
+<ul>
+<li>a poll SMS should be in the format “Question text. A. First option B. Second option”</li>
+<li>if either A or B is omitted, then default to “Yes” and “No” respectively</li>
+<li>a poll SMS can exceed the 160 character limit, but not exceed 308 characters if we take into account the delimiters ” A. ” and ” B. “</li>
+</ul>
+
+<p>This meant that an entire poll can at least be described at least by one SMS, and at most by two, since 308 is less than 2 * 160, or two SMS fragments.</p>
+
+<h1>SMS</h1>
+
+<p>Twilio seemingly don’t maintain any state on their side. I.e. if a user sends a large SMS, Twilio will not bundle the resulting SMS fragments up and send it to us in one piece. Instead, Twilio will send us the fragments one after the other as they become available from the mobile network.</p>
+
+<p>To illustrate this, here are the <code>application/form-url-encoded</code> payloads represented as Scala maps:</p>
+
+<p><a href="https://gist.github.com/opyate/3854971#TwilioSMSFirst.scala">https://gist.github.com/opyate/3854971#TwilioSMSFirst.scala</a></p>
+
+<p><a href="https://gist.github.com/opyate/3854971#TwilioSMSSecond.scala">https://gist.github.com/opyate/3854971#TwilioSMSSecond.scala</a></p>
+
+<h1>Implementation in a nutshell</h1>
+
+<p>The trick here is to assemble the SMS text once we’ve received all the fragments. Since Twilio doesn’t tell us there’s a second fragment coming, we don’t create a poll immediately after an SMS is received. Instead, we dump the payloads into MongoDB as they are received. A background worker then scans all “unprocessed” SMSes and check if there were other SMSes <em>from the same phone number within the last 10 seconds</em>. Once we have all the SMSes, we combine the original SMS text into a single text, create the poll, and we mark the Mongo record as “processed”.</p>
+
+<p>The “<em>within the last 10 seconds</em>” bit only came after I discovered a massive bug. Let me explain…</p>
+
+<h1>The Poll-from-SMS scheduled job</h1>
+
+<p>The background job server re-assembles the SMS fragments into a single SMS and checks if they’re poll-worthy.</p>
+
+<p>The first version of the SMSWorker accidentally did the following (using the data from the two Gists above):</p>
+
+<h2>Poll #1</h2>
+
+<pre>
+Question: I don't have an iPhone, so I thought I'd build SMS functionality.
+Option A. Great, what about something that interprets smoke signals?
+Option B. Good, now get on with
+</pre>
+
+<h2>Poll #2</h2>
+
+<pre>
+Question: the Android app already!
+Option A: Yes
+Option B: No
+</pre>
+
+<p>See what I did there? Option B got cut off due to the 160 character SMS limit, and we accidentally created a whole new, unintelligible poll. Not quite what I had in mind, as you can imagine. I had to start making some assumptions about the way Twilio and the mobile networks interact in light of the absence of an SLA from either.</p>
+
+<p>I assumed a maximum of 10 seconds between SMS fragments. A counter point to this is that we assume a user won’t create polls via SMS in quick succession.</p>
+
+<h1>The Poll-from-SMS scheduled job V2</h1>
+
+<p>The second version of the SMSWorker can be seen below.</p>
+
+<p><a href="https://gist.github.com/opyate/3854971#ScheduledPollFromSMSActor.scala">https://gist.github.com/opyate/3854971#ScheduledPollFromSMSActor.scala</a></p>
+
+<p>The value inProximity are the SMS fragments within a 10 second period. The SMS fragments belong to the same user, as obtained via the groupBycall on line 8.</p>
+
+<p>The SMSParser on line 19 is really nothing special, but from the test cases you’ll see that we’re catering for every eventuality:</p>
+
+<p><a href="https://gist.github.com/opyate/3854971#SMSParserSpec.scala">https://gist.github.com/opyate/3854971#SMSParserSpec.scala</a></p>
+
+<h1>Conclusion</h1>
+
+<p>This was a fun little addition. Next up is voting via SMS.</p>
+
+<p>MongoDB allowed me to store the entire SMS payload and worry about the contents later. I didn’t create a model for the SMS payload, because it isn’t core to my domain. Also, the 10 second window seemed like a safe trade-off in light of being in the dark (huh?) with regards to mobile network SLAs. We’ll measure and adjust accordingly, of course.</p>
+
+<p>Twilio was easy to integrate with, and it all just works. Now I feel like SMS-enabling all my apps.</p>
+
+<p><img width="50%" src="http://cdn.memegenerator.net/instances/400x/28084623.jpg" alt="SMS-enable all the things"></p>
+  </body>
+</html>

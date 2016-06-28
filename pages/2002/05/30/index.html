@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>No 猫 GIFs here.</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+<!-- modules/handlers/by-mime-type/image/_landingpage.rkt --><p>I present the <a href="/projects/dbbeancreator">DB Bean Creator for Java and MySQL/PostgresQL</a>.</p>
+
+<p>When you have finished designing your database, you start to code the beans to interface with it. Making changes to the DB means making changes to the beans. This is time consuming and costly.</p>
+
+<p>The DB Bean Creator looks at your database (PostgresQL and MySQL are currently supported) and creates all the beans on the fly.</p>
+
+<h1>What to do</h1>
+
+<p>Basically, create an HTML page with the following <a href="/projects/dbbeancreator/dbbeancreator/form.html">form snippet</a>.</p>
+
+<p><a href="/projects/dbbeancreator/dbbeancreator/CreateDBBean.java">The servlet</a> should be compiled and put in a servlet container (like Tomcat).</p>
+
+<p>Also, put <a href="/projects/dbbeancreator/dbbeancreator/org.gjt.tw.dbobjects.tar.gz">this</a> into your app. It&#39;s some oooold DB persistance stuff someone devved years ago. It hasn&#39;t been updated since 2001, but I modified it a little to fit my script.</p>
+
+<p>When you submit the form, the servlet will spew out bean code, and/or create the sources as specified.</p>
+
+<h1>All of it</h1>
+
+<p><a href="/projects/dbbeancreator/dbbeancreator.tgz">dbbeancreator.tgz</a> (23,678 bytes)</p>
+
+<p>Happy coding. I hope this shaves hours off your dev time too :-) Now you can get the DB schema perfect, and adapt the code on the run.</p>
+
+<h1>Future developments:</h1>
+
+<ul>
+<li>Tag libraries to utilise the beans</li>
+<li>JUnit test cases</li>
+<li>Get the servlet to work with newer/better persistance libraries</li>
+</ul>
+  </body>
+</html>

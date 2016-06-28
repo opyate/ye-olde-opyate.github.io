@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>No 猫 GIFs here.</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+<!-- modules/handlers/by-mime-type/image/_landingpage.rkt --><p>Normally, in <code>docker-compose.yml</code>  I would just configure a database like this:</p>
+
+<pre><code>db:
+  image: postgres:9.4
+</code></pre>
+
+<p>However, to customise the image, we use our own Dockerfile:</p>
+
+<pre><code>FROM postgres:9.4
+ADD config.sh /docker-entrypoint-initdb.d/
+</code></pre>
+
+<p>The contents of <code>config.sh</code>:</p>
+
+<pre><code>perl -pi -e &quot;s/#log_statement = &#39;none&#39;/log_statement = &#39;all&#39;/g&quot; \
+/var/lib/postgresql/data/postgresql.conf
+</code></pre>
+
+<p>And <code>docker-compose.yml</code> now becomes:</p>
+
+<pre><code>db:
+  build: location/of/new/docker/file
+</code></pre>
+
+<p>Link your app, launch the stack, and start seeing log statements on STDIN:</p>
+
+<pre><code>db_1         | LOG:  statement: BEGIN
+db_1         | LOG:  statement: SELECT etc etc
+</code></pre>
+  </body>
+</html>
