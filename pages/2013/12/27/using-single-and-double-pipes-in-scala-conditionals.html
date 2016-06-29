@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>No 猫 GIFs here.</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+<!-- modules/handlers/by-mime-type/image/_landingpage.rkt --><p>In a nutshell, use a single pipe if you want all the expressions in your conditionals to be evaluated, and a double pipe to conk out as soon as you have <code>true</code>.</p>
+
+<pre>
+scala> def a = { println("a") ; true }
+a: Boolean
+
+scala> def b = { println("b") ; true }
+b: Boolean
+
+scala> def c = { println("c") ; true }
+c: Boolean
+
+scala> if (a || b || c) println("true") else println("false")
+a
+true
+
+scala> if (a | b | c) println("true") else println("false")
+a
+b
+c
+true
+</pre>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>No 猫 GIFs here.</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+<!-- modules/handlers/by-mime-type/image/_landingpage.rkt --><p><img src="http://distilleryimage10.ak.instagram.com/09fde780461511e3924b22000aaa05e0_8.jpg" width="50%" align="right" alt="jq to the res-q."> ** <em>TL;DR</em> A quick way to pretty-print JSON in vim with no dependencies (here&#39;s looking at you, Perl). Download <a href="http://stedolan.github.io/jq/">jq</a> then <code>:%!jq &#39;.&#39;</code>**</p>
+
+<p><del>Computational statisticians</del>Data scientists have some the funnest tools, and I found a good write-up of a few more I didn&#39;t know about called <a href="http://jeroenjanssens.com/2013/09/19/seven-command-line-tools-for-data-science.html">7 command-line tools for data science</a>. The first thing the article mentions is a gem called <a href="http://stedolan.github.io/jq/">jq</a>.</p>
+
+<p>I found jq to be especially useful for formatting JSON in vim. So, before ado can in any way be furthered:</p>
+
+<p><code>curl http://stedolan.github.io/jq/download/linux64/jq -o ~/bin/jq</code>
+<span style='display:block;'>&nbsp;</span>
+<code>chmod +x ~/bin/jq</code></p>
+
+<p>In vim, open your unformatted JSON file, then: <code>:%!jq &#39;.&#39;</code>.</p>
+
+<p>There you go, ladies and gents &mdash; a command so short, you don&#39;t even need to put it in your vimrc!</p>
+  </body>
+</html>

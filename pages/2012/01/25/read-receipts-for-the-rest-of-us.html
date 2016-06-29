@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>No 猫 GIFs here.</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+<!-- modules/handlers/by-mime-type/image/_landingpage.rkt --><p>Or, more correctly: Read Receipts for geeks who use <a href="http://www.iterm2.com/">iTerm</a> and/or <a href="http://growl.info/">Growl</a>.</p>
+
+<h1>Read receipt</h1>
+
+<p>So, the Interwebs is down, or the proxy is packing up, or you can’t log in to server X, or <insert generic technical issue here>. You fire off an email to the sysadmins explaining the problem, and now you’re waiting for a reply.</p>
+
+<p>It just so happens that I had a bit of technical trouble today, and fired off an email to someone who can help. I love metrics, and in this case I wanted to know exactly when the sysadmin is looking at my cry for help so I can actually pop over to their side of the office and badger them to fix it (nah, I’m not really like that ;-)</p>
+
+<p>What you need is a Read Receipt notification which tells you that they read your email.</p>
+
+<h1>The rest of us</h1>
+
+<p>If you’re in my situation, you:</p>
+
+<ul>
+<li>don’t use MS products, hence no Read Receipts in your email client</li>
+<li>even if your mail client does support Read Receipts, you haven&#39;t switched it on, because it&#39;s a faff</li>
+<li>don’t work in an office where there’s a reliable ticketing system, so you don’t immediately know if your request is being actioned.</li>
+<li>work with people who reject read receipt requests anyway</li>
+</ul>
+
+<h1>The hack</h1>
+
+<p>Put a link in the email that they can click on. The trick is to get them to click on it, e.g.</p>
+
+<p><img width="381px" src="http://funkshional.files.wordpress.com/2012/01/email.png" alt="Links are made for clicking on"></p>
+
+<p>Notice the link http://10.5.2.113:9999/</p>
+
+<p>We now have to make sure it points to something, and more importantly, make sure you get an alert if the link is clicked.</p>
+
+<h1>Cats to the rescue</h1>
+
+<p>In this example, I’m using <a href="http://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html">cat</a>, <a href="http://en.wikipedia.org/wiki/Netcat">netcat</a> and a <a href="http://icanhascheezburger.com/">lolcat</a> (swap the lolcat out with a screenshot of your actual issue). I prepend the command with <a href="http://www.gnu.org/software/bash/manual/html_node/Pipelines.html">time</a> which causes timing statistics to be printed for the command once it finishes.</p>
+
+<p>Open a shell, and host the image with:</p>
+
+<p><a href="https://gist.github.com/opyate/6375611#catserver">https://gist.github.com/opyate/6375611#catserver</a></p>
+
+<p><strong>UPDATE</strong></p>
+
+<p>In retrospect, you can serve something up repeatedly by putting it in a <code>while (true)</code> loop:</p>
+
+<p><a href="https://gist.github.com/opyate/6375611#holding-page">https://gist.github.com/opyate/6375611#holding-page</a></p>
+
+<p><img width="381px" src="http://funkshional.files.wordpress.com/2012/01/start.png" alt="Serve the cat with cat and netcat"></p>
+
+<p>Now, you’ve sent the email and hosted the image. In the meanwhile, you carry on with your other work.</p>
+
+<h1>What The Sysadmin sees</h1>
+
+<p>The Sysadmin clicks on your link, et voila:</p>
+
+<p><img width="381px" src="http://funkshional.files.wordpress.com/2012/01/what-they-see.png" alt="My all-important screenshot of my technical issue"></p>
+
+<h1>What you see</h1>
+
+<p>A Growl notification:</p>
+
+<p><img width="328px" src="http://funkshional.files.wordpress.com/2012/01/growl.png" alt="Your read receipt"></p>
+
+<p>And, the iTerm tab in which you ran the cat command’s title will flare up. This is a feature of iTerm that can be disabled with <em>Preferences &gt; Appearance &gt; Color</em> tab labels on activity. Here’s what it looks like for me:</p>
+
+<p><img width="381px" src="http://funkshional.files.wordpress.com/2012/01/meanwhile.png" alt="Read receipt part II"></p>
+
+<p>Click on the tab and see the proof that the image has been served. Even better, the time command will tell you how long it took for The Sysadmin to click on your link (one minute and three seconds, in my case):</p>
+
+<p><img width="381px" src="http://funkshional.files.wordpress.com/2012/01/end.png" alt="They took a minute to respond, shock horror!"></p>
+
+<p>Now, run over there and start badgering.</p>
+  </body>
+</html>
